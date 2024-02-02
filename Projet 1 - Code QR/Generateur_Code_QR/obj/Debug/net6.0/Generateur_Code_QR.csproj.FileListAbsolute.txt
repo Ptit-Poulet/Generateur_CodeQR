@@ -1,0 +1,15 @@
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.exe
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.deps.json
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.runtimeconfig.json
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.dll
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.pdb
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.AssemblyReference.cache
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.GeneratedMSBuildEditorConfig.editorconfig
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfoInputs.cache
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfo.cs
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CoreCompileInputs.cache
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.dll
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\refint\Generateur_Code_QR.dll
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.pdb
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.genruntimeconfig.cache
+P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll
