@@ -7,13 +7,13 @@ namespace Generateur_Code_QR
     {
         static void Main(string[] args)
         {
-            Program program = new Program();
+            Program  program = new Program();
 
             //Avec le mode alphanumérique, niveau Q et version 1
+            string ChaineCaractere = "HELLO WORLD";
             string ChaineEnBinaire ="";
             string mode = "alphanum";
                 //Error Correction Level Q
-            string ChaineCaractere = "HELLO WORLD";
 
             //Trouver le mode
             switch (mode)
@@ -23,7 +23,7 @@ namespace Generateur_Code_QR
                 //    break;
 
                 case "alphanum":
-                    ChaineEnBinaire += "0010";
+                    ChaineEnBinaire += "0010"; //indicateur de mode
                     break;
 
                 //case:...
@@ -45,26 +45,12 @@ namespace Generateur_Code_QR
 
             //}
 
-            //Mettre nb caractère en binaire 
-            int numCaractere = ChaineCaractere.Length;
-            string Bin = Convert.ToString(numCaractere, 2);//Met les caractère en binaire
-            int Binaire = int.Parse(Bin);
-            int Bits = 0;// les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
-            int NbCaractere = 0;
-            string indicateurNbCaractere = "";
-            int longueurBinaire = program.Size(Binaire);//Savoir la longueur de l'indicateur
+            //Indicateur de nombre de caractère
+            string indicateurNbCaractere = program.IndicateurNbCaractere(ChaineCaractere);
 
-            //*****9 bits de log a cause de la version****
-
-            if (longueurBinaire < 9)//Savoir si la longueur de l'indicateur est 9 bits de long 
-            {
-                Bits = 9 - longueurBinaire;
-                NbCaractere = Binaire.ToString("D").Length + Bits;
-                
-            }
-            indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
             ChaineEnBinaire = ChaineEnBinaire + " "+ indicateurNbCaractere;
 
+            //bits de données
             string codageAlphaNum = program.CodageAlphaNum(ChaineCaractere);
 
             ChaineEnBinaire = ChaineEnBinaire + codageAlphaNum;
@@ -82,6 +68,31 @@ namespace Generateur_Code_QR
             int i = (int)Math.Abs(number);
             if (i == 0) return 0;
             return i.ToString().Length;
+        }
+
+        public string IndicateurNbCaractere(string ChaineCaractere)
+        {
+            Program program = new Program();
+            //Mettre nb caractère en binaire 
+            int numCaractere = ChaineCaractere.Length;
+            string Bin = Convert.ToString(numCaractere, 2);//Met les caractère en binaire
+            int Binaire = int.Parse(Bin);
+            int Bits = 0;// les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
+            int NbCaractere = 0;
+            string indicateurNbCaractere = "";
+            int longueurBinaire = program.Size(Binaire);//Savoir la longueur de l'indicateur
+
+            //*****9 bits de log a cause de la version****
+
+            if (longueurBinaire < 9)//Savoir si la longueur de l'indicateur est 9 bits de long 
+            {
+                Bits = 9 - longueurBinaire;
+                NbCaractere = Binaire.ToString("D").Length + Bits;
+
+            }
+            indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
+
+            return indicateurNbCaractere;
         }
 
         /// <summary>
