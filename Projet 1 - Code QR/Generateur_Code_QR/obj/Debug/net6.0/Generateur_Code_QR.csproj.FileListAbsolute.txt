@@ -13,3 +13,18 @@ P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\re
 P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.pdb
 P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.genruntimeconfig.cache
 P:\session 4\Dev d'App\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.exe
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.deps.json
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.runtimeconfig.json
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.dll
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.pdb
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.AssemblyReference.cache
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfo.cs
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.dll
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\refint\Generateur_Code_QR.dll
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.pdb
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.genruntimeconfig.cache
+C:\Users\Utilisateur\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll

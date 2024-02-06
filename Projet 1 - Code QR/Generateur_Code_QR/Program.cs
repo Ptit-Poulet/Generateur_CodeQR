@@ -63,12 +63,13 @@ namespace Generateur_Code_QR
                 
             }
             indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
-            ChaineEnBinaire += " "+ indicateurNbCaractere;
-           
-            //string codageAlphaNum = program.CodageAlphaNum(ChaineCaractere);
-            //ChaineEnBinaire += " " + codageAlphaNum;
+            ChaineEnBinaire = ChaineEnBinaire + " "+ indicateurNbCaractere;
 
-            //Console.WriteLine(ChaineEnBinaire);
+            string codageAlphaNum = program.CodageAlphaNum(ChaineCaractere);
+
+            ChaineEnBinaire = ChaineEnBinaire + codageAlphaNum;
+
+            Console.WriteLine(ChaineEnBinaire);
         }
         /// <summary>
         /// Longueur d'un int
@@ -90,29 +91,26 @@ namespace Generateur_Code_QR
         /// <returns>Chaine binaire</returns>
         public string CodageAlphaNum(string Caractere)
         {
-            string binaire11Bits = "";
-            List<string> lettre = new List<string> { "H", "E", "L", "O"," ","W", "R", "D"};
-            List<string> chiffre = new List<string>{ "14", "21", "24", "36", "36", "32", "27", "13" };
+            string CaractereEncode = "";
+            string binaire = "";
+            string indicateurCaractere = "";
+            int valeurNumerique = 0;
+
+            List<string> lettre = new List<string> { "H", "E", "L", "O", " ", "W", "R", "D" };
+            List<string> chiffre = new List<string> { "17", "14", "21", "24", "36", "32", "27", "13" };
+
             List<List<string>> alphaNumValue = new List<List<string>>();
-            for(int i = 0; i < 8; i++)
+            List<string> caractereEnBinaire = new List<string>();
+
+            //Créer une liste avec les valeurs alphanumerique
+            for (int i = 0; i < 8; i++)
             {
                 List<string> value = new List<string>();
                 value.Add(lettre[i]);
                 value.Add(chiffre[i]);
                 alphaNumValue.Add(value);
             }
-            List<string> caractereEnBinaire = new List<string>();
 
-            //int nbCaractere = Caractere.Length;
-            //for(int i = 0; i < nbCaractere; i++)
-            //{
-            //    for(int j = 0; j < nbCaractere; j++)
-            //    if (alphaNumValue.Contains(Caractere[i].ToString()))
-            //    {
-            //            caractereEnBinaire[i] += alphaNumValue[j];
-            //    }
-
-            //}
             // Conversion en binaire
             foreach (char c in Caractere)
             {
@@ -124,17 +122,38 @@ namespace Generateur_Code_QR
                 {
                     caractereEnBinaire.Add(matchingItem[1]);
                 }
-                
+
             }
 
-            for (int i = 0; i < caractereEnBinaire.Count - 1; i += 2)
+
+            //Formule pour mettre en binaire
+            for (int i = 0; i < caractereEnBinaire.Count; i += 2)
             {
-                int valeurNumerique = int.Parse(caractereEnBinaire[i]) * 45;
-                binaire11Bits = Convert.ToString(valeurNumerique, 2).PadLeft(11, '0');
+                //Si le caractère est seul
+                if (i == caractereEnBinaire.Count - 1)
+                {
+                    valeurNumerique = int.Parse(caractereEnBinaire[i]);
+                }
+                else
+                {
+                    valeurNumerique = int.Parse(caractereEnBinaire[i]) * 45 + int.Parse(caractereEnBinaire[i + 1]);
+                }
 
+                //Regarder si fini sur un caractère seul
+                int longueurPadding = (i == caractereEnBinaire.Count - 1) ? 6 : 11;
+
+                binaire = Convert.ToString(valeurNumerique, 2).PadLeft(longueurPadding, '0');
+
+                CaractereEncode = CaractereEncode + " " + binaire;
+
+                //Break la boucle si c'Est le dernier caractère
+                if (i == caractereEnBinaire.Count - 1)
+                {
+                    break;
+                }
             }
 
-            return binaire11Bits;
+            return CaractereEncode;
 
         }
 
