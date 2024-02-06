@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Generateur_Code_QR
@@ -31,19 +32,19 @@ namespace Generateur_Code_QR
             }
 
             ////Trouver la version
-            //switch(ChaineCaractere.Length)
-            //{
-            //    //Version 1
-            //    case <16:
+            switch (ChaineCaractere.Length)
+            {
+                //Version 1
+                case < 16:
 
-            //        break;
+                    break;
 
-            //        //Version 2
-            //    //case < 29:
-            //    //    break;
-            //    //...
+                    //Version 2
+                    //case < 29:
+                    //    break;
+                    //...
 
-            //}
+            }
 
             //Indicateur de nombre de caractère
             string indicateurNbCaractere = program.IndicateurNbCaractere(ChaineCaractere);
@@ -54,8 +55,10 @@ namespace Generateur_Code_QR
             string codageAlphaNum = program.CodageAlphaNum(ChaineCaractere);
 
             ChaineEnBinaire = ChaineEnBinaire + codageAlphaNum;
+            string trim = ChaineEnBinaire.Replace(" ", String.Empty);   
+            string bitsdeDonne = program.AJoutOctetPad(trim);
 
-            Console.WriteLine(ChaineEnBinaire);
+            Console.WriteLine(bitsdeDonne);
         }
         /// <summary>
         /// Longueur d'un int
@@ -70,6 +73,11 @@ namespace Generateur_Code_QR
             return i.ToString().Length;
         }
 
+        /// <summary>
+        /// Foonction pour obtenir l'indicateur de nombre de caractères
+        /// </summary>
+        /// <param name="ChaineCaractere"></param>
+        /// <returns>Indicateur de nb caractères</returns>
         public string IndicateurNbCaractere(string ChaineCaractere)
         {
             Program program = new Program();
@@ -99,7 +107,7 @@ namespace Generateur_Code_QR
         /// Codage alphanumerique des caractères
         /// </summary>
         /// <param name="Caractere">les caractères</param>
-        /// <returns>Chaine binaire</returns>
+        /// <returns>Bits de données</returns>
         public string CodageAlphaNum(string Caractere)
         {
             string CaractereEncode = "";
@@ -166,6 +174,69 @@ namespace Generateur_Code_QR
 
             return CaractereEncode;
 
+        }
+
+        public string AJoutOctetPad(string Donnecode)
+        {
+            //faire des enum pour tout les tableau qu'on aura besoin ??
+            int nbTotalMotCode = 13;
+            string result = "";
+            
+            //Sachant que c'est la verison 1 avec un code d'erreur de Q
+            int nbBitsRequis = nbTotalMotCode * 8;
+
+
+            if(Donnecode.Length < nbBitsRequis - 4)
+            {
+                for(int i = 0; i < 4; i++)
+                {
+                    Donnecode += "0";
+
+                }
+                int length = Donnecode.Length;
+
+            }
+            else if(Donnecode.Length > nbBitsRequis - 4 && Donnecode.Length < nbBitsRequis)
+            {
+                for(int i = 0; i < nbBitsRequis; i++)
+                {
+                    Donnecode.PadLeft(1, '0');
+                }
+            }
+
+            if(Donnecode.Length % 8 != 0)
+            {
+
+                string DonneCodeMultiple = Donnecode.Replace(" ", "");
+                int remainder = Donnecode.Length % 8;
+
+                if(remainder != 0)
+                {
+                    DonneCodeMultiple += new string('0', 8 - remainder);
+                }
+                
+                do
+                {
+
+                    DonneCodeMultiple = DonneCodeMultiple + "11101100";
+                
+                    if(DonneCodeMultiple.Length != nbBitsRequis)
+                    {
+                        DonneCodeMultiple = DonneCodeMultiple + "00010001";
+                    }
+
+
+                }
+                while (DonneCodeMultiple.Length != nbBitsRequis);
+
+                for (int i = 0; i < DonneCodeMultiple.Length; i += 8)
+                {
+                    result += DonneCodeMultiple.Substring(i, Math.Min(8, DonneCodeMultiple.Length - i)) + " ";
+                }
+
+            }
+
+            return result;
         }
 
 
