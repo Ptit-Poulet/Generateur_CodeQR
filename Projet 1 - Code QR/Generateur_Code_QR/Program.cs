@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using STH1123.ReedSolomon;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
@@ -11,239 +12,89 @@ namespace Generateur_Code_QR
             string ChaineDebut = "HELLO WORLD";
             string mode = "alphanum";
             CodeQr codeQr = new CodeQr();
-            string resultat = codeQr.PreparationCW(ChaineDebut, mode);
-            string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100";
-            if(resultat == resultatAttendu)
+            int nbTotalMotCode = 16;
+
+            string resultat = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
+            string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100 00010001 11101100 00010001";
+            Console.WriteLine(resultat);
+            if (resultat == resultatAttendu)
             {
                 Console.WriteLine("Le code est : est le même");
 
             }
 
-            //    Program  program = new Program();
+            //// //Exemple Bibliotheque Reed - Solomon
+            //int[] G1B1 = new int[26] { Convert.ToInt32("00100000", 2), Convert.ToInt32("01011011", 2), Convert.ToInt32("00001011", 2), Convert.ToInt32("01111000", 2), Convert.ToInt32("11010001", 2), 
+            //Convert.ToInt32("01110010", 2),Convert.ToInt32("11011100", 2), Convert.ToInt32("01001101", 2), Convert.ToInt32("01000011", 2), Convert.ToInt32("01000000", 2), Convert.ToInt32("11101100", 2),
+            //Convert.ToInt32("00010001", 2),Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-            //    //Avec le mode alphanumérique, niveau Q et version 1
-            //    string ChaineCaractere = "HELLO WORLD";
-            //    string ChaineEnBinaire ="";
-            //    string mode = "alphanum";
-            //        //Error Correction Level Q
+            //rse.Encode(G1B1, 10);
 
-            //    //Trouver le mode
-            //    switch (mode)
-            //    {
-            //        //case "numeric":
-            //            //ChaineEnBinaire += 0001;
-            //        //    break;
-
-            //        case "alphanum":
-            //            ChaineEnBinaire += "0010"; //indicateur de mode
-            //            break;
-
-            //        //case:...
-
-            //    }
-
-            //    ////Trouver la version
-            //    switch (ChaineCaractere.Length)
-            //    {
-            //        //Version 1
-            //        case < 16:
-
-            //            break;
-
-            //            //Version 2
-            //            //case < 29:
-            //            //    break;
-            //            //...
-
-            //    }
-
-            ////Indicateur de nombre de caractère
-            //string indicateurNbCaractere = program.IndicateurNbCaractere(ChaineCaractere);
-
-            //ChaineEnBinaire = ChaineEnBinaire + " " + indicateurNbCaractere;
-
-            ////bits de données
-            //string codageAlphaNum = program.CodageAlphaNum(ChaineCaractere);
-
-            //ChaineEnBinaire = ChaineEnBinaire + codageAlphaNum;
-
-
-            //string trim = ChaineEnBinaire.Replace(" ", String.Empty);
-
-            ////Ajout des octets de pad
-            //string bitsdeDonne = program.AJoutOctetPad(trim);
-
-            //Console.WriteLine(bitsdeDonne);
-            ////}
-
-            ///// <summary>
-            ///// Foonction pour obtenir l'indicateur de nombre de caractères
-            ///// </summary>
-            ///// <param name="ChaineCaractere"></param>
-            ///// <returns>Indicateur de nb caractères</returns>
-            //public string IndicateurNbCaractere(string ChaineCaractere)
+            //for (int i = 16; i < G1B1.Length; i++)
             //{
-
-            //    //Mettre nb caractère en binaire 
-            //    int nbCaractere = ChaineCaractere.Length;
-            //    string Bin = Convert.ToString(nbCaractere, 2);//Met les caractère en binaire
-            //    int Binaire = int.Parse(Bin);
-            //    //int Bits = 0;// les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
-            //    int Bits = Binaire.ToString().Length;
-            //    int NbCaractere = 0;
-            //    string indicateurNbCaractere = "";
-            //    int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
-
-            //    //*****9 bits de log a cause de la version****
-
-            //    if (longueurBinaire < 9)//Savoir si la longueur de l'indicateur est 9 bits de long 
-            //    {
-            //        Bits = 9 - longueurBinaire;
-            //        NbCaractere = Binaire.ToString("D").Length + Bits;
-
-            //    }
-            //    indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
-
-            //    return indicateurNbCaractere;
+            //    Console.WriteLine(G1B1[i]);
             //}
 
-            ///// <summary>
-            ///// Codage alphanumerique des caractères
-            ///// </summary>
-            ///// <param name="Caractere">les caractères</param>
-            ///// <returns>Bits de données</returns>
-            //public string CodageAlphaNum(string Caractere)
-            //{
-            //    string CaractereEncode = "";
-            //    string binaire = "";
-            //    string indicateurCaractere = "";
-            //    int valeurNumerique = 0;
+            //pour créer un code 5-Q. Il y'a 18 mots de codes de correction d'erreurs pour chaque bloc
+            int[] MG1B1 = new int[33] { Convert.ToInt32("01000011", 2), Convert.ToInt32("01010101", 2), Convert.ToInt32("01000110", 2),
+                                        Convert.ToInt32("10000110", 2),Convert.ToInt32("01010111", 2), Convert.ToInt32("00100110", 2),
+                                        Convert.ToInt32("01010101", 2), Convert.ToInt32("11000010", 2),Convert.ToInt32("01110111", 2),
+                                        Convert.ToInt32("00110010", 2), Convert.ToInt32("00000110", 2), Convert.ToInt32("00010010", 2),
+                                        Convert.ToInt32("00000110", 2), Convert.ToInt32("01100111", 2), Convert.ToInt32("00100110", 2),
+                                        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-            //    List<string> lettre = new List<string> { "H", "E", "L", "O", " ", "W", "R", "D" };
-            //    List<string> chiffre = new List<string> { "17", "14", "21", "24", "36", "32", "27", "13" };
+            int[] MG1B2 = new int[33] { Convert.ToInt32("11110110", 2), Convert.ToInt32("11110110", 2), Convert.ToInt32("01000010", 2),
+                                        Convert.ToInt32("00000111", 2), Convert.ToInt32("01110110", 2), Convert.ToInt32("10000110", 2),
+                                        Convert.ToInt32("11110010", 2), Convert.ToInt32("00000111", 2), Convert.ToInt32("00100110", 2),
+                                        Convert.ToInt32("01010110", 2), Convert.ToInt32("00010110", 2), Convert.ToInt32("11000110", 2),
+                                        Convert.ToInt32("11000111", 2), Convert.ToInt32("10010010", 2), Convert.ToInt32("00000110", 2),
+                                       0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+           
 
-            //    List<List<string>> alphaNumValue = new List<List<string>>();
-            //    List<string> caractereEnBinaire = new List<string>();
+            int[] MG2B1 = new int[34] { Convert.ToInt32("10110110", 2), Convert.ToInt32("11100110", 2), Convert.ToInt32("11110111", 2),Convert.ToInt32("01110111", 2),
+                                        Convert.ToInt32("00110010", 2), Convert.ToInt32("00000111", 2), Convert.ToInt32("01110110", 2), Convert.ToInt32("10000110", 2),
+                                        Convert.ToInt32("01010111", 2), Convert.ToInt32("00100110", 2), Convert.ToInt32("01010010", 2), Convert.ToInt32("00000110", 2),
+                                        Convert.ToInt32("10000110", 2), Convert.ToInt32("10010111", 2), Convert.ToInt32("00110010", 2), Convert.ToInt32("00000111", 2),
+                                       0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-            //    //Créer une liste avec les valeurs alphanumerique
-            //    for (int i = 0; i < 8; i++)
-            //    {
-            //        List<string> value = new List<string>();
-            //        value.Add(lettre[i]);
-            //        value.Add(chiffre[i]);
-            //        alphaNumValue.Add(value);
-            //    }
+            int[] MG2B2 = new int[34] { Convert.ToInt32("01000110", 2), Convert.ToInt32("11110111", 2), Convert.ToInt32("01110110", 2),Convert.ToInt32("01010110", 2),
+                                        Convert.ToInt32("11000010", 2), Convert.ToInt32("00000110", 2), Convert.ToInt32("10010111", 2), Convert.ToInt32("00110010", 2),
+                                        Convert.ToInt32("00010000", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
+                                        Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
+                                       0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-            //    // Conversion en binaire
-            //    foreach (char c in Caractere)
-            //    {
-            //        // Recherche de la correspondance dans la liste alphaNumValue
-            //        var matchingItem = alphaNumValue.FirstOrDefault(item => item.Contains(c.ToString()));
+            //int[] MG2B2 = new int[34] { Convert.ToInt32("01000110", 2), Convert.ToInt32("11110111", 2), Convert.ToInt32("01110110", 2),Convert.ToInt32("01010110", 2),
+            //                            Convert.ToInt32("11000010", 2), Convert.ToInt32("00000110", 2), Convert.ToInt32("10010111", 2), Convert.ToInt32("00110010", 2),
+            //                            Convert.ToInt32("11100000", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
+            //                            Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
+            //                           0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+           
+            ReedSolomonEncoder rse = new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256);
 
-            //        // Si une correspondance est trouvée, ajoutez la représentation binaire
-            //        if (matchingItem != null)
-            //        {
-            //            caractereEnBinaire.Add(matchingItem[1]);
-            //        }
+            //rse.Encode(MG1B1, 18);
+            //rse.Encode(MG1B2, 18);
+            //rse.Encode(MG2B1, 18);
+            rse.Encode(MG2B2, 18);
 
-            //    }
-
-
-            //    //Formule pour mettre en binaire
-            //    for (int i = 0; i < caractereEnBinaire.Count; i += 2)
-            //    {
-            //        //Si le caractère est seul
-            //        if (i == caractereEnBinaire.Count - 1)
-            //        {
-            //            valeurNumerique = int.Parse(caractereEnBinaire[i]);
-            //        }
-            //        else
-            //        {
-            //            valeurNumerique = int.Parse(caractereEnBinaire[i]) * 45 + int.Parse(caractereEnBinaire[i + 1]);
-            //        }
-
-            //        //Regarder si fini sur un caractère seul
-            //        int longueurPadding = (i == caractereEnBinaire.Count - 1) ? 6 : 11;
-
-            //        binaire = Convert.ToString(valeurNumerique, 2).PadLeft(longueurPadding, '0');
-
-            //        CaractereEncode = CaractereEncode + " " + binaire;
-
-            //        //Break la boucle si c'Est le dernier caractère
-            //        if (i == caractereEnBinaire.Count - 1)
-            //        {
-            //            break;
-            //        }
-            //    }
-
-            //    return CaractereEncode;
-
-            //}
-
-            //public string AJoutOctetPad(string Donnecode)
-            //{
-            //    int nbTotalMotCode = 13;
-            //    string result = "";
-
-            //    //Sachant que c'est la verison 1 avec un code d'erreur de Q
-            //    int nbBitsRequis = nbTotalMotCode * 8;
-
-            //    //Terminateur
-            //    if(Donnecode.Length < nbBitsRequis - 4)
-            //    {
-            //        for(int i = 0; i < 4; i++)
-            //        {
-            //            Donnecode += "0";
-
-            //        }
-            //        int length = Donnecode.Length;
-
-            //    }
-            //    else if(Donnecode.Length > nbBitsRequis - 4 && Donnecode.Length < nbBitsRequis)
-            //    {
-            //        for(int i = 0; i < nbBitsRequis; i++)
-            //        {
-            //            Donnecode.PadLeft(1, '0');
-            //        }
-            //    }
-
-            //    //Ajout d'octets de pad
-            //    if(Donnecode.Length % 8 != 0)
-            //    {
-
-            //        string DonneCodeMultiple = Donnecode.Replace(" ", "");
-            //        int remainder = Donnecode.Length % 8;
-
-            //        if(remainder != 0)
-            //        {
-            //            DonneCodeMultiple += new string('0', 8 - remainder);
-            //        }
-
-            //        do
-            //        {
-
-            //            DonneCodeMultiple = DonneCodeMultiple + "11101100";
-
-            //            if(DonneCodeMultiple.Length != nbBitsRequis)
-            //            {
-            //                DonneCodeMultiple = DonneCodeMultiple + "00010001";
-            //            }
+            for (int i = 0; i < MG2B2.Length; i++)
+            {
+                Console.WriteLine(MG2B2[i]);
+            }
 
 
-            //        }
-            //        while (DonneCodeMultiple.Length != nbBitsRequis);
+            int[,] motDecodesEntrelaces = new int[16, 4];
 
-            //        //Mettre des espaces après chaque 8bits
-            //        for (int i = 0; i < DonneCodeMultiple.Length; i += 8)
-            //        {
-            //            result += DonneCodeMultiple.Substring(i, Math.Min(8, DonneCodeMultiple.Length - i)) + " ";
-            //        }
+            int[,] motDecodesDeDonneesEntrelaces = new int[18, 4];
 
-            //    }
 
-            //    return result;
+            //Entrelaçons les mots de codes de données
+            for (int i = 0; i < motDecodesDeDonneesEntrelaces.GetLength(0); i++)
+            {
+                
+            }
+
+
         }
-
 
     }
 

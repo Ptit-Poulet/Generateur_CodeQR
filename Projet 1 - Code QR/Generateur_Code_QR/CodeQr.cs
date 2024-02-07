@@ -23,7 +23,7 @@ namespace Generateur_Code_QR
         }
 
         //Méthodes
-        public string PreparationCW(string ChaineDebut, string mode)
+        public string PreparationCW(string ChaineDebut, string mode, int nbTotalMotCode)
         {
             string ChaineDonneEncode = "";
           
@@ -37,7 +37,7 @@ namespace Generateur_Code_QR
             ChaineDonneEncode = ChaineDonneEncode + donneEnBits;
             string Trim = ChaineDonneEncode.Replace(" ", String.Empty);
 
-            string BitsdeDonne = AjouterOctetsPad(Trim);
+            string BitsdeDonne = AjouterOctetsPad(Trim, nbTotalMotCode);
 
             return BitsdeDonne;
 
@@ -206,10 +206,10 @@ namespace Generateur_Code_QR
         /// </summary>
         /// <param name="ChaineDebut"></param>
         /// <returns></returns>
-        public string AjouterOctetsPad(string ChaineDebut)
+        public string AjouterOctetsPad(string ChaineDebut, int nbTotalMotCode)
         {
             //TODO modifier
-            int nbTotalMotCode = 13;
+
             string result = "";
 
             //Sachant que c'est la verison 1 avec un code d'erreur de Q

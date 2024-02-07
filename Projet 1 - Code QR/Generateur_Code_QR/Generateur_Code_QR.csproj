@@ -11,8 +11,4 @@
     <PackageReference Include="STH1123.ReedSolomon" Version="2.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ReedSolomon\ReedSolomon.csproj" />
-  </ItemGroup>
-
 </Project>
