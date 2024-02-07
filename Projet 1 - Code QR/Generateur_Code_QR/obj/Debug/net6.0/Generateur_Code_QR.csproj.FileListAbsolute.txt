@@ -43,3 +43,5 @@ P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\o
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.pdb
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.genruntimeconfig.cache
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\ReedSolomon.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CopyComplete
