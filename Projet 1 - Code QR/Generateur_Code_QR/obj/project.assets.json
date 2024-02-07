@@ -14,19 +14,6 @@
             "related": ".xml"
           }
         }
-      },
-      "ReedSolomon/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "STH1123.ReedSolomon": "2.1.0"
-        },
-        "compile": {
-          "bin/placeholder/ReedSolomon.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ReedSolomon.dll": {}
-        }
       }
     }
   },
@@ -47,16 +34,10 @@
         "sth1123.reedsolomon.2.1.0.nupkg.sha512",
         "sth1123.reedsolomon.nuspec"
       ]
-    },
-    "ReedSolomon/1.0.0": {
-      "type": "project",
-      "path": "../ReedSolomon/ReedSolomon.csproj",
-      "msbuildProject": "../ReedSolomon/ReedSolomon.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ReedSolomon >= 1.0.0",
       "STH1123.ReedSolomon >= 2.1.0"
     ]
   },
@@ -92,11 +73,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\ReedSolomon\\ReedSolomon.csproj": {
-              "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\ReedSolomon\\ReedSolomon.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
