@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LHng/1VVvjn8d2whq2xPBE78C7pfWBsQzGut2rtzygdc0ARAF1g7ttBoAd3lc/WmAtU54dDwqgrImiBMwo2Hyg==",
+  "dgSpecHash": "aBEhQWE1GHD6jwCISYTcWCJ0wjegDVFdtxyeXqGkf4YEuWQR8fhLw5hRU5wfiGt2ww64q/Pt8vJoYBoMxbee1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utilisateur\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\sth1123.reedsolomon\\2.1.0\\sth1123.reedsolomon.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
