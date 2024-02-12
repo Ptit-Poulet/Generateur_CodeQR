@@ -101,7 +101,14 @@ namespace Generateur_Code_QR
 
             }
 
+            Console.WriteLine(resultatAttendu2.Length);
 
+            int[] chaineFormatDECinq = new int[15] { 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+            ReedSolomonEncoder rse = new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256);
+             rse.Encode(chaineFormatDECinq, 10);
+
+            foreach(int i in chaineFormatDECinq) { Console.WriteLine(i); }
         }
     }
 }
