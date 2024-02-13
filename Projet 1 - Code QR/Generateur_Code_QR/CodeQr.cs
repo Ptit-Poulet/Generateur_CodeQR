@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Generateur_Code_QR
 {
-    internal class CodeQr
+    public class CodeQr
     {
         //Variables
 
-        //version
         string mode = "alphanum";
-        //EC - Error code
+        char errorCL = 'Q';
+        //EC - Error code = Q
 
         /// <summary>
         /// Constructeur
@@ -25,10 +25,12 @@ namespace Generateur_Code_QR
         //Méthodes
         public string PreparationCW(string ChaineDebut, string mode, int nbTotalMotCode)
         {
-            string ChaineDonneEncode = "";
+            
           
+            //version =  TrouverVersion(ChaineDebut);
+
             string indicateurMode = TrouverIndicateurMode(mode);
-            ChaineDonneEncode = indicateurMode;
+            string ChaineDonneEncode = indicateurMode;
 
             string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut);
             ChaineDonneEncode = ChaineDonneEncode +" "+ indicateurNbCaractere;
@@ -41,7 +43,6 @@ namespace Generateur_Code_QR
 
             return BitsdeDonne;
 
-            //ChaineDonneEncode += TrouverVersion(ChaineDebut);
 
 
 
@@ -108,13 +109,11 @@ namespace Generateur_Code_QR
             //TODO modifier
 
             //Mettre nb caractère en binaire 
-            int nbCaractere = ChaineDebut.Length;
-            string Bin = Convert.ToString(nbCaractere, 2);//Met les caractère en binaire
-            int Binaire = int.Parse(Bin);
-            //int Bits = 0;// les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
+            int Binaire = int.Parse(Convert.ToString(ChaineDebut.Length, 2));
+
+            // les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
             int Bits = Binaire.ToString().Length;
             int NbCaractere = 0;
-            string indicateurNbCaractere = "";
             int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
 
             //*****9 bits de log a cause de la version****
@@ -125,7 +124,7 @@ namespace Generateur_Code_QR
                 NbCaractere = Binaire.ToString("D").Length + Bits;
 
             }
-            indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
+            string indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
 
             return indicateurNbCaractere;
         }
@@ -230,7 +229,7 @@ namespace Generateur_Code_QR
             {
                 for (int i = 0; i < nbBitsRequis; i++)
                 {
-                    ChaineDebut.PadLeft(1, '0');
+                    ChaineDebut+= '0';
                 }
             }
 
@@ -238,7 +237,7 @@ namespace Generateur_Code_QR
             if (ChaineDebut.Length % 8 != 0)
             {
 
-                string DonneCodeMultiple = ChaineDebut.Replace(" ", "");
+                string DonneCodeMultiple = ChaineDebut;
                 int remainder = ChaineDebut.Length % 8;
 
                 if (remainder != 0)
@@ -249,11 +248,11 @@ namespace Generateur_Code_QR
                 do
                 {
 
-                    DonneCodeMultiple = DonneCodeMultiple + "11101100";
+                    DonneCodeMultiple += "11101100";
 
                     if (DonneCodeMultiple.Length != nbBitsRequis)
                     {
-                        DonneCodeMultiple = DonneCodeMultiple + "00010001";
+                        DonneCodeMultiple += "00010001";
                     }
 
 
