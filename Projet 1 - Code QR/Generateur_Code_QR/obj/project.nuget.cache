@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aBEhQWE1GHD6jwCISYTcWCJ0wjegDVFdtxyeXqGkf4YEuWQR8fhLw5hRU5wfiGt2ww64q/Pt8vJoYBoMxbee1g==",
+  "dgSpecHash": "7OBHfCvPa2hLSiCnvrE1wTMW5EIRZOiBSUCUo0Yq7mdWbmtXQSTSl1NkFdHU/aHRFmZp4HOBx+1Z9d4ekbrp+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Utilisateur\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\skiasharp\\2.88.7\\skiasharp.2.88.7.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.7\\skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.7\\skiasharp.nativeassets.win32.2.88.7.nupkg.sha512",
     "C:\\Users\\Utilisateur\\.nuget\\packages\\sth1123.reedsolomon\\2.1.0\\sth1123.reedsolomon.2.1.0.nupkg.sha512"
   ],
   "logs": []

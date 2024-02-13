@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generateur_Code_QR
 {
-    internal class CodeQr
+    public class CodeQr
     {
         //Variables
 

@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Generateur_Code_QR
 {
-    internal class Groupe
+    public class Groupe
     {
         /// <summary>
         /// Constructeur
@@ -103,7 +103,7 @@ namespace Generateur_Code_QR
         }
 
         /// <summary>
-        /// Construction du message finale en binaire
+        /// Construction du message finale en binaire avec les données et Ec entrelacé
         /// </summary>
         /// <param name="data"></param>
         /// <param name="EC"></param>
@@ -164,12 +164,68 @@ namespace Generateur_Code_QR
         }
 
         /// <summary>
+        /// Construction du message final en binaire sans avoir à entrelacer des données
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="versionCode"></param>
+        /// <returns>Binaire à placer dans la matrice</returns>
+        public string StructureMessageFinale(int[] message, int versionCode)
+        {
+            string elementOctet = "";
+
+            //Mettre le message en binaire et en 8 bits
+            for (int i = 0; i < message.Length; i++)
+            {
+
+                if (message[i] == null)
+                    continue;
+                else
+                {
+                    int valeurNumerique = message[i];
+                    string elementBinaire = Convert.ToString(valeurNumerique, 2);
+                    int remainder = elementBinaire.Length % 8;
+
+                    if (elementBinaire.Length % 8 != 0)
+                    {
+                        elementOctet += new string('0', 8 - remainder);
+
+                    }
+                    elementOctet += elementBinaire;
+
+                }
+            }
+
+            List<List<int>> bitsrestantes = VersionRemainderBits(versionCode);
+
+            //Ajout des bits nécessaires
+            for (int i = 0; i < bitsrestantes.Count; i++)
+            {
+                // Récupération de la version et des bits requis 
+                int currentVersion = bitsrestantes[i][0];
+                int requiredBitsCount = bitsrestantes[i][1];
+
+                // Vérification si la version correspond à versionCode
+                if (currentVersion == versionCode)
+                {
+                    // Ajout des bits nécessaires selon requiredBitsCount
+                    for (int j = 0; j < requiredBitsCount; j++)
+                    {
+                        elementOctet += '0';
+                    }
+
+                    break;
+                }
+            }
+            return elementOctet;
+        }
+        /// <summary>
         /// Redonne le nombre de bits nécessaire selon la version
         /// </summary>
         /// <param name="versionCode"></param>
         /// <returns>Nb bits restant pour le placecement dans la matrice</returns>
         public List<List<int>> VersionRemainderBits(int versionCode)
         {
+            //Je pense qu'on peut utiliser un dictionnaire pour ça à l'avenir
             List<int> version = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
             List<int> requiredBits = new List<int> { 0, 7, 7, 7, 7, 7, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3 };
 

@@ -68,12 +68,11 @@ namespace Generateur_Code_QR
             /*---------------------------------------------------*/
             Bloc bloc = new Bloc();
             //TEST foNCTION BLOC FORMER BLOC
-            //string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100";
-            //int[] lol = bloc.FomerBloc(resultatAttendu);
+            int[]message = bloc.FormerBloc(resultat, 13, 13);
 
-            //for (int i = 0; i < lol.Length; i++)
+            //for (int i = 0; i < message.Length; i++)
             //{
-            //    Console.WriteLine(lol[i]);
+            //    Console.WriteLine(message[i]);
             //}
             //ReedSolomon est dans la class Bloc
             bloc.ReedSolomon(MG1B1, 18);
@@ -101,6 +100,17 @@ namespace Generateur_Code_QR
 
             }
 
+            Console.WriteLine(resultatAttendu2.Length);
+
+            string messaFinaleBinaire = groupe.StructureMessageFinale(message, 1);
+            Console.WriteLine("HELLO WORLD :"+ messaFinaleBinaire);
+
+            int[] chaineFormatDECinq = new int[15] { 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+            ReedSolomonEncoder rse = new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256);
+             rse.Encode(chaineFormatDECinq, 10);
+
+            //foreach(int i in chaineFormatDECinq) { Console.WriteLine(i); }
 
         }
     }

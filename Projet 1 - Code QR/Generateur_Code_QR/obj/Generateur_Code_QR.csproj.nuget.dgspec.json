@@ -47,6 +47,10 @@
             "STH1123.ReedSolomon": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.7, )"
             }
           },
           "imports": [
