@@ -1,16 +1,20 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "Gdq+ulKnBjsgR5/T3gzFMtqsla6Ttpbe8llUti25zRw/y2b8ZXTRGiVZVPQT8pvpmZixzjKZhsYR4ysDByCgbw==",
+  "dgSpecHash": "vZtyeESz5RYLEYwXzn62fgUEUdQEPwT/C23RHFm5q24J5GOee69jMw7NcRpoGXB6btAR1Ucr8ICJq+hCN54c5Q==",
   "success": true,
   "projectFilePath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
-=======
-  "dgSpecHash": "LrlGCJB3m/AEu9390lvsyw4sxcF8p5IP57rAVoRMacTkq7J2SmCq7y9a0eHB82QXyHGDUP0sHazRD9fBhyD5hA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\2130331\\Downloads\\Dev-APP-1\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
->>>>>>> b76faecea542adc6dff8f44b19fb8f34ec3de66e
   "expectedPackageFiles": [
+    "C:\\Users\\2230912\\.nuget\\packages\\skiasharp\\2.88.7\\skiasharp.2.88.7.nupkg.sha512",
+    "C:\\Users\\2230912\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.7\\skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
+    "C:\\Users\\2230912\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.7\\skiasharp.nativeassets.win32.2.88.7.nupkg.sha512",
     "C:\\Users\\2230912\\.nuget\\packages\\sth1123.reedsolomon\\2.1.0\\sth1123.reedsolomon.2.1.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Generateur_Code_QR
 {
-    internal class CodeQr
+    public class CodeQr
     {
         //Variables
 
-        //version
         string mode = "alphanum";
-        //EC - Error code
+        char errorCL = 'Q';
+        //EC - Error code = Q
 
         /// <summary>
         /// Constructeur
@@ -27,6 +27,8 @@ namespace Generateur_Code_QR
         {
             
           
+            //version =  TrouverVersion(ChaineDebut);
+
             string indicateurMode = TrouverIndicateurMode(mode);
             string ChaineDonneEncode = indicateurMode;
 
@@ -41,7 +43,6 @@ namespace Generateur_Code_QR
 
             return BitsdeDonne;
 
-            //ChaineDonneEncode += TrouverVersion(ChaineDebut);
 
 
 
@@ -228,7 +229,7 @@ namespace Generateur_Code_QR
             {
                 for (int i = 0; i < nbBitsRequis; i++)
                 {
-                    ChaineDebut.PadLeft(1, '0');
+                    ChaineDebut+= '0';
                 }
             }
 
@@ -236,7 +237,7 @@ namespace Generateur_Code_QR
             if (ChaineDebut.Length % 8 != 0)
             {
 
-                string DonneCodeMultiple = ChaineDebut.Replace(" ", "");
+                string DonneCodeMultiple = ChaineDebut;
                 int remainder = ChaineDebut.Length % 8;
 
                 if (remainder != 0)
@@ -247,11 +248,11 @@ namespace Generateur_Code_QR
                 do
                 {
 
-                    DonneCodeMultiple = DonneCodeMultiple + "11101100";
+                    DonneCodeMultiple += "11101100";
 
                     if (DonneCodeMultiple.Length != nbBitsRequis)
                     {
-                        DonneCodeMultiple = DonneCodeMultiple + "00010001";
+                        DonneCodeMultiple += "00010001";
                     }
 
 

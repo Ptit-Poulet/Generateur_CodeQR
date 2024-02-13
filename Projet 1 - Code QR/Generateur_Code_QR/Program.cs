@@ -1,8 +1,10 @@
 ﻿using STH1123.ReedSolomon;
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Generateur_Code_QR
 {
@@ -13,8 +15,9 @@ namespace Generateur_Code_QR
             string ChaineDebut = "HELLO WORLD";
             string mode = "alphanum";
             CodeQr codeQr = new CodeQr();
-            int nbTotalMotCode = 16;
+            int nbTotalMotCode = 13;
 
+<<<<<<< HEAD
             //string resultat = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
             //string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100 00010001 11101100 00010001";
             //// Console.WriteLine(resultat);
@@ -23,18 +26,22 @@ namespace Generateur_Code_QR
             //    Console.WriteLine("Le code est est le même");
 
             //}
+=======
+            /*TEST  FONCTION PREPARATION CW*/
+            string resultat = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
+            string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100";
+            if (resultat == resultatAttendu)
+            {
+                Console.WriteLine("TEST PREPARATION cw: Réussi");
+            }
+            else
+            {
+                Console.WriteLine("TEST PREPARATION cw: Échoué");
 
-            //// //Exemple Bibliotheque Reed - Solomon
-            //int[] G1B1 = new int[26] { Convert.ToInt32("00100000", 2), Convert.ToInt32("01011011", 2), Convert.ToInt32("00001011", 2), Convert.ToInt32("01111000", 2), Convert.ToInt32("11010001", 2), 
-            //Convert.ToInt32("01110010", 2),Convert.ToInt32("11011100", 2), Convert.ToInt32("01001101", 2), Convert.ToInt32("01000011", 2), Convert.ToInt32("01000000", 2), Convert.ToInt32("11101100", 2),
-            //Convert.ToInt32("00010001", 2),Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+            }
+            /*TEST  FONCTION PREPARATION CW*/
+>>>>>>> b5ec5e3542d471f45786832f4d0a896ceb686153
 
-            //rse.Encode(G1B1, 10);
-
-            //for (int i = 16; i < G1B1.Length; i++)
-            //{
-            //    Console.WriteLine(G1B1[i]);
-            //}
 
             //pour créer un code 5-Q. Il y'a 18 mots de codes de correction d'erreurs pour chaque bloc
             int[] MG1B1 = new int[33] { Convert.ToInt32("01000011", 2), Convert.ToInt32("01010101", 2), Convert.ToInt32("01000110", 2),
@@ -71,19 +78,27 @@ namespace Generateur_Code_QR
             //                           Convert.ToInt32("11100000", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
             //                          Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2), Convert.ToInt32("00010001", 2), Convert.ToInt32("11101100", 2),
             //                          0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};    //Il y'a une erreur au niveau du 16, car la valeur correspondante ici est 224
+<<<<<<< HEAD
 
             ReedSolomonEncoder rse = new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256);
+=======
+            /*---------------------------------------------------*/
+            Bloc bloc = new Bloc();
+            //TEST foNCTION BLOC FORMER BLOC
+            int[]message = bloc.FormerBloc(resultat, 13, 13);
+>>>>>>> b5ec5e3542d471f45786832f4d0a896ceb686153
 
-            rse.Encode(MG1B1, 18);
-            rse.Encode(MG1B2, 18);
-            rse.Encode(MG2B1, 18);
-            rse.Encode(MG2B2, 18);
-
-            //for (int i = 16; i <= MG1B1.Length; i++)
+            //for (int i = 0; i < message.Length; i++)
             //{
-            //    Console.WriteLine(MG2B2[i]);
+            //    Console.WriteLine(message[i]);
             //}
+            //ReedSolomon est dans la class Bloc
+            bloc.ReedSolomon(MG1B1, 18);
+            bloc.ReedSolomon(MG1B2, 18);
+            bloc.ReedSolomon(MG2B1, 18);
+            bloc.ReedSolomon(MG2B2, 18);
 
+<<<<<<< HEAD
             int[,] motDecodesDeDonneesEntrelaces = new int[16, 4];
 
             int[,] motDecodesDeCorrectionEntrelaces = new int[18, 4];
@@ -104,14 +119,25 @@ namespace Generateur_Code_QR
                     motDecodesDeDonneesEntrelaces[i, 2] = MG2B1[i];
                     motDecodesDeDonneesEntrelaces[i, 3] = MG2B2[i];
                 }
-            }
+=======
+            /*TEST FONCTIONs POUR MESSAGE FINAL*/
+            Groupe groupe = new Groupe();
+            int NbData = 16;
+            int ECcodeword = 18;
+            int versionCode = 5;
+            string data = groupe.EntrelacerData(NbData, MG1B1, MG1B2, MG2B1, MG2B2);
+            string codeErreur = groupe.EntrelacerEC(ECcodeword, NbData, MG1B1, MG1B2, MG2B1, MG2B2);
+            string messageEnBinanire = groupe.StructurerMessageFinal(data, codeErreur, versionCode);
 
-
-            string concatenes = "";
-
-            //je le remplis
-            for (int i = 0; i < motDecodesDeDonneesEntrelaces.GetLength(0); i++)
+            string resultatAttendu2 = "01000011111101101011011001000110010101011111011011100110111101110100011001000010111101110111011010000110000001110111011101010110010101110111011000110010110000100010011010000110000001110000011001010101111100100111011010010111110000100000011110000110001100100111011100100110010101110001000000110010010101100010011011101100000001100001011001010010000100010001001011000110000001101110110000000110110001111000011000010001011001111001001010010111111011000010011000000110001100100001000100000111111011001101010101010111100101001110101111000111110011000111010010011111000010110110000010110001000001010010110100111100110101001010110101110011110010100100110000011000111101111011011010000101100100111111000101111100010010110011101111011111100111011111001000100001111001011100100011101110011010101111100010000110010011000010100010011010000110111100001111111111011101011000000111100110101011001001101011010001101111010101001001101111000100010000101000000010010101101010001101101100100000111010000110100011111100000010000001101111011110001100000010110010001001111000010110001101111011000000000";
+            if (messageEnBinanire == resultatAttendu2)
             {
+                Console.WriteLine("TEST MESSAGE FINAL: Réussi");
+>>>>>>> b5ec5e3542d471f45786832f4d0a896ceb686153
+            }
+            else
+            {
+<<<<<<< HEAD
                 for (int j = 0; j < motDecodesDeDonneesEntrelaces.GetLength(1); j++)
                 {
                     //Console.WriteLine(motDecodesDeDonneesEntrelaces[i, j]);
@@ -137,21 +163,18 @@ namespace Generateur_Code_QR
                 motDecodesDeCorrectionEntrelaces[i, 1] = MG1B1[i + 15];
                 motDecodesDeCorrectionEntrelaces[i, 2] = MG2B1[i + 16];
                 motDecodesDeCorrectionEntrelaces[i, 3] = MG2B2[i + 16];
+=======
+                Console.WriteLine("TEST MESSAGE FINAL: Échoué");
+>>>>>>> b5ec5e3542d471f45786832f4d0a896ceb686153
 
             }
 
-            string concatenes2 = "";
+            Console.WriteLine(resultatAttendu2.Length);
 
-            //je le remplis
-            for (int i = 0; i < motDecodesDeCorrectionEntrelaces.GetLength(0); i++)
-            {
-                for (int j = 0; j < motDecodesDeCorrectionEntrelaces.GetLength(1); j++)
-                {
-                    if (motDecodesDeCorrectionEntrelaces[i, j] == 0)
-                        continue;
-                    else
-                        concatenes2 += motDecodesDeCorrectionEntrelaces[i, j] + ",";
+            string messaFinaleBinaire = groupe.StructureMessageFinale(message, 1);
+            Console.WriteLine("HELLO WORLD :"+ messaFinaleBinaire);
 
+<<<<<<< HEAD
 
                 }
             }
@@ -232,8 +255,15 @@ namespace Generateur_Code_QR
 
 
             //Console.WriteLine(int.Parse("67"));
+=======
+            int[] chaineFormatDECinq = new int[15] { 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+            ReedSolomonEncoder rse = new ReedSolomonEncoder(GenericGF.QR_CODE_FIELD_256);
+             rse.Encode(chaineFormatDECinq, 10);
+
+            //foreach(int i in chaineFormatDECinq) { Console.WriteLine(i); }
+
+>>>>>>> b5ec5e3542d471f45786832f4d0a896ceb686153
         }
-
     }
-
 }
