@@ -25,10 +25,10 @@ namespace Generateur_Code_QR
         //Méthodes
         public string PreparationCW(string ChaineDebut, string mode, int nbTotalMotCode)
         {
-            string ChaineDonneEncode = "";
+            
           
             string indicateurMode = TrouverIndicateurMode(mode);
-            ChaineDonneEncode = indicateurMode;
+            string ChaineDonneEncode = indicateurMode;
 
             string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut);
             ChaineDonneEncode = ChaineDonneEncode +" "+ indicateurNbCaractere;
@@ -108,13 +108,11 @@ namespace Generateur_Code_QR
             //TODO modifier
 
             //Mettre nb caractère en binaire 
-            int nbCaractere = ChaineDebut.Length;
-            string Bin = Convert.ToString(nbCaractere, 2);//Met les caractère en binaire
-            int Binaire = int.Parse(Bin);
-            //int Bits = 0;// les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
+            int Binaire = int.Parse(Convert.ToString(ChaineDebut.Length, 2));
+
+            // les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
             int Bits = Binaire.ToString().Length;
             int NbCaractere = 0;
-            string indicateurNbCaractere = "";
             int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
 
             //*****9 bits de log a cause de la version****
@@ -125,7 +123,7 @@ namespace Generateur_Code_QR
                 NbCaractere = Binaire.ToString("D").Length + Bits;
 
             }
-            indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
+            string indicateurNbCaractere = Binaire.ToString("D" + NbCaractere.ToString());
 
             return indicateurNbCaractere;
         }

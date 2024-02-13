@@ -45,3 +45,20 @@ P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\o
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\ReedSolomon.dll
 P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CopyComplete
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.exe
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.deps.json
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.runtimeconfig.json
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.dll
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\Generateur_Code_QR.pdb
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\bin\Debug\net6.0\ReedSolomon.dll
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.AssemblyReference.cache
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.GeneratedMSBuildEditorConfig.editorconfig
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfoInputs.cache
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.AssemblyInfo.cs
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CoreCompileInputs.cache
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.csproj.CopyComplete
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.dll
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\refint\Generateur_Code_QR.dll
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.pdb
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\Generateur_Code_QR.genruntimeconfig.cache
+P:\HIV24\DEV APP\projet1\Generateur_CodeQR\Projet 1 - Code QR\Generateur_Code_QR\obj\Debug\net6.0\ref\Generateur_Code_QR.dll
