@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "STH1123.ReedSolomon/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/ReedSolomon.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/ReedSolomon.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "STH1123.ReedSolomon/2.1.0": {
+      "sha512": "XnpFWjT8eaZv3gq1SltwRx2p+SKtk/BLWXzbsQKPfPHYJlNMNHzZIxYx/70R+5pnvxMKaF0dISTgL5BRyKNP4Q==",
+      "type": "package",
+      "path": "sth1123.reedsolomon/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/ReedSolomon.dll",
+        "lib/net20/ReedSolomon.xml",
+        "lib/net40/ReedSolomon.dll",
+        "lib/net40/ReedSolomon.xml",
+        "lib/netstandard1.1/ReedSolomon.dll",
+        "lib/netstandard1.1/ReedSolomon.xml",
+        "sth1123.reedsolomon.2.1.0.nupkg.sha512",
+        "sth1123.reedsolomon.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "STH1123.ReedSolomon >= 2.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\2230912\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\ReedSolomon\\ReedSolomon.csproj",
+      "projectName": "ReedSolomon",
+      "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\ReedSolomon\\ReedSolomon.csproj",
+      "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
+      "outputPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\ReedSolomon\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "STH1123.ReedSolomon": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
