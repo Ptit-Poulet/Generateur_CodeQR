@@ -243,5 +243,6 @@ namespace Generateur_Code_QR
 
             return remainderBits;
         }
+        
     }
 }
