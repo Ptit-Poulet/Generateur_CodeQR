@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "matrice/1.0.0": {
         "dependencies": {
+          "Generateur_Code_QR": "1.0.0",
           "STH1123.ReedSolomon": "2.1.0",
           "SkiaSharp": "2.88.7"
         },
@@ -62,6 +63,15 @@
             "fileVersion": "2.1.0.0"
           }
         }
+      },
+      "Generateur_Code_QR/1.0.0": {
+        "dependencies": {
+          "STH1123.ReedSolomon": "2.1.0",
+          "SkiaSharp": "2.88.7"
+        },
+        "runtime": {
+          "Generateur_Code_QR.dll": {}
+        }
       }
     }
   },
@@ -98,6 +108,11 @@
       "sha512": "sha512-XnpFWjT8eaZv3gq1SltwRx2p+SKtk/BLWXzbsQKPfPHYJlNMNHzZIxYx/70R+5pnvxMKaF0dISTgL5BRyKNP4Q==",
       "path": "sth1123.reedsolomon/2.1.0",
       "hashPath": "sth1123.reedsolomon.2.1.0.nupkg.sha512"
+    },
+    "Generateur_Code_QR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

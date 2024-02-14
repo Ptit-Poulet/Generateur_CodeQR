@@ -69,6 +69,20 @@
             "related": ".xml"
           }
         }
+      },
+      "Generateur_Code_QR/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "STH1123.ReedSolomon": "2.1.0",
+          "SkiaSharp": "2.88.7"
+        },
+        "compile": {
+          "bin/placeholder/Generateur_Code_QR.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Generateur_Code_QR.dll": {}
+        }
       }
     }
   },
@@ -211,28 +225,39 @@
         "sth1123.reedsolomon.2.1.0.nupkg.sha512",
         "sth1123.reedsolomon.nuspec"
       ]
+    },
+    "Generateur_Code_QR/1.0.0": {
+      "type": "project",
+      "path": "../Generateur_Code_QR/Generateur_Code_QR.csproj",
+      "msbuildProject": "../Generateur_Code_QR/Generateur_Code_QR.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Generateur_Code_QR >= 1.0.0",
       "STH1123.ReedSolomon >= 2.1.0",
       "SkiaSharp >= 2.88.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2130331\\.nuget\\packages\\": {}
+    "C:\\Users\\2230912\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2130331\\Downloads\\Dev-APP-1\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+      "projectUniqueName": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
       "projectName": "matrice",
-      "projectPath": "C:\\Users\\2130331\\Downloads\\Dev-APP-1\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
-      "packagesPath": "C:\\Users\\2130331\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2130331\\Downloads\\Dev-APP-1\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\obj\\",
+      "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+      "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
+      "outputPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\2130331\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -240,12 +265,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj": {
+              "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -283,7 +313,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
