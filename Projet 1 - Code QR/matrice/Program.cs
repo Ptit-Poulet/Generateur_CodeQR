@@ -6,6 +6,8 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using SkiaSharp;
+using Generateur_Code_QR;
+using System.Reflection.Metadata;
 
 namespace matrice
 {
@@ -14,16 +16,30 @@ namespace matrice
         static void Main(string[] args)
         {
             // crate a surface
+            string ChaineDebut = "HELLO WORLD";
+            string mode = "alphanum";
+            CodeQr codeQr = new CodeQr();
+            Bloc bloc = new Bloc();
+            int nbTotalMotCode = 13, ECcodeword = 13;
+
             var info = new SKImageInfo(21, 21);  //Crée un nouveau SKImageInfo avec la largeur et la hauteur spécifiées.
 
             using var surface = SKSurface.Create(info); //Crée une nouvelle surface dont le contenu sera dessiné vers une cible de rendu hors écran, allouée par la surface.
 
             bool?[,] tableauFinal = new bool?[21, 21];
+            //bool?[,] tableauExemple;
+            int[] tableauMessage = bloc.FormerBloc(codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode), nbTotalMotCode, ECcodeword);
 
             tableauFinal = AjouterModelesDeRecherche(tableauFinal);    //Je remplis les modèles de fonction
             tableauFinal = AjouterSeparateurs(tableauFinal);   //j'ajoute les séparateurs
             tableauFinal = AjouterModeleAlignement(tableauFinal);   //j'ajoute les modèles d'alignement
             tableauFinal = AjouterModeleSyncronisation(tableauFinal);   //Ajouter modèle de syncronisation
+            tableauFinal = AjouterModuleSombre(tableauFinal);  //Ajout du module sombre
+            //tableauExemple = tableauFinal;
+            tableauFinal = PlacerMessage(tableauFinal, tableauMessage);//Ajout du message dans la matrice
+            //tableauFinal = AppliquerMasque(tableauFinal, tableauExemple);
+            //tableauFinal = ReserverZoneFormat(tableauFinal, tableauExemple);
+            
 
             var canvas = surface.Canvas;
 
@@ -37,18 +53,14 @@ namespace matrice
             {
                 for (int j = 0; j < tableauFinal.GetLength(1); j++)
                 {
-                    if (tableauFinal[i, j] == true)
+                    if (tableauFinal[i, j] == true) // zéro
                         canvas.DrawPoint(i, j, SKColors.White);
-                    if (tableauFinal[i, j] == false)
+                    if (tableauFinal[i, j] == false) // un
                         canvas.DrawPoint(i, j, SKColors.Black);
                     //if (tableauFinal[i, j] == null)  //Cette condition sera très utile pour le masque
                     //    canvas.DrawPoint(i, j, SKColors.White);
                 }
             }
-
-
-
-
 
             // save the file
             using var image = surface.Snapshot();
@@ -213,15 +225,217 @@ namespace matrice
             bool couleur = false;
 
             //pour la ligne horizontale
-            for(int i = 7 + 1; i <= 21 - 7 - 1 - 1; i++)
+            for (int i = 7 + 1; i <= 21 - 7 - 1 - 1; i++)
             {
-                tableau[i, 5] = couleur;
+                tableau[i, 6] = couleur;
+                couleur = !couleur;
+            }
+
+            couleur = false; //ON le remet à false pour pouvoir boucler de nouveau
+            //pour la ligne verticale
+            for (int j = 8; j <= 12; j++)
+            {
+                tableau[6, j] = couleur;
                 couleur = !couleur;
             }
 
             return tableau;
 
         }
+        static bool?[,] AjouterModuleSombre(bool?[,] tableau)
+        {
+            //Nous sommes en version 1 
 
+            //tableau[13, 8] = false;
+            tableau[8, 13] = false;
+
+            return tableau;
+
+        }
+        //TODO
+        static bool?[,] ReserverZoneFormat(bool?[,] tableau, bool?[,] tableau)
+        {
+            string information = "011000001101000";
+
+           
+            for (int j = 0; j <= 8; j++)
+            {
+
+                if (j != 6)
+                    tableau[8, j] = information[j] == '0' ? true : false;
+                if(j == 6)
+                    tableau[8, j] = information[j-1] == '0' ? true : false;
+
+            }
+            //for (int k = 0; k <= 8; k++)
+            //{
+            //    if (k != 6)
+            //        tableau[k, 8] = information[k] == '0' ? true : false;
+            //}
+
+            ////La zone qui entoure le module de recherche situé en haut à droite
+            //for (int k = 0; k <= 7; k++)
+            //{
+            //    tableau[k + 13, 8] = information[k] == '0' ? true : false;
+
+            //}
+
+            ////La zone qui entoure le module de recherche situé en bas à gauche
+            //for (int j = 0; j <= 7; j++)
+            //{
+            //    if (j != 0)
+            //        tableau[8, j + 13] = information[j] == '0' ? true : false;
+
+            //}
+
+
+            return tableau;
+        }
+        static bool?[,] PlacerMessage(bool?[,] tableau, int[] message)
+        {
+            bool couleur = false;
+            Groupe groupe = new Groupe();
+            int versionCode = 1;
+            string messageAPlacer = groupe.StructureMessageFinale(message, versionCode);
+
+            int row = tableau.GetLength(0) - 1;
+            int col = tableau.GetLength(1) - 1;
+            char currentChar;
+
+
+            //FIX Bleu (True, False, Null, Bleu!)
+            //Les zones qui entourent les séparateurs situés en haut à gauche
+            for (int j = 0; j <= 8; j++)
+            {
+                if (j != 6)
+
+                    tableau[8, j] = true;
+            }
+            for (int k = 0; k <= 8; k++)
+            {
+                if (k != 6)
+                    tableau[k, 8] = true;
+
+            }
+
+            //La zone qui entoure le module de recherche situé en haut à droite
+            for (int k = 0; k <= 7; k++)
+            {
+                tableau[k + 13, 8] = true;
+
+            }
+
+            //La zone qui entoure le module de recherche situé en bas à gauche
+            for (int j = 0; j <= 7; j++)
+            {
+                if (j != 0)
+                    tableau[8, j + 13] = true;
+
+            }
+
+
+
+            int i = 0;
+            while (col >= 1)
+            {
+
+                while (row >= 0)
+                {
+                    if (tableau[col, row] == null)
+                    {
+                        currentChar = messageAPlacer[i];
+                        couleur = (currentChar == '0') ? true : false;
+
+                        tableau[col, row] = couleur;
+                        i++;
+                    }
+                    col--;
+
+                    if (tableau[col, row] == null)
+                    {
+                        currentChar = messageAPlacer[i];
+                        couleur = (currentChar == '0') ? true : false;
+
+                        tableau[col, row] = couleur;
+                        i++;
+                    }
+                    col++;
+                    row--;
+
+                }
+                row++;
+                col -= 2;
+
+                if (col == 6)
+                {
+                    col--;
+                }
+
+
+                while (row <= tableau.GetLength(0) - 1)
+                {
+
+                    if (tableau[col, row] == null)
+                    {
+                        currentChar = messageAPlacer[i];
+                        couleur = (currentChar == '0') ? true : false;
+
+                        tableau[col, row] = couleur;
+                        i++;
+                    }
+
+                    col--;
+
+                    if (tableau[col, row] == null)
+                    {
+
+                        currentChar = messageAPlacer[i];
+                        couleur = (currentChar == '0') ? true : false;
+
+                        tableau[col, row] = couleur;
+                        i++;
+                    }
+                    col++;
+                    row++;
+
+                }
+                row--;
+                col -= 2;
+
+                if (col == 6)
+                {
+                    col--;
+                }
+
+
+            }
+
+            return tableau;
+
+        }
+
+        static bool?[,] DeterminerMasque(bool?[,] tableau)
+        {
+
+            return tableau;
+        }
+        static bool?[,] AppliquerMasque(bool?[,] tableauFinal ,bool?[,] tableauExemple)
+        {
+            
+            //Mask 2
+            for(int x = 0; x < tableauFinal.GetLength(0); x++)
+            {
+                for(int y = 0; y < tableauFinal.GetLength(1); y++) 
+                {
+                    if (tableauExemple[x,y]== null)
+                    {
+                        tableauFinal[x,y] = !tableauFinal[x,y];
+                    }
+                }
+
+            }
+
+            return tableauFinal;
+        }
     }
 }

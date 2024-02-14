@@ -20,3 +20,30 @@ C:\Users\2130331\Downloads\Dev-APP-1\Generateur_CodeQR\Projet 1 - Code QR\matric
 C:\Users\2130331\Downloads\Dev-APP-1\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.pdb
 C:\Users\2130331\Downloads\Dev-APP-1\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.genruntimeconfig.cache
 C:\Users\2130331\Downloads\Dev-APP-1\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\ref\matrice.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\matrice.exe
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\matrice.deps.json
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\matrice.runtimeconfig.json
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\matrice.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\matrice.pdb
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\SkiaSharp.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\ReedSolomon.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.csproj.AssemblyReference.cache
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.GeneratedMSBuildEditorConfig.editorconfig
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.AssemblyInfoInputs.cache
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.AssemblyInfo.cs
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.csproj.CoreCompileInputs.cache
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.csproj.CopyComplete
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\refint\matrice.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.pdb
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\matrice.genruntimeconfig.cache
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\obj\Debug\net6.0\ref\matrice.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\Generateur_Code_QR.deps.json
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\Generateur_Code_QR.runtimeconfig.json
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\Generateur_Code_QR.exe
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\Generateur_Code_QR.dll
+P:\session 4\Dev d'App\Generateur_CodeQR\Projet 1 - Code QR\matrice\bin\Debug\net6.0\Generateur_Code_QR.pdb
