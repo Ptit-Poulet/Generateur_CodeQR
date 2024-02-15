@@ -22,6 +22,47 @@ namespace Generateur_Code_QR
 
             string codeWord = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
             CreerCodeQR(codeWord, nbTotalMotCode,ECcodeword);
+        }
+        /// <summary>
+        /// Regroupement des fonctions pour créer le code QR
+        /// </summary>
+        /// <param name="codeWord"></param>
+        /// <param name="nbTotalMotCode"></param>
+        /// <param name="ECcodeword"></param>
+        public static void CreerCodeQR(string codeWord, int nbTotalMotCode, int ECcodeword )
+        {
+            bool?[,] tableauFinal = new bool?[21, 21];
+            bool?[,] tableauExemple = new bool?[21, 21];
+            int masqueChoisi = 0;//Sera déterminé ultérieurement
+            Module module = new Module();
+            Masqueur masqueur = new Masqueur();
+            Bloc bloc = new Bloc();
+            CodeQr codeQr = new CodeQr();
+
+            module.RemplirMatrice(tableauFinal);
+            int[] message = bloc.FormerBloc(codeWord, nbTotalMotCode, ECcodeword);
+
+            tableauFinal = module.AjouterModelesDeRecherche(tableauFinal);    
+            tableauFinal = module.AjouterSeparateurs(tableauFinal);   
+            tableauFinal = module.AjouterModeleAlignement(tableauFinal);   
+            tableauFinal = module.AjouterModeleSyncronisation(tableauFinal);   
+            tableauFinal = module.AjouterModuleSombre(tableauFinal);  
+
+            for (int i = 0; i < tableauFinal.GetLength(0); i++)
+            {
+                for (int j = 0; j < tableauFinal.GetLength(1); j++)
+                {
+                    tableauExemple[i, j] = tableauFinal[i, j];
+                }
+            }
+
+            tableauFinal = module.PlacerMessage(tableauFinal, message);
+            tableauFinal = masqueur.AppliquerMasque(tableauFinal, tableauExemple, masqueChoisi);
+            tableauFinal = module.ReserverZoneFormat(tableauFinal);
+
+        }
+    }
+}
             ///*TEST  FONCTION PREPARATION CW*/
             //string resultat = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
             //string resultatAttendu = "00100000 01011011 00001011 01111000 11010001 01110010 11011100 01001101 01000011 01000000 11101100 00010001 11101100";
@@ -139,45 +180,3 @@ namespace Generateur_Code_QR
             // rse.Encode(chaineFormatDECinq, 10);
 
             ////foreach(int i in chaineFormatDECinq) { Console.WriteLine(i); }
-
-        }
-        /// <summary>
-        /// Regroupement des fonctions pour créer le code QR
-        /// </summary>
-        /// <param name="codeWord"></param>
-        /// <param name="nbTotalMotCode"></param>
-        /// <param name="ECcodeword"></param>
-        public static void CreerCodeQR(string codeWord, int nbTotalMotCode, int ECcodeword )
-        {
-            bool?[,] tableauFinal = new bool?[21, 21];
-            bool?[,] tableauExemple = new bool?[21, 21];
-            int masqueChoisi = 0;//Sera déterminé ultérieurement
-            Module module = new Module();
-            Masqueur masqueur = new Masqueur();
-            Bloc bloc = new Bloc();
-            CodeQr codeQr = new CodeQr();
-
-            module.RemplirMatrice(tableauFinal);
-            int[] message = bloc.FormerBloc(codeWord, nbTotalMotCode, ECcodeword);
-
-            tableauFinal = module.AjouterModelesDeRecherche(tableauFinal);    
-            tableauFinal = module.AjouterSeparateurs(tableauFinal);   
-            tableauFinal = module.AjouterModeleAlignement(tableauFinal);   
-            tableauFinal = module.AjouterModeleSyncronisation(tableauFinal);   
-            tableauFinal = module.AjouterModuleSombre(tableauFinal);  
-
-            for (int i = 0; i < tableauFinal.GetLength(0); i++)
-            {
-                for (int j = 0; j < tableauFinal.GetLength(1); j++)
-                {
-                    tableauExemple[i, j] = tableauFinal[i, j];
-                }
-            }
-
-            tableauFinal = module.PlacerMessage(tableauFinal, message);
-            tableauFinal = masqueur.AppliquerMasque(tableauFinal, tableauExemple, masqueChoisi);
-            tableauFinal = module.ReserverZoneFormat(tableauFinal);
-
-        }
-    }
-}
