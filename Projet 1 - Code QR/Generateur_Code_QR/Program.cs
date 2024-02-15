@@ -39,7 +39,6 @@ namespace Generateur_Code_QR
             Bloc bloc = new Bloc();
             CodeQr codeQr = new CodeQr();
 
-            module.RemplirMatrice(tableauFinal);
             int[] message = bloc.FormerBloc(codeWord, nbTotalMotCode, ECcodeword);
 
             tableauFinal = module.AjouterModelesDeRecherche(tableauFinal);    
@@ -60,6 +59,7 @@ namespace Generateur_Code_QR
             tableauFinal = masqueur.AppliquerMasque(tableauFinal, tableauExemple, masqueChoisi);
             tableauFinal = module.ReserverZoneFormat(tableauFinal);
 
+            module.RemplirMatrice(tableauFinal);
         }
     }
 }

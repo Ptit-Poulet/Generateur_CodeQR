@@ -17,7 +17,7 @@ namespace Generateur_Code_QR
         /// <param name="tableauFinal"></param>
         public void RemplirMatrice(bool?[,] tableauFinal)
         {
-            tableauFinal = new bool?[21, 21];
+            
             var info = new SKImageInfo(21, 21);  //Crée un nouveau SKImageInfo avec la largeur et la hauteur spécifiées.
 
             using var surface = SKSurface.Create(info); //Crée une nouvelle surface dont le contenu sera dessiné vers une cible de rendu hors écran, allouée par la surface.
