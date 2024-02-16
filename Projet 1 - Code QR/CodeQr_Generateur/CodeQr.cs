@@ -31,7 +31,7 @@ namespace CodeQr_Generateur
             string indicateurMode = TrouverIndicateurMode(ChaineDebut,mode);
             string ChaineDonneEncode = indicateurMode;
 
-            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut, version);
+            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut,mode, version);
             ChaineDonneEncode = ChaineDonneEncode + " " + indicateurNbCaractere;
 
             string donneEnBits = CodageAlphanum(ChaineDebut);
@@ -95,22 +95,20 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChaineDebut"></param>
         /// <returnsL'indicateur nb de caracteres></returns>
-        public string TrouverIndicateurNbCaract(string ChaineDebut,int version)
+        public string TrouverIndicateurNbCaract(string ChaineDebut,ChEncoding mode,int version)
         {
-            //TODO 
+           
+            int bitsNecessaire = nbCaractByMode.GetNbCaract(mode,version);
             //Mettre nb caractère en binaire 
             int Binaire = int.Parse(Convert.ToString(ChaineDebut.Length, 2));
 
-            // les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
             int Bits = Binaire.ToString().Length;
             int NbCaractere = 0;
             int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
 
-            //*****9 bits de log a cause de la version****
-
-            if (longueurBinaire < 9)//Savoir si la longueur de l'indicateur est 9 bits de long 
+            if (longueurBinaire < bitsNecessaire)//Savoir si la longueur de l'indicateur est 9 bits de long 
             {
-                Bits = 9 - longueurBinaire;
+                Bits = bitsNecessaire - longueurBinaire;
                 NbCaractere = Binaire.ToString("D").Length + Bits;
 
             }

@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace CodeQr_Generateur
 {
-    internal class enums
+    public enum ECLevel
     {
+        L,
+        M,
+        Q,
+        H
     }
+
+    public enum ChEncoding
+    {
+        Num,
+        AlphaNum,
+        Byte,
+        Kanji
+    }
+
+
 }
