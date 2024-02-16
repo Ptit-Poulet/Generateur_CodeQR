@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CodeQr_Generateur
 {
+    
     public class CodeQr
     {
         /// <summary>
@@ -20,28 +22,25 @@ namespace CodeQr_Generateur
         /// <param name="mode"></param>
         /// <param name="nbTotalMotCode"></param>
         /// <returns>Codeword prêt à être placé</returns>
-        public string PreparationCW(string ChaineDebut, string mode, int nbTotalMotCode)
+        public string PreparationCW(string ChaineDebut, ChEncoding mode, ECLevel niveauCorrection)
         {
 
 
-            //version =  TrouverVersion(ChaineDebut);
+           int  version =  TrouverVersion(ChaineDebut, mode, niveauCorrection);
 
-            string indicateurMode = TrouverIndicateurMode(mode);
+            string indicateurMode = TrouverIndicateurMode(ChaineDebut,mode);
             string ChaineDonneEncode = indicateurMode;
 
-            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut);
+            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut,mode, version);
             ChaineDonneEncode = ChaineDonneEncode + " " + indicateurNbCaractere;
 
             string donneEnBits = CodageAlphanum(ChaineDebut);
             ChaineDonneEncode = ChaineDonneEncode + donneEnBits;
             string Trim = ChaineDonneEncode.Replace(" ", String.Empty);
 
-            string BitsdeDonne = AjouterOctetsPad(Trim, nbTotalMotCode);
+            string BitsdeDonne = AjouterOctetsPad(Trim, niveauCorrection, version);
 
             return BitsdeDonne;
-
-
-
 
         }
 
@@ -50,21 +49,28 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="mode"></param>
         /// <returns>L'indicateur</returns>
-        public string TrouverIndicateurMode(string mode)
+        public string TrouverIndicateurMode(string chaine, ChEncoding mode)
         {
             string indicateurMode = "";
+
             //Trouver le mode
             switch (mode)
             {
-                //case "numeric":
-                //ChaineEnBinaire += 0001;
-                //    break;
-
-                case "alphanum":
-                    indicateurMode += "0010"; //indicateur de mode
+                case ChEncoding.Num:
+                    indicateurMode += "0001";
                     break;
 
-                    //case:...
+                case ChEncoding.AlphaNum:
+                    indicateurMode += "0010"; 
+                    break;
+
+                case ChEncoding.Byte:
+                    indicateurMode += "0100"; 
+                    break;
+                case ChEncoding.Kanji:
+                    indicateurMode += "1000"; 
+                    break;
+
 
             }
 
@@ -76,24 +82,11 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChainDebut"></param>
         /// <returns>La version</returns>
-        public int TrouverVersion(string ChainDebut)
+        public int TrouverVersion(string ChainDebut,ChEncoding mode, ECLevel niveauCorrection)
         {
-            int version = 0;
-
-            ////Trouver la version
-            switch (ChainDebut.Length)
-            {
-                //Version 1
-                case < 16:
-                    version = 1;
-                    break;
-
-                    //Version 2
-                    //case < 29:
-                    //    break;
-                    //...
-
-            }
+            
+            int version = QRVersionHelper.GetQRVersionFromInput(ChainDebut, niveauCorrection, mode);
+           
             return version;
         }
 
@@ -102,23 +95,20 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChaineDebut"></param>
         /// <returnsL'indicateur nb de caracteres></returns>
-        public string TrouverIndicateurNbCaract(string ChaineDebut)
+        public string TrouverIndicateurNbCaract(string ChaineDebut,ChEncoding mode,int version)
         {
-            //TODO modifier
-
+           
+            int bitsNecessaire = nbCaractByMode.GetNbCaract(mode,version);
             //Mettre nb caractère en binaire 
             int Binaire = int.Parse(Convert.ToString(ChaineDebut.Length, 2));
 
-            // les zéro qui seront en plus pour faire l'indicateur de nb caractère 9 bits de long
             int Bits = Binaire.ToString().Length;
             int NbCaractere = 0;
             int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
 
-            //*****9 bits de log a cause de la version****
-
-            if (longueurBinaire < 9)//Savoir si la longueur de l'indicateur est 9 bits de long 
+            if (longueurBinaire < bitsNecessaire)//Savoir si la longueur de l'indicateur est 9 bits de long 
             {
-                Bits = 9 - longueurBinaire;
+                Bits = bitsNecessaire - longueurBinaire;
                 NbCaractere = Binaire.ToString("D").Length + Bits;
 
             }
@@ -134,7 +124,6 @@ namespace CodeQr_Generateur
         /// <returns>DOnnées en bits</returns>
         public string CodageAlphanum(string ChaineDebut)
         {
-            //TODO modifier
             string CaractereEncode = "";
             string binaire = "";
             string indicateurCaractere = "";
@@ -205,9 +194,10 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChaineDebut"></param>
         /// <returns></returns>
-        public string AjouterOctetsPad(string ChaineDebut, int nbTotalMotCode)
+        public string AjouterOctetsPad(string ChaineDebut, ECLevel niveauCorrection, int version)
         {
-            //TODO modifier
+            GroupBlockCodewordHelper group = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
+            int nbTotalMotCode = group.TotalDataCodeWords;
 
             string result = "";
 

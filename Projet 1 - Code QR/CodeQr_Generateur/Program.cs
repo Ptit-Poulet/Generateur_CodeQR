@@ -7,14 +7,15 @@
             //Console.WriteLine("Hello, World!");
 
             string ChaineDebut = "HELLO WORLD";
-            string mode = "alphanum";
-            CodeQr codeQr = new CodeQr();
-            int nbTotalMotCode = 13;
+            ChEncoding mode = ChEncoding.AlphaNum;
             int ECcodeword = 13;
+            ECLevel niveauCorrection = ECLevel.Q;
+            //int nbTotalMotCode = 13;
+            CodeQr codeQr = new CodeQr();
             Bloc bloc = new Bloc();
             GenerateurCodeQr generateur = new GenerateurCodeQr();
 
-            string codeWord = codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode);
+            string codeWord = codeQr.PreparationCW(ChaineDebut, mode, niveauCorrection);
             generateur.CreerCodeQR(codeWord, nbTotalMotCode, ECcodeword);
         }
     }

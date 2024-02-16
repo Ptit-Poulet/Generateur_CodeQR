@@ -28,23 +28,24 @@ namespace CodeQr_Generateur
 
             return rse;
         }
-        
-        //1-Q
+    
         /// <summary>
-        /// FOrmer un bloc avec un seul groupe et bloc
+        /// Former un bloc 
         /// </summary>
         /// <param name="codeWord"></param>
         /// <param name="Nbdata"></param>
         /// <param name="ECcodeword"></param>
         /// <returns>Le bloc encode</returns>
-        public int[] FormerBloc(string codeWord, int Nbdata, int ECcodeword)
+        public int[] FormerBloc(string codeWord,ECLevel niveauCorrection, int version)
         {
-            ////Spécifique à 1-Q
-            //int ECcodeword = 13;
+            GroupBlockCodewordHelper group = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
+            int nbTotalMotCode = group.TotalDataCodeWords;
+            int ECcodeword = group.HowManyCorrectionCodewords;
+
 
             string[] tblCW = codeWord.Split(' ');
 
-            int[] bloc = new int[Nbdata + ECcodeword];
+            int[] bloc = new int[nbTotalMotCode + ECcodeword];
 
 
             //Convertir en Décimal et mettre le mot de code dans un tableau
@@ -56,7 +57,7 @@ namespace CodeQr_Generateur
             //Mettre les mots de codes d'erreurs
             for (int i = 0; i < ECcodeword; i++)
             {
-                bloc[i + Nbdata] = '0';
+                bloc[i + nbTotalMotCode] = '0';
             }
 
             ReedSolomon(bloc, ECcodeword);
