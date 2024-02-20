@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {}
+    "C:\\Users\\2230912\\Downloads\\Generateur_CodeQR-Mode\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {
+    "C:\\Users\\2230912\\Downloads\\Generateur_CodeQR-Mode\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
+        "projectUniqueName": "C:\\Users\\2230912\\Downloads\\Generateur_CodeQR-Mode\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
         "projectName": "CodeQr_Generateur",
-        "projectPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
-        "packagesPath": "C:\\Users\\2130331\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\obj\\",
+        "projectPath": "C:\\Users\\2230912\\Downloads\\Generateur_CodeQR-Mode\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
+        "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2230912\\Downloads\\Generateur_CodeQR-Mode\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2130331\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

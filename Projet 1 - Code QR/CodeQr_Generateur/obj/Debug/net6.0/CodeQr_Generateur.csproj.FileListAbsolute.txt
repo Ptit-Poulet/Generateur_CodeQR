@@ -20,3 +20,47 @@ P:\session 4\Dev d'App\Generateur_CodeQR\Generateur_CodeQR\Projet 1 - Code QR\Co
 P:\session 4\Dev d'App\Generateur_CodeQR\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.pdb
 P:\session 4\Dev d'App\Generateur_CodeQR\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.genruntimeconfig.cache
 P:\session 4\Dev d'App\Generateur_CodeQR\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\ref\CodeQr_Generateur.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.exe
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.deps.json
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.runtimeconfig.json
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.pdb
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\SkiaSharp.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\ReedSolomon.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.AssemblyReference.cache
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.AssemblyInfoInputs.cache
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.AssemblyInfo.cs
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.CoreCompileInputs.cache
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.CopyComplete
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\refint\CodeQr_Generateur.dll
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.pdb
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.genruntimeconfig.cache
+C:\Users\2130331\Downloads\Generateur_CodeQR (2)\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\ref\CodeQr_Generateur.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.exe
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.deps.json
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.runtimeconfig.json
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\CodeQr_Generateur.pdb
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\SkiaSharp.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\ReedSolomon.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.AssemblyReference.cache
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.AssemblyInfoInputs.cache
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.AssemblyInfo.cs
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.CoreCompileInputs.cache
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.csproj.CopyComplete
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\refint\CodeQr_Generateur.dll
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.pdb
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\CodeQr_Generateur.genruntimeconfig.cache
+C:\Users\2230912\Downloads\Generateur_CodeQR-Mode\Generateur_CodeQR\Projet 1 - Code QR\CodeQr_Generateur\obj\Debug\net6.0\ref\CodeQr_Generateur.dll

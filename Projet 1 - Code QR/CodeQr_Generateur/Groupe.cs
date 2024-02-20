@@ -21,12 +21,11 @@ namespace CodeQr_Generateur
         /// <returns>Données entrelacé</returns>
         public string EntrelacerData(int NbData, int[] MG1B1, int[] MG1B2, int[] MG2B1, int[] MG2B2)
         {
-            // pour 5-Q
-            //NbData = 16;
+           
             int[,] EntrelaceDonnee = new int[NbData, 4];
             string data = "";
 
-            // Entrelacer les donnes
+            
             for (int i = 0; i < EntrelaceDonnee.GetLength(0); i++)
             {
                 EntrelaceDonnee[i, 0] = MG1B1[i];
@@ -34,7 +33,7 @@ namespace CodeQr_Generateur
                 EntrelaceDonnee[i, 2] = MG2B1[i];
                 EntrelaceDonnee[i, 3] = MG2B2[i];
 
-                if (i == EntrelaceDonnee.GetLength(0) - 1)     //À cause que les deux premiers blocs du groupe 1 ont une taille inférieure de 1 à ceux du groupe 2
+                if (i == EntrelaceDonnee.GetLength(0) - 1)    
                 {
                     EntrelaceDonnee[i, 0] = 0;
                     EntrelaceDonnee[i, 1] = 0;
@@ -89,7 +88,7 @@ namespace CodeQr_Generateur
                     {
                         codeErreur += EntrelaceCodeErreur[i, j];
 
-                        // Vérifier si ce n'est pas le dernier élément avant d'ajouter la virgule
+                        
                         if (!(i == EntrelaceCodeErreur.GetLength(0) - 1 && j == EntrelaceCodeErreur.GetLength(1) - 1))
                         {
                             codeErreur += ", ";
@@ -139,17 +138,17 @@ namespace CodeQr_Generateur
 
             List<List<int>> bitsrestantes = VersionRemainderBits(versionCode);
 
-            //Ajout des bits nécessaires
+           
             for (int i = 0; i < bitsrestantes.Count; i++)
             {
-                // Récupération de la version et des bits requis 
+               
                 int currentVersion = bitsrestantes[i][0];
                 int requiredBitsCount = bitsrestantes[i][1];
 
-                // Vérification si la version correspond à versionCode
+              
                 if (currentVersion == versionCode)
                 {
-                    // Ajout des bits nécessaires selon requiredBitsCount
+                   
                     for (int j = 0; j < requiredBitsCount; j++)
                     {
                         elementOctet += '0';
@@ -199,14 +198,14 @@ namespace CodeQr_Generateur
             //Ajout des bits nécessaires
             for (int i = 0; i < bitsrestantes.Count; i++)
             {
-                // Récupération de la version et des bits requis 
+                
                 int currentVersion = bitsrestantes[i][0];
                 int requiredBitsCount = bitsrestantes[i][1];
 
-                // Vérification si la version correspond à versionCode
+                
                 if (currentVersion == versionCode)
                 {
-                    // Ajout des bits nécessaires selon requiredBitsCount
+                   
                     for (int j = 0; j < requiredBitsCount; j++)
                     {
                         elementOctet += '0';
@@ -225,14 +224,11 @@ namespace CodeQr_Generateur
         /// <returns>Nb bits restant pour le placecement dans la matrice</returns>
         public List<List<int>> VersionRemainderBits(int versionCode)
         {
-            //Je pense qu'on peut utiliser un dictionnaire pour ça à l'avenir
             List<int> version = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
             List<int> requiredBits = new List<int> { 0, 7, 7, 7, 7, 7, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3 };
 
             List<List<int>> remainderBits = new List<List<int>>();
-            //int versionCode = 5;
-
-            //Créer une liste avec les valeurs 
+            
             for (int i = 0; i < 20; i++)
             {
                 List<int> value = new List<int>();

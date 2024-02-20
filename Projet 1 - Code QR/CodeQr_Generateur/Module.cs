@@ -22,29 +22,28 @@ namespace CodeQr_Generateur
         public void RemplirMatrice(bool?[,] tableauFinal)
         {
 
-            var info = new SKImageInfo(21, 21);  //Crée un nouveau SKImageInfo avec la largeur et la hauteur spécifiées.
+            var info = new SKImageInfo(21, 21); 
 
-            using var surface = SKSurface.Create(info); //Crée une nouvelle surface dont le contenu sera dessiné vers une cible de rendu hors écran, allouée par la surface.
+            using var surface = SKSurface.Create(info); 
             var canvas = surface.Canvas;
 
-            // make sure the canvas is blank
-            canvas.Clear(SKColors.Gray);    //Le fond gris est pour bien voir les modules qui doivent etre blanc
+           
+            canvas.Clear(SKColors.Gray);    
 
-            //Je dessine sur ma surface en suivant la logique de remplissage de mon tableau
+           
             for (int i = 0; i < tableauFinal.GetLength(0); i++)
             {
                 for (int j = 0; j < tableauFinal.GetLength(1); j++)
                 {
-                    if (tableauFinal[i, j] == true) // zéro
+                    if (tableauFinal[i, j] == true) 
                         canvas.DrawPoint(i, j, SKColors.White);
-                    if (tableauFinal[i, j] == false) // un
+                    if (tableauFinal[i, j] == false)
                         canvas.DrawPoint(i, j, SKColors.Black);
-                    //if (tableauFinal[i, j] == null)  //Cette condition sera très utile pour le masque
-                    //    canvas.DrawPoint(i, j, SKColors.White);
+                   
                 }
             }
 
-            // save the file
+          
             using var image = surface.Snapshot();
             using var data = image.Encode(SKEncodedImageFormat.Png, 100);
             using var stream = File.OpenWrite("output.png");
@@ -171,7 +170,7 @@ namespace CodeQr_Generateur
         /// <returns>Matrice avec ds séparateur</returns>
         public bool?[,] AjouterSeparateurs(bool?[,] tableau)
         {
-            //Les séparateurs qui entourent le module de recherche situé en haut à gauche
+           
             for (int j = 0; j <= 7; j++)
             {
                 tableau[7, j] = true;
@@ -181,7 +180,6 @@ namespace CodeQr_Generateur
                 tableau[i, 7] = true;
             }
 
-            //Les séparateurs qui entourent le module de recherche situé en haut à droite
             for (int j = 0; j <= 7; j++)
             {
                 tableau[21 - 7 - 1, j] = true;
@@ -191,7 +189,6 @@ namespace CodeQr_Generateur
                 tableau[i + 21 - 7 - 1, 7] = true;
             }
 
-            //Les séparateurs qui entourent le module de recherche situé en bas à gauche
             for (int j = 0; j <= 7; j++)
             {
                 tableau[7, j + 21 - 7 - 1] = true;
@@ -217,7 +214,7 @@ namespace CodeQr_Generateur
         }
 
         /// <summary>
-        /// 
+        /// Ajout des module de syncronisation
         /// </summary>
         /// <param name="tableau"></param>
         /// <returns></returns>
@@ -232,8 +229,7 @@ namespace CodeQr_Generateur
                 couleur = !couleur;
             }
 
-            couleur = false; //ON le remet à false pour pouvoir boucler de nouveau
-            //pour la ligne verticale
+            couleur = false;
             for (int j = 8; j <= 12; j++)
             {
                 tableau[6, j] = couleur;
@@ -253,7 +249,6 @@ namespace CodeQr_Generateur
         {
             //Nous sommes en version 1 
 
-            //tableau[13, 8] = false;
             tableau[8, 13] = false;
 
             return tableau;
@@ -332,8 +327,7 @@ namespace CodeQr_Generateur
             char currentChar;
 
 
-            //FIX Bleu (True, False, Null, Bleu!)
-            //Les zones qui entourent les séparateurs situés en haut à gauche
+
             for (int j = 0; j <= 8; j++)
             {
                 if (j != 6)
@@ -347,14 +341,14 @@ namespace CodeQr_Generateur
 
             }
 
-            //La zone qui entoure le module de recherche situé en haut à droite
+
             for (int k = 0; k <= 7; k++)
             {
                 tableau[k + 13, 8] = true;
 
             }
 
-            //La zone qui entoure le module de recherche situé en bas à gauche
+
             for (int j = 0; j <= 7; j++)
             {
                 if (j != 0)

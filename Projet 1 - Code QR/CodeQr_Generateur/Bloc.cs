@@ -38,6 +38,7 @@ namespace CodeQr_Generateur
         /// <returns>Le bloc encode</returns>
         public int[] FormerBloc(string codeWord,ECLevel niveauCorrection, int version)
         {
+
             GroupBlockCodewordHelper group = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
             int nbTotalMotCode = group.TotalDataCodeWords;
             int ECcodeword = group.HowManyCorrectionCodewords;
