@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj": {}
   },
   "projects": {
@@ -12,12 +13,25 @@
         "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
         "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
         "outputPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\obj\\",
+=======
+    "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
+        "projectName": "Generateur_Code_QR",
+        "projectPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj",
+        "packagesPath": "C:\\Users\\2130331\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\obj\\",
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2130331\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -74,6 +88,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -82,12 +97,22 @@
         "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
         "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
         "outputPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\obj\\",
+=======
+    "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+        "projectName": "matrice",
+        "projectPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+        "packagesPath": "C:\\Users\\2130331\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\obj\\",
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2130331\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -103,8 +128,13 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+<<<<<<< HEAD
               "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj": {
                 "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj"
+=======
+              "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj": {
+                "projectPath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\Generateur_Code_QR\\Generateur_Code_QR.csproj"
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
               }
             }
           }

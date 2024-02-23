@@ -35,7 +35,11 @@
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
+<<<<<<< HEAD
         <value>903</value>
+=======
+        <value>905</value>
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
       </counter>
       <counter>
         <item-type type-id="drawing-shape" type="Simple Shape" />
@@ -145,7 +149,11 @@
         <phone-number />
         <description />
         <color>#00000000</color>
+<<<<<<< HEAD
         <working-schedule uid="ws-27a6be501b5c410283d277a7343bbdaa" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+=======
+        <working-schedule uid="ws-f2d4e0837770468883fef10baefa72f5" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
       </person>
       <person id="">
         <first-name>Raphael</first-name>
@@ -754,44 +762,79 @@ Placer les bits de données</comment>
           </item>
           <item id="3a981b293847487e81f05f322e1ace20" cid="REL001" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:09" from="7a3cb7bbf39646f2b97a58213365fee2" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
             <relation from="7a3cb7bbf39646f2b97a58213365fee2" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-91fb9c55-28ad-47c8-b9e9-e611f2b95e5d" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-5662b268-9a24-439d-9bc4-b16d59d8826a" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-a3327baa-14b7-426c-b6db-4a5fade6d89b" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-8a2749ad-5cf1-4fa1-ba92-dcc7fab97577" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="8861d8cda7d94ede91af97254d610b2f" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:20" from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
             <relation from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-1311f807-7d5f-40cc-9125-856fbdfed895" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-47e63456-5cac-4aac-8b06-4285fbef00b9" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-dd9aee20-9768-4b57-bde1-d9432413408d" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-2d2d2ffb-5716-4707-9fc4-0ec5c28d4c75" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="83796b3d74b84f37b15b01259cd72060" cid="REL003" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:29" from="57bf154416f04e94bb57a39b362dfc79" to="0af9ccd2e04a43a1b5bb4183a454fd9a" visibility="package">
             <relation from="57bf154416f04e94bb57a39b362dfc79" to="0af9ccd2e04a43a1b5bb4183a454fd9a" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-a6410f08-3222-44ed-b470-decc65f6fef5" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-63e1164b-757e-4419-a08f-34d3083fc25b" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-5f7fa2d3-bafe-4a24-8257-190e13adcc93" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-1730c654-5199-43f4-a679-7877bfa214b8" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="e2599d9851e84a4d9b8778bda838ad22" cid="REL004" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:37" from="7270e2ae863b4bf7b4284e58fd587c52" to="c846e740d334465cbabad76accab00d4" visibility="package">
             <relation from="7270e2ae863b4bf7b4284e58fd587c52" to="c846e740d334465cbabad76accab00d4" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-215b44ce-d6a9-4cbc-8021-edfa048c3154" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-b2629d90-57a1-41d4-a376-2558c2836bf9" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-77db3162-3e7f-4c21-ba1c-b28245874094" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-de9f4d90-a811-4928-9af4-c4da00f26da7" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="85d30e0d647240fe96981d2ff40a2c46" cid="REL005" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:41" from="e275f328969f47899dc466f70cdfce15" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
             <relation from="e275f328969f47899dc466f70cdfce15" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-750d2c1f-e2d4-44e0-9b14-b4dddf3e8cd8" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-4bfbc794-3da9-4f10-9d3c-24d649a74e83" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-2d995d6d-7bef-4a36-abcd-03cebec51a1a" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-254d7ff2-34bb-4b8c-9574-83b9ad3dbf08" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="12f422b6dcc4426790cbd308c22232b3" cid="REL006" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:48" from="7852a2ff3b484993bf2bb589e90e0492" to="36af297d862c466995700cb1167afda2" visibility="package">
             <relation from="7852a2ff3b484993bf2bb589e90e0492" to="36af297d862c466995700cb1167afda2" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-c61206aa-144f-47a5-ad1c-e770bc70e3df" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-fc037109-5437-4c68-9e4f-5d466c26e738" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-12bb7e2d-e979-47f9-967a-8a732c138683" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-4ead6f7b-1c66-4e2a-9b21-77ca08e1b3d7" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="08b1e1929b14447dafa7ee94a8310ec9" cid="REL007" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:51" from="36af297d862c466995700cb1167afda2" to="c846e740d334465cbabad76accab00d4" visibility="package">
             <relation from="36af297d862c466995700cb1167afda2" to="c846e740d334465cbabad76accab00d4" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-d956895d-f6d1-4881-82ad-2fee85282dc6" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-c8fd6f2c-ef81-4f2e-9ecf-26390dbde402" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-efe62bf3-b866-4df4-a049-fdf985b09cac" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-d254a982-4576-4956-94ea-9fb5aae1ad9e" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="c38aef634fe74f73b0130e29f8b29e9f" cid="PROP001" type="property" name="Bibliothèque externe" style-class="" owner="7270e2ae863b4bf7b4284e58fd587c52" creator="" creation-date="01/30/2024 09:37:00" visibility="private">
@@ -1052,8 +1095,13 @@ Placer les bits de données</comment>
           </item>
           <item id="b6a523154e14420daccc6fef4cde1d4b" cid="REL008" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:03:07" from="97875769c06a43f5a4e962e62b27edf4" to="a89bf4c181924ebb8f4b77065578bae1" visibility="package">
             <relation from="97875769c06a43f5a4e962e62b27edf4" to="a89bf4c181924ebb8f4b77065578bae1" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-606c2118-791b-4b71-b598-6e10221f85ab" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-c7fffb78-1300-4240-86b5-68ad0ab2181d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-82cd25e3-7245-4df3-8a19-d4f18e34251c" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-41923278-7791-45aa-9122-0eeeac53f6c2" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="d18fc6de7e1a431b97708b2d9f8a7717" cid="C012" type="class" name="ObservableObject" style-class="" owner="00d1e929ec3441f1ba4614bc984bba15" change-tracking-state="added" creator="" creation-date="01/30/2024 10:04:04" visibility="package" />
@@ -1074,8 +1122,13 @@ Placer les bits de données</comment>
           </item>
           <item id="6343b87c3c414809a8c5808a2d62d820" cid="REL009" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:04:39" from="0f46232ae924440395441e7090fb4577" to="7f7fe6c90b7a4938b8ef173cc42b3279" visibility="package">
             <relation from="0f46232ae924440395441e7090fb4577" to="7f7fe6c90b7a4938b8ef173cc42b3279" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-f04447f2-7a15-41f4-b91e-36bd2da3eda5" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-a37937f7-1af8-4099-b4bc-77a11ee9f172" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-3cac36a1-76a3-40ee-9645-1b0286243756" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-7997122f-d853-4a38-afe3-22d0ea727105" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="09158d01fddd41b19055f977f1b10822" cid="GNR001" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:05:16" from="97875769c06a43f5a4e962e62b27edf4" to="d18fc6de7e1a431b97708b2d9f8a7717" visibility="package" />
@@ -1096,8 +1149,13 @@ Placer les bits de données</comment>
           </item>
           <item id="0233c4bd6ac44a8baa58182cbaf35002" cid="REL012" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:06:37" from="02a6f46f37274392bad63f9b0a81560e" to="97875769c06a43f5a4e962e62b27edf4" visibility="package">
             <relation from="02a6f46f37274392bad63f9b0a81560e" to="97875769c06a43f5a4e962e62b27edf4" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-38afadb2-9ed7-486b-93c4-a6dfaab10099" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-12452ce6-37a6-458d-bdd0-c41359a86b05" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-bf320306-4d3f-45cb-91a7-c94fc9d98ff2" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-176d4a33-cd21-4e16-bdb4-d95a4dabcc88" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="873ae2ebfaff41808f6cfee50214ef65" cid="C014" type="class" name="Class14" style-class="" owner="f409eca5e2144dc29e2f16b42ac7373e" change-tracking-state="added" creator="" creation-date="01/30/2024 10:07:01" visibility="package" />
@@ -1105,8 +1163,13 @@ Placer les bits de données</comment>
           <item id="2390fe1404e14508b5a8d86581918c6f" cid="C016" type="class" name="Groupe" style-class="" owner="f409eca5e2144dc29e2f16b42ac7373e" change-tracking-state="added" creator="" creation-date="01/30/2024 10:08:47" visibility="package" />
           <item id="aef7ea886079490c8da4cf184c8d77b4" cid="REL013" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:10:06" from="0f46232ae924440395441e7090fb4577" to="02a6f46f37274392bad63f9b0a81560e" visibility="package">
             <relation from="0f46232ae924440395441e7090fb4577" to="02a6f46f37274392bad63f9b0a81560e" derived="false">
+<<<<<<< HEAD
               <start-role id="umlar-ff1dd86e-7733-4a85-a480-23b8ba044cbb" name="" navigability="" association-type="association" visibility="private" />
               <end-role id="umlar-ce322da7-f75f-4a8a-a8d3-a31b97a047a7" name="" navigability="" association-type="association" visibility="private" />
+=======
+              <start-role id="umlar-e3431743-437b-46c1-a5e5-a5406f94b4e8" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-d64f720e-e0f3-45a4-86fb-61fa36e57a6e" name="" navigability="" association-type="association" visibility="private" />
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             </relation>
           </item>
           <item id="d0819c8ac253481fbc70e56cc9870df9" cid="PROP023" type="property" name="Logo" style-class="" owner="02a6f46f37274392bad63f9b0a81560e" creator="" creation-date="01/30/2024 10:10:16" visibility="undefined">
