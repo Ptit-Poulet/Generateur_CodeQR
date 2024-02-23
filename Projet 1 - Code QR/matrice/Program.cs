@@ -27,6 +27,14 @@ namespace matrice
             bool?[,] tableauExemple = new bool?[21, 21];
             int[] tableauMessage = bloc.FormerBloc(codeQr.PreparationCW(ChaineDebut, mode, nbTotalMotCode), nbTotalMotCode, ECcodeword);
 
+<<<<<<< HEAD
+            //tableauFinal = AjouterModelesDeRecherche(tableauFinal);    //Je remplis les modèles de fonction
+            //tableauFinal = AjouterSeparateurs(tableauFinal);   //j'ajoute les séparateurs
+            //tableauFinal = AjouterModeleAlignement(tableauFinal);   //j'ajoute les modèles d'alignement
+            //tableauFinal = AjouterModeleSyncronisation(tableauFinal);   //Ajouter modèle de syncronisation
+            //tableauFinal = AjouterModuleSombre(tableauFinal);  //Ajout du module sombre
+
+=======
             
 
             //tableauFinal = AjouterModelesDeRecherche(tableauFinal);    //Je remplis les modèles de fonction
@@ -35,6 +43,7 @@ namespace matrice
             //tableauFinal = AjouterModeleSyncronisation(tableauFinal);   //Ajouter modèle de syncronisation
             //tableauFinal = AjouterModuleSombre(tableauFinal);  //Ajout du module sombre
 
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             //for (int i = 0; i < tableauFinal.GetLength(0); i++)
             //{
             //    for (int j = 0; j < tableauFinal.GetLength(1); j++)

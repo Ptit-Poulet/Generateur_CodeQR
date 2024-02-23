@@ -39,6 +39,8 @@ namespace Generateur_Code_QR
             Bloc bloc = new Bloc();
             CodeQr codeQr = new CodeQr();
 
+<<<<<<< HEAD
+=======
             GroupBlockCodewordHelper helper = GroupBlockCodewordHelper.getVersionGroupBlockCodewordInfo(ECLevel.Q, 3);
 
             Console.WriteLine(helper.TotalDataCodeWords);
@@ -49,6 +51,7 @@ namespace Generateur_Code_QR
             Console.WriteLine(helper.NbCodeWordsInGroup2Blocks);
 
 
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
             int[] message = bloc.FormerBloc(codeWord, nbTotalMotCode, ECcodeword);
 
             tableauFinal = module.AjouterModelesDeRecherche(tableauFinal);    

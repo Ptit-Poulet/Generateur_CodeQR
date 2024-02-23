@@ -10,8 +10,8 @@ namespace Generateur_Code_QR
     {
         //Variables
 
-        string mode = "alphanum";
-        char errorCL = 'Q';
+        //string mode = "alphanum";
+        //char errorCL = 'Q';
         //EC - Error code = Q
 
         /// <summary>

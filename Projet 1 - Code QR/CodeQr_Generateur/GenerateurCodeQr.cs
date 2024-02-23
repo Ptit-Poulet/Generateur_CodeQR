@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,10 @@ namespace CodeQr_Generateur
         /// <param name="ECcodeword"></param>
         public void CreerCodeQR(string codeWord, int ECcodeword, ECLevel niveauCorrection, int version)
         {
+
             bool?[,] tableauFinal = new bool?[21, 21];
             bool?[,] tableauExemple = new bool?[21, 21];
-            int masqueChoisi = 0;
+            int masqueChoisi = 0;//Sera déterminé ultérieurement
             Module module = new Module();
             Masqueur masqueur = new Masqueur();
             Bloc bloc = new Bloc();

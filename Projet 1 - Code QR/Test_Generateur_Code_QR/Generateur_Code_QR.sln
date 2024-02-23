@@ -5,7 +5,11 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generateur_Code_QR", "Generateur_Code_QR.csproj", "{7C84072D-B565-46E7-90DA-36860870B592}"
 EndProject
+<<<<<<< HEAD
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrice", "..\matrice\matrice.csproj", "{2ADC284A-DBEA-4942-8BA3-04607856FED7}"
+=======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrice", "..\matrice\matrice.csproj", "{2ADC284A-DBEA-4942-8BA3-04607856FED7}"
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

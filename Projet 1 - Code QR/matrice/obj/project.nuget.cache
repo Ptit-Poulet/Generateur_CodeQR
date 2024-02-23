@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "yQk4UOSqERZ3nyDsru95dipEM4zHCKbQzpPDka92Tu3LQy0Wi++3HLW7vY729wv3f5zmudfKWQ7TkalXtOIZ8w==",
+  "success": true,
+  "projectFilePath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+=======
   "dgSpecHash": "RrIbFN6YD/wMu2XR2X31s1b3ZhEaMI/2cDJMbZDQL5rqPQory4K5sn8rHQ7uJwXmgS8WI4NPllR0ISeqnB4tmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\2130331\\Downloads\\Generateur_CodeQR 2\\Generateur_CodeQR\\Projet 1 - Code QR\\matrice\\matrice.csproj",
+>>>>>>> 9e240f04218899d369aecffae973a1a00a418a06
   "expectedPackageFiles": [
     "C:\\Users\\2130331\\.nuget\\packages\\skiasharp\\2.88.7\\skiasharp.2.88.7.nupkg.sha512",
     "C:\\Users\\2130331\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.7\\skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
