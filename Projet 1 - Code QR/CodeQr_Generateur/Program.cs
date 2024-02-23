@@ -5,15 +5,15 @@ namespace CodeQr_Generateur
         static void Main(string[] args)
         {
             //Donné pas l'utilisateur
-            string ChaineDebut = "HELLO WORLD";
+            string chaineDebut = "HELLO WORLD";
             ECLevel niveauCorrection = ECLevel.Q;
 
-            CodeQr codeQr = new CodeQr();
+            CodeQr codeQr = new CodeQr(chaineDebut, niveauCorrection);
             GenerateurCodeQr generateur = new GenerateurCodeQr();
 
 
-            ChEncoding mode = codeQr.ChoisirLeMode(ChaineDebut); //on choisit d'abord le mode d'encodage des données
-            string codeWord = codeQr.PreparationCW(ChaineDebut, mode, niveauCorrection, out int version);
+            ChEncoding mode = codeQr.ChoisirLeMode(chaineDebut); //on choisit d'abord le mode d'encodage des données
+            string codeWord = codeQr.EncoderChaine(chaineDebut, mode, niveauCorrection, out int version);
 
             GroupBlockCodewordHelper group = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
             int ECcodeword = group.HowManyCorrectionCodewords;

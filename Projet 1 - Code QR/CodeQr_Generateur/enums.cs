@@ -23,4 +23,11 @@ namespace CodeQr_Generateur
     }
 
 
+    //Liste des possibles attributs de cette classe
+    /*chaineDebut
+     * mode--
+     * niveauCorrection_
+     *  version--
+     */
+
 }

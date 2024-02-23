@@ -49,7 +49,7 @@ namespace CodeQr_Generateur
 
         };
 
-        static public int GetQRVersionFromInput(string input, ECLevel ec, ChEncoding chartype)
+        static public int GetQRVersionFromInput(string input, ChEncoding chartype,  ECLevel ec)
         {
             int inputlength = input.Length;
 
