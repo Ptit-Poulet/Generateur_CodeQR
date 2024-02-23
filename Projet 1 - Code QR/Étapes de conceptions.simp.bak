@@ -35,7 +35,7 @@
     <entity-ids>
       <counter>
         <item-type type-id="group" type="Group" />
-        <value>682</value>
+        <value>903</value>
       </counter>
       <counter>
         <item-type type-id="drawing-shape" type="Simple Shape" />
@@ -75,7 +75,7 @@
       </counter>
       <counter>
         <item-type type-id="property" type="Property" />
-        <value>37</value>
+        <value>40</value>
       </counter>
       <counter>
         <item-type type-id="data-type" type="Data Type" />
@@ -99,7 +99,7 @@
     <fields>
       <counter>
         <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
-        <value>6</value>
+        <value>37</value>
       </counter>
     </fields>
   </counters>
@@ -135,7 +135,17 @@
         <phone-number />
         <description />
         <color>#00000000</color>
-        <working-schedule uid="ws-1ad6cd9183744d9086d9bb61551ebb4e" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+        <working-schedule uid="ws-7e589c6ac79645d0b169539633d6464a" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Raphael</first-name>
+        <last-name>Gagnon</last-name>
+        <role />
+        <e-mail>raphaelgagnon@cegep-chicoutimi.qc.ca</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-27a6be501b5c410283d277a7343bbdaa" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
       </person>
       <person id="">
         <first-name>Raphael</first-name>
@@ -159,7 +169,27 @@
     <type-sets>
       <type-set file="UmlTypes.xml" />
     </type-sets>
-    <custom-types />
+    <custom-types>
+      <type id="i" tid="" name="i" description="" />
+      <type id="in" tid="" name="in" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="int[" tid="" name="int[" description="" />
+      <type id="int[*" tid="" name="int[*" description="" />
+      <type id="int[*]" tid="" name="int[*]" description="" />
+      <type id="int[*] (int[*]" tid="" name="int[*] (int[*]" description="" />
+      <type id="int[*] (int[*" tid="" name="int[*] (int[*" description="" />
+      <type id="int[*] (int[" tid="" name="int[*] (int[" description="" />
+      <type id="int[*] (int" tid="" name="int[*] (int" description="" />
+      <type id="int[*] (in" tid="" name="int[*] (in" description="" />
+      <type id="int[*] (i" tid="" name="int[*] (i" description="" />
+      <type id="int[*] (" tid="" name="int[*] (" description="" />
+      <type id="int [*]" tid="" name="int [*]" description="" />
+      <type id="interger" tid="" name="interger" description="" />
+      <type id="bool?" tid="" name="bool?" description="" />
+      <type id="TableauFinal : bool?" tid="" name="TableauFinal : bool?" description="" />
+      <type id="integer" tid="" name="integer" description="" />
+      <type id="string" tid="" name="string" description="" />
+    </custom-types>
   </types>
   <items>
     <item id="fbd1c08af2c347a49420536e0032d056" cid="CMT001" type="comment" name="Comment" style-class="" creator="" creation-date="01/26/2024 10:39:15">
@@ -442,7 +472,7 @@ Placer les bits de données</comment>
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-class" id="p5849fe7b90c240569ab19c9c98250633_635486211" name="Application console" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="-351,87">
+      <diagram type="uml-class" id="p5849fe7b90c240569ab19c9c98250633_635486211" name="Application console" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="127,-294" zoom="1.2">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -462,63 +492,151 @@ Placer les bits de données</comment>
           <item id="d1e7b8d40b6b4c8cabefe5e4623058c8" cid="PKG001" type="package" name="Package1" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:14" visibility="package" />
           <item id="7a3cb7bbf39646f2b97a58213365fee2" cid="C001" type="class" name="GénérateurCodeQR" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:19" visibility="package">
             <owned-items>
-              <owned-item ref="56bd69c294c442959e65b7ad8495e8ea" />
               <owned-item ref="80f0b9dde9f8452a85239c7a67ba354b" />
               <owned-item ref="8796d928ffbe470da9a4fb13239b3da6" />
-              <owned-item ref="6471216a497345acb4793c1dcba31906" />
-              <owned-item ref="8dfd2e8c8068417a8b5ad67192ac81d7" />
+              <owned-item ref="062cd8ca648e42ff8aa46dd1854725b9" />
+              <owned-item ref="3c583b8a90754e0aa1d55d30ee2c29bb" />
+              <owned-item ref="b50ae25f9b184f0482141a1ec73520b9" />
             </owned-items>
             <attributes>
-              <attribute id="abdd9e3053ca74972a5746542e1e69a5b931" cid="PROP018" name="CodeQR" creation-date="01/30/2024 09:55:41" property-ref="56bd69c294c442959e65b7ad8495e8ea" />
               <attribute id="afa64a8c614664415aa249b644fa93775390" cid="PROP019" name="Input" creation-date="01/30/2024 09:55:51" property-ref="80f0b9dde9f8452a85239c7a67ba354b" />
               <attribute id="a5ef8088185834da084c1963ab81b0a91913" cid="PROP020" name="Output" creation-date="01/30/2024 09:55:55" property-ref="8796d928ffbe470da9a4fb13239b3da6" />
-              <attribute id="a4d90f04812324fdd8d3bdf29ae032bc8309" cid="PROP021" name="Masqueur" creation-date="01/30/2024 09:56:00" property-ref="6471216a497345acb4793c1dcba31906" />
-              <attribute id="a3310b063a9ea45299854c22b776c39d4574" cid="PROP022" name="Groupe" creation-date="01/30/2024 09:56:05" property-ref="8dfd2e8c8068417a8b5ad67192ac81d7" />
+              <attribute id="acd0af87e1ab9454ead94cfca1977dec78" cid="PROP037" name="version" creation-date="02/14/2024 17:38:47" property-ref="062cd8ca648e42ff8aa46dd1854725b9" />
+              <attribute id="a189fb33d60404b6894c0bab4f09407f5358" cid="PROP038" name="niveauCE" creation-date="02/14/2024 17:39:19" property-ref="3c583b8a90754e0aa1d55d30ee2c29bb" />
+              <attribute id="a53683c45153b40928c4a652b995a6517463" cid="PROP039" name="modeEncodage" creation-date="02/14/2024 17:39:27" property-ref="b50ae25f9b184f0482141a1ec73520b9" />
             </attributes>
+            <operations>
+              <operation id="of26793bed0564d618703775a5ae534be997" cid="ELEM034" name="GénérateurCodeQR" creation-date="02/14/2024 17:35:49" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pb34ae57ed96f4a64b958ec9e5205cace" name="input" type="String" type-id="Uml.String" />
+                  <parameter id="p7cb7ac42650543edab89ccacbca4044b" name="version" type="Integer" type-id="Uml.Integer" />
+                  <parameter id="pf6869204ff974ade868c717c2e5ae98b" name="niveauCE" type="integer" type-id="integer" />
+                  <parameter id="p5c86dd694bf34d4bb86f259d80f2482e" name="modeEncodage" type="string" type-id="string" />
+                </parameters>
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="of61255a5adac431aaf9fb39dec208218159" cid="ELEM033" name="CreerCodeQr" creation-date="02/14/2024 17:35:37" type="" type-id="" visibility="public" />
+            </operations>
           </item>
           <item id="c846e740d334465cbabad76accab00d4" cid="C002" type="class" name="Bloc" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:30" visibility="package">
             <owned-items>
               <owned-item ref="0d72fcf060e742909366dff76b0a4e84" />
               <owned-item ref="64ef1b2ca06e490ca0a5b54ecb2ba8e4" />
             </owned-items>
-            <attributes>
-              <attribute id="adb065faa494e4a36bd2a2607c141fe71830" cid="PROP006" name="Nombre de mots de code d'erreurs" creation-date="01/30/2024 09:40:28" property-ref="0d72fcf060e742909366dff76b0a4e84" />
-              <attribute id="a75f95ba8ce1d4a4780a37b3b704b9fde102" cid="PROP036" name="taille" creation-date="01/31/2024 13:32:13" property-ref="64ef1b2ca06e490ca0a5b54ecb2ba8e4" />
-            </attributes>
+            <operations>
+              <operation id="of33f6120600148ffb7d78a7e194a2232221" cid="ELEM006" name="Bloc" creation-date="02/14/2024 16:59:16" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o0c3e41fa16c242788f580cc14ee6a225118" cid="ELEM007" name="FormerBloc" creation-date="02/14/2024 17:01:51" type="" type-id="" visibility="public">
+                <parameters>
+                  <parameter id="pf4dfa31a68dd46cd90a83a74608c9195" name="codeWord" type="String" type-id="Uml.String" />
+                  <parameter id="p3daa70d5ee2342198621bb1ef8b0f6f2" name="nombrDonnees" type="Integer" type-id="Uml.Integer" />
+                  <parameter id="p4311d9d1e6814bea95c58c5b991126a7" name="nbCorrectionErreursCW" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
           </item>
           <item id="36af297d862c466995700cb1167afda2" cid="C003" type="class" name="Groupe" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:34" visibility="package">
             <owned-items>
               <owned-item ref="2e11d4ca14224541bd200b3505864637" />
             </owned-items>
-            <attributes>
-              <attribute id="a38457004eff3465d9259f953e82c41e0650" cid="PROP007" name="Bloc" creation-date="01/30/2024 09:42:35" property-ref="2e11d4ca14224541bd200b3505864637" />
-            </attributes>
+            <operations>
+              <operation id="o949bd92322fb44b2ad9a0b43d8843c0586" cid="ELEM008" name="Groupe" creation-date="02/14/2024 17:03:24" type="" type-id="" visibility="public">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o3be6903a303449c191ccfd2263106dae891" cid="ELEM009" name="EntrelacerDonnees" creation-date="02/14/2024 17:06:38" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="p0fd15ff7a83749c1b35e261c5d4bde91" name="nombreDonnees" type="Integer" type-id="Uml.Integer" />
+                  <parameter id="p3cf34e92ccc84d2f853845e30755c979" name="premierBlocG1" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="p38c5d08cc0f94a01924d632cdd531e17" name="secondBlocG1" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="p4493e63e64f24bc18b2b8903267acda7" name="premierBlocG2" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="pb8a41589518e456d9f6e0e019c7ceec7" name="secondBlocG2" type="int" type-id="int" multiplicity="*" />
+                </parameters>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </operation>
+              <operation id="o14ae169e4c2248efa2b97eee674baa29673" cid="ELEM010" name="+ EntrelacerCorrectionErreur" creation-date="02/14/2024 17:09:34" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="pf83d03e6954f4c409c7b049ec7c1d977" name="nbCorrectionErreurCW" type="interger" type-id="interger" />
+                  <parameter id="p527f0012cdb942fc92d18ad4e316bf13" name="nombreDonnees" type="Integer" type-id="Uml.Integer" />
+                  <parameter id="pd906a5e9d94b4110bcf8a66e22e46072" name="premierBlocG1" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="pc6df99f0c01b4562b5c82022a7329296" name="secondBlocG1" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="pdef1f7d1f8934485a785ab3f6c703ed5" name="premierBlocG2" type="int" type-id="int" multiplicity="*" />
+                  <parameter id="p97931527e5684ce1ad322c598cb9a148" name="secondBlocG2" type="int" type-id="int" multiplicity="*" />
+                </parameters>
+              </operation>
+              <operation id="obb2e0f33426742589d9d012d8b77e43f819" cid="ELEM011" name="StructurerMessage" creation-date="02/14/2024 17:14:49" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="pdfd53998f88244a4ba8c1907698e8562" name="chaineDonnees" type="String" type-id="Uml.String" />
+                  <parameter id="p5a783d0fd91a40afa45e4f77d1ec1725" name="chaineCorrectionErreur" type="String" type-id="Uml.String" />
+                  <parameter id="p1de0e65a617f4649afad10fd1cce872d" name="versionCode" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
+              <operation id="oc4060bf55c884374ac661aa54cac840a393" cid="ELEM012" name="StructurerMessage" creation-date="02/14/2024 17:14:55" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="pf5c66c2b113845f5a9c49f58473b3f09" name="message" type="String" type-id="Uml.String" />
+                  <parameter id="p731b5dbfb178456aac0293d4ae947a10" name="versionCode" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
+              <operation id="ob15e7ae9271a4e2eb48b48be45baff88714" cid="ELEM013" name="VersionRemainderBits" creation-date="02/14/2024 17:17:26" type="int [*]" type-id="int [*]" visibility="undefined">
+                <parameters>
+                  <parameter id="p51e8dd0d93914c60babb65d852d96088" name="versionCode" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
+            </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
           </item>
           <item id="7852a2ff3b484993bf2bb589e90e0492" cid="C004" type="class" name="CodeQR" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:39" visibility="package">
-            <owned-items>
-              <owned-item ref="a1300251fd5245d4834eb5bfc105da5f" />
-              <owned-item ref="9918fd4eac1d49a7898b86d210c44e9f" />
-              <owned-item ref="6675ac55d25d49f08a4d43d3ef7b5977" />
-              <owned-item ref="3168780fa5f749a6bdd99d71ac7b7f29" />
-              <owned-item ref="f8e3f24696074136b3813341f5cb9eb8" />
-              <owned-item ref="debdd88479cd4e00b00d14f4ee719a69" />
-              <owned-item ref="a244b32285ef45deac605a36996de9b1" />
-              <owned-item ref="13c56899cc2f485d9c0b7b9567265bd9" />
-            </owned-items>
-            <attributes>
-              <attribute id="a6acef5e9f3aa41a58958dcb82c11337f975" cid="PROP003" name="Mode d'encodage" creation-date="01/30/2024 09:38:20" property-ref="a1300251fd5245d4834eb5bfc105da5f" />
-              <attribute id="a1b71a860a70d41ee997a0b3bae9c2e2d297" cid="PROP004" name="Version" creation-date="01/30/2024 09:38:29" property-ref="9918fd4eac1d49a7898b86d210c44e9f" />
-              <attribute id="a6cceb91dd89742c8b68dc20e17d7c4ef559" cid="PROP005" name="Niveau correction d'erreur" creation-date="01/30/2024 09:38:34" property-ref="6675ac55d25d49f08a4d43d3ef7b5977" />
-              <attribute id="ab9d730bd5262437fb554da3aea4950d1938" cid="PROP009" name="Pattern de localisation" creation-date="01/30/2024 09:48:27" property-ref="3168780fa5f749a6bdd99d71ac7b7f29" />
-              <attribute id="a0f90414fcecd40e3b6f3f0f340505a28473" cid="PROP011" name="Séparateur" creation-date="01/30/2024 09:50:05" property-ref="f8e3f24696074136b3813341f5cb9eb8" />
-              <attribute id="aba3bf17f9c244d2291333ae8341a1c24737" cid="PROP012" name="Pattern d'alignement" creation-date="01/30/2024 09:50:18" property-ref="debdd88479cd4e00b00d14f4ee719a69" />
-              <attribute id="a8cd14f9d144547c09e2cc7903abe50c8274" cid="PROP013" name="Pattern de timing" creation-date="01/30/2024 09:50:26" property-ref="a244b32285ef45deac605a36996de9b1" />
-              <attribute id="a0be3414fc15b412bbc04633f209b3b74965" cid="PROP014" name="Le module sombre" creation-date="01/30/2024 09:50:55" property-ref="13c56899cc2f485d9c0b7b9567265bd9" />
-            </attributes>
             <operations>
-              <operation id="oad4b11dac8e9472da1ce15aa24368782662" cid="ELEM004" name="SetTerminateur" creation-date="01/31/2024 13:33:07" type="" type-id="" visibility="public" />
-              <operation id="o5c2ed3e68a05413b99ef559c6d3e62e041" cid="ELEM005" name="Setdonnéescodés" creation-date="01/31/2024 13:33:23" type="" type-id="" visibility="public" />
+              <operation id="o6c3d06995ab7403bb61379a419cbf24c167" cid="ELEM014" name="CodeQR" creation-date="02/14/2024 17:19:37" type="" type-id="" visibility="undefined">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o819176737da34369acefff7b47ae92ef627" cid="ELEM015" name="PreparationCW" creation-date="02/14/2024 17:22:04" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="p45c4207b08284e36b8ab1a66f8d4042c" name="chaineDebut" type="String" type-id="Uml.String" />
+                  <parameter id="pde5fbb5452cb4870a6591c29266063bc" name="mode" type="String" type-id="Uml.String" />
+                  <parameter id="pd1be743a3e7149468f4f55fb8b2ba126" name="nbTotalMotCode" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
+              <operation id="o17088ed2e86a48c6b76a307344901f11627" cid="ELEM016" name="TrouverIndicateurMode" creation-date="02/14/2024 17:22:04" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="p511b863717fb42ffb2d6b2ab6476fef5" name="mode" type="String" type-id="Uml.String" />
+                </parameters>
+              </operation>
+              <operation id="oa7d467f9a77e498ca3ddf15940a08ea1274" cid="ELEM017" name="TrouverIndicateurNbCaracteres" creation-date="02/14/2024 17:23:11" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="pa8f7eb86121349df8fc35df28a05829c" name="chaineDebut" type="String" type-id="Uml.String" />
+                </parameters>
+              </operation>
+              <operation id="ob66c3b0ba3064c7a8d59639e05622f74442" cid="ELEM018" name="CodageAlphanum" creation-date="02/14/2024 17:25:52" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="p9ba2ee1eb72d4aa2a607515d1ae8d809" name="chaineDebut" type="String" type-id="Uml.String" />
+                </parameters>
+              </operation>
+              <operation id="o9cc499151d49427b9870be6346e193a2442" cid="ELEM019" name=" AjouterOctetsPad" creation-date="02/14/2024 17:25:52" type="String" type-id="Uml.String" visibility="public">
+                <parameters>
+                  <parameter id="pa133fb08728644e7882baab5aa2344d5" name="chaineDebut" type="String" type-id="Uml.String" />
+                  <parameter id="pb73484b49c4d40ec89653033199c2fa0" name="nbTotalMotCode" type="Integer" type-id="Uml.Integer" />
+                </parameters>
+              </operation>
             </operations>
+            <source-codes>
+              <source-code language="ActionScript" />
+            </source-codes>
           </item>
           <item id="0af9ccd2e04a43a1b5bb4183a454fd9a" cid="C005" type="class" name="Masqueur" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:44" visibility="package">
             <owned-items>
@@ -527,6 +645,21 @@ Placer les bits de données</comment>
             <attributes>
               <attribute id="a73da56caa45e4107b62f7e2204635957283" cid="PROP017" name="masque" creation-date="01/30/2024 09:55:21" property-ref="8ca615bda7e54f42a95e95cde4af39df" />
             </attributes>
+            <operations>
+              <operation id="oe31f4731462841a19ffe8a3ed15eb3f8468" cid="ELEM022" name="Masqueur" creation-date="02/14/2024 17:27:46" type="" type-id="" visibility="undefined">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="ob50fdbe8c3a74e01a76d3e5388653dfd624" cid="ELEM023" name="AppliquerMasque" creation-date="02/14/2024 17:27:47" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="pb258ee02e45547d0871ec96229334070" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="p0f63d563ad8d49b1ad88c4279bdffa9e" name="]" type="" type-id="" />
+                  <parameter id="p27fc7fc985954623b225b44b44966622" name="TableauExemple" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="p5daa639284a44b1d8178d920080c9203" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
           </item>
           <item id="57bf154416f04e94bb57a39b362dfc79" cid="C006" type="class" name="Masque" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:52" visibility="package">
             <owned-items>
@@ -537,6 +670,14 @@ Placer les bits de données</comment>
               <attribute id="a3091c0c5707f4b70b2f6650163df72cd241" cid="PROP015" name="Modèle" creation-date="01/30/2024 09:53:42" property-ref="647741259a84429da7bb3b13d8f2b547" />
               <attribute id="a116cb2a44ff34d0dad9def4d9213d1eb47" cid="PROP016" name="Score de pénalité" creation-date="01/30/2024 09:53:53" property-ref="cfded42b7de34b52ba7fef943dea375f" />
             </attributes>
+            <operations>
+              <operation id="o333d15fe245b4f079c66cc8b6118a8a8204" cid="ELEM020" name="Masque" creation-date="02/14/2024 17:26:29" type="" type-id="" visibility="undefined">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="o0e6908b7201a43aca028118e97f10d89184" cid="ELEM021" name="DeterminerMasque" creation-date="02/14/2024 17:26:31" type="interger" type-id="interger" visibility="public" />
+            </operations>
           </item>
           <item id="e275f328969f47899dc466f70cdfce15" cid="C007" type="class" name="Module" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:32:57" visibility="package">
             <owned-items>
@@ -547,6 +688,61 @@ Placer les bits de données</comment>
               <attribute id="a90be01a21c0143d09aaef5a2c5f69f75983" cid="PROP008" name="Couleur" creation-date="01/30/2024 09:46:29" property-ref="fc91cfc25e614b429a1819e4e38889c7" />
               <attribute id="a6b5a86488afd4907bc841cd0f9a3de18725" cid="PROP010" name="Taille" creation-date="01/30/2024 09:48:44" property-ref="c6375f7ebf194b3faf865513717045fa" />
             </attributes>
+            <operations>
+              <operation id="o4562892cedf34ec5a6b4a702b5b17023652" cid="ELEM024" name="Module" creation-date="02/14/2024 17:29:44" type="" type-id="" visibility="undefined">
+                <stereotypes>
+                  <stereotype>create</stereotype>
+                </stereotypes>
+              </operation>
+              <operation id="ob5960ef871bd435fbe16b46dd2f31791727" cid="ELEM025" name="AjouterModuleSombre" creation-date="02/14/2024 17:29:45" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="p626ed76ef22b46f99c2cc6f9b84a34e0" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="pd4e04d1c49ae4e948df2f26198ad030f" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o16d0888a049e4cb0a5a0a9711b683b7f296" cid="ELEM026" name="AjouterModeleAlignement" creation-date="02/14/2024 17:30:45" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="p242a4d0f32f0478eabe69de5ec0ed93d" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="p37f9f1d5873d4b0598403db0b5027e49" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o1db091f756394e7bb419f703b3ca524747" cid="ELEM027" name="AjouterModeleSynchronisation" creation-date="02/14/2024 17:31:10" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="p7f5056d29d244648b694427e418072f8" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="pdd83d663b83443f89e42c92987978bc5" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="oe204bcc46a694a039efdaace9ff65d5c791" cid="ELEM028" name="AjouterSeparateurs" creation-date="02/14/2024 17:31:38" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="pf8cdafc9e04c4e75b38a22fe9b192f22" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="peaec9b5fc66d40fa903c71716b089fb8" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o01b4868b5c2b4746b46701eacfa6e931375" cid="ELEM029" name="AjouterModeleDeRecherche" creation-date="02/14/2024 17:31:58" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="p10e25375c4b94cccbfd668652f31eb75" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="pe8ed27edb23c4eee846b235e3da1d7f3" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o22325eb9ee6e4429883b6ec88df82e16879" cid="ELEM030" name="ReservezZoneformat" creation-date="02/14/2024 17:32:30" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="pe4c4821ff2de48048eb13add926c8c91" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="p21fe4007b32743409f03b3d9cab51ebe" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o2a276cfe92934894a74eb2e85e9a5cfb336" cid="ELEM031" name="remplirTableauFinal" creation-date="02/14/2024 17:33:10" type="bool?" type-id="bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="pdae95999e0aa49b38ee396d85ca00c25" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="p8568f4e09514459abb634ef59e562100" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="of7ff1b152b61497d92661c29b0b0c1cc807" cid="ELEM032" name="PlacerMessage" creation-date="02/14/2024 17:34:46" type="TableauFinal : bool?" type-id="TableauFinal : bool?" multiplicity="," visibility="public">
+                <parameters>
+                  <parameter id="pd6c69cb6a4444b36a1dbfefd85bdcd3b" name="TableauFinal" type="bool?" type-id="bool?" default-value="[" />
+                  <parameter id="peaf8aae3c01c42caaf1d1b343b9e4522" name="]" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
           </item>
           <item id="7270e2ae863b4bf7b4284e58fd587c52" cid="C008" type="class" name="ReedSolomonEncoder" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:33:01" visibility="package">
             <owned-items>
@@ -558,44 +754,44 @@ Placer les bits de données</comment>
           </item>
           <item id="3a981b293847487e81f05f322e1ace20" cid="REL001" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:09" from="7a3cb7bbf39646f2b97a58213365fee2" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
             <relation from="7a3cb7bbf39646f2b97a58213365fee2" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
-              <start-role id="umlar-bac652ba-934c-4e85-b0de-fea32822bd61" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-77323213-08a9-4cab-949d-b2c58cf398f9" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-91fb9c55-28ad-47c8-b9e9-e611f2b95e5d" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-5662b268-9a24-439d-9bc4-b16d59d8826a" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
-          <item id="8861d8cda7d94ede91af97254d610b2f" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:20" from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7a3cb7bbf39646f2b97a58213365fee2" visibility="package">
-            <relation from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7a3cb7bbf39646f2b97a58213365fee2" derived="false">
-              <start-role id="umlar-bc4d276a-ebe9-44be-bf5f-47bdb24b9bb6" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-ab113dea-20ef-4cca-bf0c-c57261115b47" name="" navigability="" association-type="association" visibility="private" />
+          <item id="8861d8cda7d94ede91af97254d610b2f" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:20" from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
+            <relation from="0af9ccd2e04a43a1b5bb4183a454fd9a" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
+              <start-role id="umlar-1311f807-7d5f-40cc-9125-856fbdfed895" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-47e63456-5cac-4aac-8b06-4285fbef00b9" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="83796b3d74b84f37b15b01259cd72060" cid="REL003" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:29" from="57bf154416f04e94bb57a39b362dfc79" to="0af9ccd2e04a43a1b5bb4183a454fd9a" visibility="package">
             <relation from="57bf154416f04e94bb57a39b362dfc79" to="0af9ccd2e04a43a1b5bb4183a454fd9a" derived="false">
-              <start-role id="umlar-c4c5b7f7-e1e1-42bc-b670-c1f80c5c0311" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-22964343-9761-47a1-9318-4ea9fffc5f4c" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-a6410f08-3222-44ed-b470-decc65f6fef5" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-63e1164b-757e-4419-a08f-34d3083fc25b" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="e2599d9851e84a4d9b8778bda838ad22" cid="REL004" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:37" from="7270e2ae863b4bf7b4284e58fd587c52" to="c846e740d334465cbabad76accab00d4" visibility="package">
             <relation from="7270e2ae863b4bf7b4284e58fd587c52" to="c846e740d334465cbabad76accab00d4" derived="false">
-              <start-role id="umlar-f336c4dd-97ef-4ede-ae60-ef76cfd48ea4" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-e6b981d4-8c58-4d31-b3fd-f8e130b52ae4" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-215b44ce-d6a9-4cbc-8021-edfa048c3154" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-b2629d90-57a1-41d4-a376-2558c2836bf9" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="85d30e0d647240fe96981d2ff40a2c46" cid="REL005" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:41" from="e275f328969f47899dc466f70cdfce15" to="7852a2ff3b484993bf2bb589e90e0492" visibility="package">
             <relation from="e275f328969f47899dc466f70cdfce15" to="7852a2ff3b484993bf2bb589e90e0492" derived="false">
-              <start-role id="umlar-c6c2bcab-d235-4c9d-8e6a-e5a80e1cd139" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-ef2721e8-694f-4dec-b6c5-a72d64aab877" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-750d2c1f-e2d4-44e0-9b14-b4dddf3e8cd8" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-4bfbc794-3da9-4f10-9d3c-24d649a74e83" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="12f422b6dcc4426790cbd308c22232b3" cid="REL006" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:48" from="7852a2ff3b484993bf2bb589e90e0492" to="36af297d862c466995700cb1167afda2" visibility="package">
             <relation from="7852a2ff3b484993bf2bb589e90e0492" to="36af297d862c466995700cb1167afda2" derived="false">
-              <start-role id="umlar-2fb0ce3a-cb88-467b-928f-f3ab7c704b0c" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-265eec84-e300-468a-9c34-592f45bdb1cf" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-c61206aa-144f-47a5-ad1c-e770bc70e3df" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-fc037109-5437-4c68-9e4f-5d466c26e738" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="08b1e1929b14447dafa7ee94a8310ec9" cid="REL007" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 09:34:51" from="36af297d862c466995700cb1167afda2" to="c846e740d334465cbabad76accab00d4" visibility="package">
             <relation from="36af297d862c466995700cb1167afda2" to="c846e740d334465cbabad76accab00d4" derived="false">
-              <start-role id="umlar-9a65075d-3aaa-4979-b036-84d2e92f7777" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-4ccb8d24-1a4d-4874-84c1-4b52a6b02f42" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-d956895d-f6d1-4881-82ad-2fee85282dc6" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-c8fd6f2c-ef81-4f2e-9ecf-26390dbde402" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="c38aef634fe74f73b0130e29f8b29e9f" cid="PROP001" type="property" name="Bibliothèque externe" style-class="" owner="7270e2ae863b4bf7b4284e58fd587c52" creator="" creation-date="01/30/2024 09:37:00" visibility="private">
@@ -634,62 +830,12 @@ Placer les bits de données</comment>
             </style>
             <enumeration-items />
           </item>
-          <item id="a1300251fd5245d4834eb5bfc105da5f" cid="PROP003" type="property" name="Mode d'encodage" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:38:20" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="9918fd4eac1d49a7898b86d210c44e9f" cid="PROP004" type="property" name="Version" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:38:29" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="6675ac55d25d49f08a4d43d3ef7b5977" cid="PROP005" type="property" name="Niveau correction d'erreur" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:38:34" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="0d72fcf060e742909366dff76b0a4e84" cid="PROP006" type="property" name="Nombre de mots de code d'erreurs" style-class="" owner="c846e740d334465cbabad76accab00d4" creator="" creation-date="01/30/2024 09:40:28" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="2e11d4ca14224541bd200b3505864637" cid="PROP007" type="property" name="Bloc" style-class="" owner="36af297d862c466995700cb1167afda2" creator="" creation-date="01/30/2024 09:42:35" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
           <item id="fc91cfc25e614b429a1819e4e38889c7" cid="PROP008" type="property" name="Couleur" style-class="" owner="e275f328969f47899dc466f70cdfce15" creator="" creation-date="01/30/2024 09:46:29" visibility="undefined">
             <feature />
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="3168780fa5f749a6bdd99d71ac7b7f29" cid="PROP009" type="property" name="Pattern de localisation" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:48:27" visibility="undefined">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
           <item id="c6375f7ebf194b3faf865513717045fa" cid="PROP010" type="property" name="Taille" style-class="" owner="e275f328969f47899dc466f70cdfce15" creator="" creation-date="01/30/2024 09:48:44" visibility="undefined">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="f8e3f24696074136b3813341f5cb9eb8" cid="PROP011" type="property" name="Séparateur" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:50:05" visibility="undefined">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="debdd88479cd4e00b00d14f4ee719a69" cid="PROP012" type="property" name="Pattern d'alignement" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:50:18" visibility="undefined">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="a244b32285ef45deac605a36996de9b1" cid="PROP013" type="property" name="Pattern de timing" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:50:26" visibility="undefined">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
-          <item id="13c56899cc2f485d9c0b7b9567265bd9" cid="PROP014" type="property" name="Le module sombre" style-class="" owner="7852a2ff3b484993bf2bb589e90e0492" creator="" creation-date="01/30/2024 09:50:55" visibility="undefined">
             <feature />
             <structural-feature type="" type-id="" />
             <property />
@@ -709,29 +855,29 @@ Placer les bits de données</comment>
             <structural-feature type="" type-id="" />
             <property />
           </item>
-          <item id="56bd69c294c442959e65b7ad8495e8ea" cid="PROP018" type="property" name="CodeQR" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:55:41" visibility="undefined">
+          <item id="3c583b8a90754e0aa1d55d30ee2c29bb" cid="PROP038" type="property" name="niveauCE" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="02/14/2024 17:39:19" visibility="private">
             <feature />
-            <structural-feature type="" type-id="" />
+            <structural-feature type="int" type-id="int" />
             <property />
           </item>
-          <item id="80f0b9dde9f8452a85239c7a67ba354b" cid="PROP019" type="property" name="Input" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:55:51" visibility="undefined">
+          <item id="80f0b9dde9f8452a85239c7a67ba354b" cid="PROP019" type="property" name="Input" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:55:51" visibility="private">
             <feature />
-            <structural-feature type="" type-id="" />
+            <structural-feature type="string" type-id="string" />
             <property />
           </item>
-          <item id="8796d928ffbe470da9a4fb13239b3da6" cid="PROP020" type="property" name="Output" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:55:55" visibility="undefined">
+          <item id="8796d928ffbe470da9a4fb13239b3da6" cid="PROP020" type="property" name="Output" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:55:55" visibility="private">
             <feature />
-            <structural-feature type="" type-id="" />
+            <structural-feature type="string" type-id="string" />
             <property />
           </item>
-          <item id="6471216a497345acb4793c1dcba31906" cid="PROP021" type="property" name="Masqueur" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:56:00" visibility="undefined">
+          <item id="b50ae25f9b184f0482141a1ec73520b9" cid="PROP039" type="property" name="modeEncodage" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="02/14/2024 17:39:27" visibility="private">
             <feature />
-            <structural-feature type="" type-id="" />
+            <structural-feature type="string" type-id="string" />
             <property />
           </item>
-          <item id="8dfd2e8c8068417a8b5ad67192ac81d7" cid="PROP022" type="property" name="Groupe" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="01/30/2024 09:56:05" visibility="undefined">
+          <item id="062cd8ca648e42ff8aa46dd1854725b9" cid="PROP037" type="property" name="version" style-class="" owner="7a3cb7bbf39646f2b97a58213365fee2" creator="" creation-date="02/14/2024 17:38:47" visibility="private">
             <feature />
-            <structural-feature type="" type-id="" />
+            <structural-feature type="string" type-id="string" />
             <property />
           </item>
           <item id="228e08c621c04fc2a42749e69c1d1b11" cid="E001" type="enumeration" name="NiveauCorrectionerreur" style-class="" change-tracking-state="added" creator="" creation-date="01/31/2024 13:24:06" visibility="package">
@@ -743,114 +889,109 @@ Placer les bits de données</comment>
             </stereotype-instances>
             <enumeration-items />
           </item>
-          <item id="64ef1b2ca06e490ca0a5b54ecb2ba8e4" cid="PROP036" type="property" name="taille" style-class="" owner="c846e740d334465cbabad76accab00d4" creator="" creation-date="01/31/2024 13:32:13" visibility="private">
-            <feature />
-            <structural-feature type="" type-id="" />
-            <property />
-          </item>
         </abstract-items>
         <layer id="d131d411f2764569bbfe19601b85581f" name="Default" visible="true" enabled="true" locked="false">
           <item id="7a3cb7bbf39646f2b97a58213365fee2" iid="3f9928c537f4439686f96dbbf56a0a39" creation-date="01/30/2024 09:32:19" order-index="0" type="entity">
-            <layout ax="350" ay="43" awidth="603" aheight="329" x="350" y="43" width="603" height="329" />
+            <layout ax="369.5" ay="-12" awidth="603" aheight="329" x="369.5" y="-12" width="603" height="329" />
             <class />
           </item>
           <item id="c846e740d334465cbabad76accab00d4" iid="5635f5ca7dce45d6ac63709d18f1fb41" creation-date="01/30/2024 09:32:30" order-index="1" type="entity">
-            <layout ax="0" ay="461" awidth="202" aheight="215" x="0" y="461" width="202" height="215" rotation-center="-31,-27.5" />
+            <layout ax="-284" ay="433" awidth="292" aheight="215" x="-284" y="433" width="292" height="215" rotation-center="14,-27.5" />
             <class />
           </item>
           <item id="36af297d862c466995700cb1167afda2" iid="291d898421ea4c1d92c4156c7709c080" creation-date="01/30/2024 09:32:34" order-index="2" type="entity">
-            <layout ax="252" ay="461" awidth="186" aheight="215" x="252" y="461" width="186" height="215" rotation-center="-23,-27.5" />
+            <layout ax="53" ay="406" awidth="376" aheight="275" x="63" y="416" width="186" height="215" rotation-center="-23,-27.5" />
             <class />
           </item>
           <item id="7852a2ff3b484993bf2bb589e90e0492" iid="e673271daec244549e6fb618a825a29e" creation-date="01/30/2024 09:32:39" order-index="3" type="entity">
-            <layout ax="504" ay="461" awidth="188" aheight="236" x="504" y="461" width="188" height="215" rotation-center="-38,-27.5" />
+            <layout ax="498" ay="451" awidth="346" aheight="366" x="498" y="451" width="188" height="215" rotation-center="-38,-27.5" />
             <class />
           </item>
           <item id="0af9ccd2e04a43a1b5bb4183a454fd9a" iid="8b34250568704483b0fb03eee9e1036d" creation-date="01/30/2024 09:32:44" order-index="4" type="entity">
-            <layout ax="744" ay="461" awidth="196" aheight="215" x="744" y="461" width="196" height="215" rotation-center="-28,-27.5" />
+            <layout ax="972.5" ay="526.5" awidth="196" aheight="215" x="972.5" y="526.5" width="196" height="215" rotation-center="-28,-27.5" />
             <class />
           </item>
           <item id="57bf154416f04e94bb57a39b362dfc79" iid="3362779cb504453ab2ddf07fad2c1ac2" creation-date="01/30/2024 09:32:52" order-index="5" type="entity">
-            <layout ax="992" ay="461" awidth="230" aheight="215" x="992" y="461" width="230" height="215" rotation-center="-45,-27.5" />
+            <layout ax="1258" ay="508" awidth="230" aheight="215" x="1258" y="508" width="230" height="215" rotation-center="-45,-27.5" />
             <class />
           </item>
           <item id="e275f328969f47899dc466f70cdfce15" iid="eba36502eee540e9b98fd6628d2e18f6" creation-date="01/30/2024 09:32:57" order-index="6" type="entity">
-            <layout ax="490" ay="735" awidth="202" aheight="227" x="490" y="735" width="202" height="227" rotation-center="-31,-33.5" />
+            <layout ax="486" ay="874" awidth="358" aheight="345" x="486" y="874" width="202" height="227" rotation-center="-31,-33.5" />
             <class />
           </item>
           <item id="7270e2ae863b4bf7b4284e58fd587c52" iid="2d83335326d343f4a1289e0775e49ab3" creation-date="01/30/2024 09:33:01" order-index="7" type="entity">
-            <layout ax="-8" ay="735" awidth="202" aheight="227" x="-8" y="735" width="202" height="227" rotation-center="-31,-33.5" />
+            <layout ax="-258" ay="692" awidth="202" aheight="227" x="-258" y="692" width="202" height="227" rotation-center="-31,-33.5" />
             <class />
           </item>
           <item id="3a981b293847487e81f05f322e1ace20" iid="3b56fc799352404e837b1d44f8f3af28" creation-date="01/30/2024 09:34:09" order-index="8" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="650" y1="372" x2="595" y2="461" start-border-pos="0.625621890547264" end-border-pos="0.121287128712871" start-local-pos="300" end-local-pos="98" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="669" y1="317" x2="666" y2="451" start-border-pos="0.625621890547264" end-border-pos="0.121287128712871" start-local-pos="300" end-local-pos="98" name-position="0,20">
               <points>
-                <point x="650" y="372" />
-                <point x="595" y="461" />
+                <point x="669" y="317" />
+                <point x="666" y="451" />
               </points>
             </layout>
             <relation from="7a3cb7bbf39646f2b97a58213365fee2" from-iid="3f9928c537f4439686f96dbbf56a0a39" to="7852a2ff3b484993bf2bb589e90e0492" to-iid="e673271daec244549e6fb618a825a29e" />
           </item>
           <item id="8861d8cda7d94ede91af97254d610b2f" iid="4334b4a85947466f856ac60093b07d10" creation-date="01/30/2024 09:34:20" order-index="9" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="786" y1="461" x2="739" y2="372" start-border-pos="0.0529690956582828" end-border-pos="0.588907320898761" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="972" y1="634" x2="844" y2="634" start-border-pos="0.875" end-border-pos="0.375" end-local-pos="184" name-position="0,20">
               <points>
-                <point x="786" y="461" />
-                <point x="739" y="372" />
+                <point x="972" y="634" />
+                <point x="844" y="634" />
               </points>
             </layout>
-            <relation from="0af9ccd2e04a43a1b5bb4183a454fd9a" from-iid="8b34250568704483b0fb03eee9e1036d" to="7a3cb7bbf39646f2b97a58213365fee2" to-iid="3f9928c537f4439686f96dbbf56a0a39" />
+            <relation from="0af9ccd2e04a43a1b5bb4183a454fd9a" from-iid="8b34250568704483b0fb03eee9e1036d" to="7852a2ff3b484993bf2bb589e90e0492" to-iid="e673271daec244549e6fb618a825a29e" to-field="o6c3d06995ab7403bb61379a419cbf24c167" />
           </item>
           <item id="83796b3d74b84f37b15b01259cd72060" iid="250a090eedb04a0592e6f194f3625f66" creation-date="01/30/2024 09:34:29" order-index="10" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="992" y1="568" x2="940" y2="568" start-border-pos="0.875581395348837" end-border-pos="0.374418604651163" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="1258" y1="623" x2="1168" y2="628" start-border-pos="0.866474808094113" end-border-pos="0.368230491460756" name-position="0,20">
               <points>
-                <point x="992" y="568" />
-                <point x="940" y="568" />
+                <point x="1258" y="623" />
+                <point x="1168" y="628" />
               </points>
             </layout>
             <relation from="57bf154416f04e94bb57a39b362dfc79" from-iid="3362779cb504453ab2ddf07fad2c1ac2" to="0af9ccd2e04a43a1b5bb4183a454fd9a" to-iid="8b34250568704483b0fb03eee9e1036d" />
           </item>
           <item id="e2599d9851e84a4d9b8778bda838ad22" iid="a048de8746d54866a5830a09b7c6f4b1" creation-date="01/30/2024 09:34:37" order-index="11" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="96" y1="735" x2="98" y2="676" start-border-pos="0.128995753750943" end-border-pos="0.628818955751929" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="-149" y1="692" x2="-146" y2="648" start-border-pos="0.135077788098024" end-border-pos="0.631604691074319" name-position="0,20">
               <points>
-                <point x="96" y="735" />
-                <point x="98" y="676" />
+                <point x="-149" y="692" />
+                <point x="-146" y="648" />
               </points>
             </layout>
             <relation from="7270e2ae863b4bf7b4284e58fd587c52" from-iid="2d83335326d343f4a1289e0775e49ab3" to="c846e740d334465cbabad76accab00d4" to-iid="5635f5ca7dce45d6ac63709d18f1fb41" />
           </item>
           <item id="85d30e0d647240fe96981d2ff40a2c46" iid="30f170f2fb3b47be9e47ad272871018d" creation-date="01/30/2024 09:34:41" order-index="12" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="594" y1="735" x2="595" y2="697" start-border-pos="0.128639221191406" end-border-pos="0.629083268185879" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-to-fields="false" auto-path="" x1="668" y1="874" x2="668" y2="817" start-border-pos="0.126749219841131" end-border-pos="0.626925606259032" name-position="0,20">
               <points>
-                <point x="594" y="735" />
-                <point x="595" y="697" />
+                <point x="668" y="874" />
+                <point x="668" y="817" />
               </points>
             </layout>
             <relation from="e275f328969f47899dc466f70cdfce15" from-iid="eba36502eee540e9b98fd6628d2e18f6" to="7852a2ff3b484993bf2bb589e90e0492" to-iid="e673271daec244549e6fb618a825a29e" />
           </item>
           <item id="12f422b6dcc4426790cbd308c22232b3" iid="6b4fb8fee11a4d5e8763c3169d585a2b" creation-date="01/30/2024 09:34:48" order-index="13" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="504" y1="577" x2="438" y2="568" start-border-pos="0.876744186046512" end-border-pos="0.374418604651163" start-local-pos="106" end-local-pos="107" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="498" y1="631" x2="429" y2="543" start-border-pos="0.876744186046512" end-border-pos="0.374418604651163" start-local-pos="106" end-local-pos="107" name-position="0,20">
               <points>
-                <point x="504" y="577" />
-                <point x="438" y="568" />
+                <point x="498" y="631" />
+                <point x="429" y="543" />
               </points>
             </layout>
             <relation from="7852a2ff3b484993bf2bb589e90e0492" from-iid="e673271daec244549e6fb618a825a29e" to="36af297d862c466995700cb1167afda2" to-iid="291d898421ea4c1d92c4156c7709c080" />
           </item>
           <item id="08b1e1929b14447dafa7ee94a8310ec9" iid="69124e4244fd49e5892e4da2aad0041f" creation-date="01/30/2024 09:34:51" order-index="14" type="relation">
-            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" end-auto-side="false" lock-start-point="true" lock-to-fields="false" auto-path="" x1="252" y1="567" x2="202" y2="567" start-border-pos="0.876744186046512" end-border-pos="0.373640832235647" start-local-pos="106" end-local-pos="91" name-position="0,20">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" end-auto-side="false" lock-start-point="true" lock-to-fields="false" auto-path="" x1="53" y1="542" x2="8" y2="542" start-border-pos="0.876744186046512" end-border-pos="0.3761962890625" start-local-pos="106" end-local-pos="91" name-position="0,20">
               <points>
-                <point x="252" y="567" />
-                <point x="202" y="567" />
+                <point x="53" y="542" />
+                <point x="8" y="542" />
               </points>
             </layout>
             <relation from="36af297d862c466995700cb1167afda2" from-iid="291d898421ea4c1d92c4156c7709c080" to="c846e740d334465cbabad76accab00d4" to-iid="5635f5ca7dce45d6ac63709d18f1fb41" />
           </item>
           <item id="228e08c621c04fc2a42749e69c1d1b11" iid="8944b4a9316444b3bc0a10e12d5cd8dd" creation-date="01/31/2024 13:24:06" order-index="15" type="entity">
-            <layout ax="-254" ay="458.5" awidth="204" aheight="220" x="-254" y="458.5" width="204" height="220" />
+            <layout ax="-525" ay="430.5" awidth="204" aheight="220" x="-525" y="430.5" width="204" height="220" />
             <enumeration />
           </item>
           <item id="4297cec8f4224dfc858c5b5b3c7e41dc" iid="f24fde55e61642ba8c0f06a220bbb80f" creation-date="01/31/2024 13:31:20" order-index="16" type="entity">
-            <layout ax="-253" ay="735" awidth="202" aheight="215" x="-253" y="735" width="202" height="215" />
+            <layout ax="-524" ay="698" awidth="202" aheight="215" x="-524" y="698" width="202" height="215" />
             <enumeration />
           </item>
         </layer>
@@ -911,8 +1052,8 @@ Placer les bits de données</comment>
           </item>
           <item id="b6a523154e14420daccc6fef4cde1d4b" cid="REL008" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:03:07" from="97875769c06a43f5a4e962e62b27edf4" to="a89bf4c181924ebb8f4b77065578bae1" visibility="package">
             <relation from="97875769c06a43f5a4e962e62b27edf4" to="a89bf4c181924ebb8f4b77065578bae1" derived="false">
-              <start-role id="umlar-3d173ed3-40d7-4ce4-8b1f-3cc6f6902f76" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-972f6370-06db-46cf-8758-4c88554aed94" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-606c2118-791b-4b71-b598-6e10221f85ab" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-c7fffb78-1300-4240-86b5-68ad0ab2181d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="d18fc6de7e1a431b97708b2d9f8a7717" cid="C012" type="class" name="ObservableObject" style-class="" owner="00d1e929ec3441f1ba4614bc984bba15" change-tracking-state="added" creator="" creation-date="01/30/2024 10:04:04" visibility="package" />
@@ -933,8 +1074,8 @@ Placer les bits de données</comment>
           </item>
           <item id="6343b87c3c414809a8c5808a2d62d820" cid="REL009" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:04:39" from="0f46232ae924440395441e7090fb4577" to="7f7fe6c90b7a4938b8ef173cc42b3279" visibility="package">
             <relation from="0f46232ae924440395441e7090fb4577" to="7f7fe6c90b7a4938b8ef173cc42b3279" derived="false">
-              <start-role id="umlar-6d54d4fb-d575-469f-be55-90bdee402a72" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-f9a99cf4-9f3b-4a38-872d-0af29229cb3d" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-f04447f2-7a15-41f4-b91e-36bd2da3eda5" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-a37937f7-1af8-4099-b4bc-77a11ee9f172" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="09158d01fddd41b19055f977f1b10822" cid="GNR001" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:05:16" from="97875769c06a43f5a4e962e62b27edf4" to="d18fc6de7e1a431b97708b2d9f8a7717" visibility="package" />
@@ -955,8 +1096,8 @@ Placer les bits de données</comment>
           </item>
           <item id="0233c4bd6ac44a8baa58182cbaf35002" cid="REL012" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:06:37" from="02a6f46f37274392bad63f9b0a81560e" to="97875769c06a43f5a4e962e62b27edf4" visibility="package">
             <relation from="02a6f46f37274392bad63f9b0a81560e" to="97875769c06a43f5a4e962e62b27edf4" derived="false">
-              <start-role id="umlar-a260c3d5-c6eb-4b5e-b7b2-538aada3fca3" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-c764aa30-f997-4ecb-8c35-4d7159203107" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-38afadb2-9ed7-486b-93c4-a6dfaab10099" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-12452ce6-37a6-458d-bdd0-c41359a86b05" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="873ae2ebfaff41808f6cfee50214ef65" cid="C014" type="class" name="Class14" style-class="" owner="f409eca5e2144dc29e2f16b42ac7373e" change-tracking-state="added" creator="" creation-date="01/30/2024 10:07:01" visibility="package" />
@@ -964,8 +1105,8 @@ Placer les bits de données</comment>
           <item id="2390fe1404e14508b5a8d86581918c6f" cid="C016" type="class" name="Groupe" style-class="" owner="f409eca5e2144dc29e2f16b42ac7373e" change-tracking-state="added" creator="" creation-date="01/30/2024 10:08:47" visibility="package" />
           <item id="aef7ea886079490c8da4cf184c8d77b4" cid="REL013" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="01/30/2024 10:10:06" from="0f46232ae924440395441e7090fb4577" to="02a6f46f37274392bad63f9b0a81560e" visibility="package">
             <relation from="0f46232ae924440395441e7090fb4577" to="02a6f46f37274392bad63f9b0a81560e" derived="false">
-              <start-role id="umlar-972ecf54-9bc5-4026-afed-84f85aad7f0b" name="" navigability="" association-type="association" visibility="private" />
-              <end-role id="umlar-734c75a1-e7d4-4c6d-869a-8f003045628f" name="" navigability="" association-type="association" visibility="private" />
+              <start-role id="umlar-ff1dd86e-7733-4a85-a480-23b8ba044cbb" name="" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-ce322da7-f75f-4a8a-a8d3-a31b97a047a7" name="" navigability="" association-type="association" visibility="private" />
             </relation>
           </item>
           <item id="d0819c8ac253481fbc70e56cc9870df9" cid="PROP023" type="property" name="Logo" style-class="" owner="02a6f46f37274392bad63f9b0a81560e" creator="" creation-date="01/30/2024 10:10:16" visibility="undefined">
