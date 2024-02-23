@@ -54,5 +54,86 @@ namespace CodeQr_Generateur
 
             module.RemplirMatrice(tableauFinal);
         }
+
+
+        private List<Groupe> FormerGroupes(string[] chaineOctects, ECLevel niveauCorrection, int version)
+        {
+            GroupBlockCodewordHelper infoGroupesBlocs = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
+            int currentIndex = 0;
+
+            //If 2 Groupes
+            //Creer 2 Groupes
+            //else
+            //Creer 1 seul groupe
+
+            if()
+
+            //Donné par le prof 
+            /*for (int i = 0; i < group.NbBlocksInGroup1; i++)
+            {
+                Bloc leBloc = new Bloc(codeWord.Substring(currentIndex, group.NbCodeWordsInGroup1Blocks));
+                group.NbCodeWordsInGroup1Blocks;
+            }
+            for (int i = 0; i < group.NbBlocksInGroup2; i++)
+            {
+
+            }*/
+        }
+
+        /// <summary>
+        /// Former un bloc 
+        /// </summary>
+        /// <param name="codeWord"></param>
+        /// <param name="Nbdata"></param>
+        /// <param name="ECcodeword"></param>
+        /// <returns>Le bloc encode</returns>
+        public int[] FormerBloc(string[] chaineOctects, ECLevel niveauCorrection, int version)
+        {
+
+            
+
+            string[] B1G1 = new string[group.NbCodeWordsInGroup1Blocks];
+
+            for (int i = 0; i < group.NbCodeWordsInGroup1Blocks; i++)
+            {
+
+                B1G1[i] = chaineOctects[i];
+            }
+
+            string[] B2G1 = new string[group.NbCodeWordsInGroup1Blocks];
+
+            for (int i = group.NbCodeWordsInGroup1Blocks; i < 2 * group.NbCodeWordsInGroup1Blocks; i++)
+            {
+
+                B2G1[i] = chaineOctects[i];
+            }
+
+
+
+
+
+
+            int nbTotalMotCode = group.TotalDataCodeWords;
+            int ECcodeword = group.HowManyCorrectionCodewords;
+
+            int[] bloc = new int[nbTotalMotCode + ECcodeword];
+
+
+            //Convertir en Décimal et mettre le mot de code dans un tableau
+            for (int i = 0; i < tblCW.Length; i++)
+            {
+                bloc[i] = Convert.ToInt32(tblCW[i], 2);
+            }
+
+            //Mettre les mots de codes d'erreurs
+            for (int i = 0; i < ECcodeword; i++)
+            {
+                bloc[i + nbTotalMotCode] = '0';
+            }
+
+            ReedSolomon(bloc, ECcodeword);
+
+            return bloc;
+        }
     }
 }

@@ -10,10 +10,17 @@ namespace CodeQr_Generateur
 {
     public class Bloc
     {
+        //Attributs
+        string _chaineEnBinaire;
+
         /// <summary>
         /// Constructeur
         /// </summary>
-        public Bloc() { }
+        public Bloc() 
+        {
+            string[] chaineOctects = _chaineEnBinaire.Split(' ');  
+            
+        }
 
         //Méthodes
         /// <summary>
@@ -37,28 +44,25 @@ namespace CodeQr_Generateur
         /// <param name="Nbdata"></param>
         /// <param name="ECcodeword"></param>
         /// <returns>Le bloc encode</returns>
-        public int[] FormerBloc(string codeWord,ECLevel niveauCorrection, int version)
+        public int[] FormerBloc(string[] tblCW, ECLevel niveauCorrection, int version)
         {
 
             GroupBlockCodewordHelper group = GroupBlockCodewordSplit.getVersionGroupBlockCodewordInfo(niveauCorrection, version);
             int currentIndex = 0;
 
             //Donné par le prof 
-            //for(int i=0;i<group.NbBlocksInGroup1;i++)
-            //{
-            //    Bloc leBloc = new Bloc(codeWord.Substring(currentIndex*8, group.NbCodeWordsInGroup1Blocks*8));
-            //    group.NbCodeWordsInGroup1Blocks;
-            //}
-            //for(int i=0;i<group.NbBlocksInGroup2;i++)
-            //{
+            for (int i = 0; i < group.NbBlocksInGroup1; i++)
+            {
+                Bloc leBloc = new Bloc(codeWord.Substring(currentIndex * 8, group.NbCodeWordsInGroup1Blocks * 8));
+                group.NbCodeWordsInGroup1Blocks;
+            }
+            for (int i = 0; i < group.NbBlocksInGroup2; i++)
+            {
 
-            //}
+            }
 
             int nbTotalMotCode = group.TotalDataCodeWords;
             int ECcodeword = group.HowManyCorrectionCodewords;
-
-
-            string[] tblCW = codeWord.Split(' ');
 
             int[] bloc = new int[nbTotalMotCode + ECcodeword];
 
