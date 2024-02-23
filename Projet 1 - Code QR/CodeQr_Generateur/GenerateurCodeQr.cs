@@ -19,8 +19,9 @@ namespace CodeQr_Generateur
         /// <param name="codeWord"></param>
         /// <param name="nbTotalMotCode"></param>
         /// <param name="ECcodeword"></param>
-        public void CreerCodeQR(string codeWord, int ECcodeword)
+        public void CreerCodeQR(string codeWord, int ECcodeword, ECLevel niveauCorrection, int version)
         {
+
             bool?[,] tableauFinal = new bool?[21, 21];
             bool?[,] tableauExemple = new bool?[21, 21];
             int masqueChoisi = 0;//Sera déterminé ultérieurement
@@ -29,7 +30,8 @@ namespace CodeQr_Generateur
             Bloc bloc = new Bloc();
             CodeQr codeQr = new CodeQr();
 
-            int[] message = bloc.FormerBloc(codeWord, ECcodeword);
+         
+            int[] message = bloc.FormerBloc(codeWord,niveauCorrection, version);
 
             tableauFinal = module.AjouterModelesDeRecherche(tableauFinal);
             tableauFinal = module.AjouterSeparateurs(tableauFinal);

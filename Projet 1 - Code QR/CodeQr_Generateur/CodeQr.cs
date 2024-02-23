@@ -7,13 +7,69 @@ using System.Threading.Tasks;
 
 namespace CodeQr_Generateur
 {
-    
+
     public class CodeQr
     {
+
         /// <summary>
         /// Constructeur
         /// </summary>
-        public CodeQr() { }
+        public CodeQr()
+        {
+
+
+        }
+
+        /// <summary>
+        /// Choisir le mode d'encodage en analysant la chaine de début
+        /// </summary>
+        /// <param name="ChaineDebut"></param>
+        /// <returns></returns>
+        public ChEncoding ChoisirLeMode(string ChaineDebut)
+        {
+            bool testNumerique = false;
+            bool testAlphaNumerique = false;
+            bool testByte = false;
+            bool testKanji = false;
+
+            int valeurNumerique = 0;
+            List<char> lettre = new List<char> {'0','1','2','3','4','5','6','7','8', '9','A','B','C','D','E',
+                                                'F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T',
+                                                'U','V','W','X','Y','Z',' ','$','%','*','+','-','.','/',':'};
+
+            //Si la chaîne d'entrée se compose uniquement de chiffres décimaux (0 à 9), utilisez le mode numérique .
+            testNumerique = int.TryParse(ChaineDebut, out valeurNumerique);
+            /*Si le mode numérique n'est pas applicable et si tous les caractères de la chaîne d'entrée se trouvent
+            *dans la colonne de gauche du tableau alphanumérique , utilisez le mode alphanumérique
+            */
+
+            foreach (char c in ChaineDebut)
+            {
+                if (!lettre.Contains(c))
+                {
+                    testAlphaNumerique = false;
+                    break;
+                }
+                else
+                    testAlphaNumerique = true;
+            }
+
+            //valeur de retour
+            if (testNumerique)
+                return ChEncoding.Num;
+            else if (testAlphaNumerique)
+                return ChEncoding.AlphaNum;
+            else if (!testAlphaNumerique)
+                return ChEncoding.Byte;
+            else if (testKanji)      //la valeur de "testKanji" est à réevaluer
+                return ChEncoding.Kanji;
+
+
+            return ChEncoding.AlphaNum; //valeur de retour par défaut !
+        }
+
+
+
         //Méthodes
         /// <summary>
         /// Regroupeent des fonctions de la calsse pour former le codeword
@@ -22,19 +78,19 @@ namespace CodeQr_Generateur
         /// <param name="mode"></param>
         /// <param name="nbTotalMotCode"></param>
         /// <returns>Codeword prêt à être placé</returns>
-        public string PreparationCW(string ChaineDebut, ChEncoding mode, ECLevel niveauCorrection)
+        public string PreparationCW(string ChaineDebut, ChEncoding mode, ECLevel niveauCorrection, out int version)
         {
 
 
-           int  version =  TrouverVersion(ChaineDebut, mode, niveauCorrection);
+            version = TrouverVersion(ChaineDebut, mode, niveauCorrection);
 
-            string indicateurMode = TrouverIndicateurMode(ChaineDebut,mode);
+            string indicateurMode = TrouverIndicateurMode(ChaineDebut, mode);
             string ChaineDonneEncode = indicateurMode;
 
-            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut,mode, version);
+            string indicateurNbCaractere = TrouverIndicateurNbCaract(ChaineDebut, mode, version);
             ChaineDonneEncode = ChaineDonneEncode + " " + indicateurNbCaractere;
 
-            string donneEnBits = CodageAlphanum(ChaineDebut);
+            string donneEnBits = EncoderSelonLeMode(mode, ChaineDebut, version);
             ChaineDonneEncode = ChaineDonneEncode + donneEnBits;
             string Trim = ChaineDonneEncode.Replace(" ", String.Empty);
 
@@ -61,14 +117,14 @@ namespace CodeQr_Generateur
                     break;
 
                 case ChEncoding.AlphaNum:
-                    indicateurMode += "0010"; 
+                    indicateurMode += "0010";
                     break;
 
                 case ChEncoding.Byte:
-                    indicateurMode += "0100"; 
+                    indicateurMode += "0100";
                     break;
                 case ChEncoding.Kanji:
-                    indicateurMode += "1000"; 
+                    indicateurMode += "1000";
                     break;
 
 
@@ -82,11 +138,11 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChainDebut"></param>
         /// <returns>La version</returns>
-        public int TrouverVersion(string ChainDebut,ChEncoding mode, ECLevel niveauCorrection)
+        public int TrouverVersion(string ChainDebut, ChEncoding mode, ECLevel niveauCorrection)
         {
-            
+
             int version = QRVersionHelper.GetQRVersionFromInput(ChainDebut, niveauCorrection, mode);
-           
+
             return version;
         }
 
@@ -95,18 +151,19 @@ namespace CodeQr_Generateur
         /// </summary>
         /// <param name="ChaineDebut"></param>
         /// <returnsL'indicateur nb de caracteres></returns>
-        public string TrouverIndicateurNbCaract(string ChaineDebut,ChEncoding mode,int version)
+        public string TrouverIndicateurNbCaract(string ChaineDebut, ChEncoding mode, int version)
         {
-           
-            int bitsNecessaire = nbCaractByMode.GetNbCaract(mode,version);
+
+            int bitsNecessaire = nbCaractByMode.GetNbCaract(mode, version);
+
             //Mettre nb caractère en binaire 
             int Binaire = int.Parse(Convert.ToString(ChaineDebut.Length, 2));
 
             int Bits = Binaire.ToString().Length;
             int NbCaractere = 0;
-            int longueurBinaire = Bits;//Savoir la longueur de l'indicateur
+            int longueurBinaire = Bits;
 
-            if (longueurBinaire < bitsNecessaire)//Savoir si la longueur de l'indicateur est 9 bits de long 
+            if (longueurBinaire < bitsNecessaire)
             {
                 Bits = bitsNecessaire - longueurBinaire;
                 NbCaractere = Binaire.ToString("D").Length + Bits;
@@ -118,76 +175,34 @@ namespace CodeQr_Generateur
         }
 
         /// <summary>
-        /// Mettre données en bits selon le mode
+        /// Encode la chaine selon le mode d'encodage
         /// </summary>
-        /// <param name="ChaineDebut"></param>
-        /// <returns>DOnnées en bits</returns>
-        public string CodageAlphanum(string ChaineDebut)
+        /// <param name="modeSelectionne"></param>
+        /// <param name="chaineDebut"></param>
+        /// <param name="version"></param>
+        /// <returns></returns>
+        public string EncoderSelonLeMode(ChEncoding modeSelectionne, string chaineDebut, int version)
         {
-            string CaractereEncode = "";
-            string binaire = "";
-            string indicateurCaractere = "";
-            int valeurNumerique = 0;
+            string chaineEncodee = "";
 
-            List<string> lettre = new List<string> { "H", "E", "L", "O", " ", "W", "R", "D" };
-            List<string> chiffre = new List<string> { "17", "14", "21", "24", "36", "32", "27", "13" };
-
-            List<List<string>> alphaNumValue = new List<List<string>>();
-            List<string> caractereEnBinaire = new List<string>();
-
-            //Créer une liste avec les valeurs alphanumerique
-            for (int i = 0; i < 8; i++)
+            switch (modeSelectionne)
             {
-                List<string> value = new List<string>();
-                value.Add(lettre[i]);
-                value.Add(chiffre[i]);
-                alphaNumValue.Add(value);
-            }
-
-            // Conversion en binaire
-            foreach (char c in ChaineDebut)
-            {
-                // Recherche de la correspondance dans la liste alphaNumValue
-                var matchingItem = alphaNumValue.FirstOrDefault(item => item.Contains(c.ToString()));
-
-                // Si une correspondance est trouvée, ajoutez la représentation binaire
-                if (matchingItem != null)
-                {
-                    caractereEnBinaire.Add(matchingItem[1]);
-                }
-
-            }
-
-
-            //Formule pour mettre en binaire
-            for (int i = 0; i < caractereEnBinaire.Count; i += 2)
-            {
-                //Si le caractère est seul
-                if (i == caractereEnBinaire.Count - 1)
-                {
-                    valeurNumerique = int.Parse(caractereEnBinaire[i]);
-                }
-                else
-                {
-                    valeurNumerique = int.Parse(caractereEnBinaire[i]) * 45 + int.Parse(caractereEnBinaire[i + 1]);
-                }
-
-                //Regarder si fini sur un caractère seul
-                int longueurPadding = (i == caractereEnBinaire.Count - 1) ? 6 : 11;
-
-                binaire = Convert.ToString(valeurNumerique, 2).PadLeft(longueurPadding, '0');
-
-                CaractereEncode = CaractereEncode + " " + binaire;
-
-                //Break la boucle si c'Est le dernier caractère
-                if (i == caractereEnBinaire.Count - 1)
-                {
+                case ChEncoding.Num:
+                    chaineEncodee = Encodage.CodageNumerique(chaineDebut);
                     break;
-                }
+                case ChEncoding.AlphaNum:
+                    chaineEncodee = Encodage.CodageAlphaNum(chaineDebut);
+                    break;
+                case ChEncoding.Byte:
+                    chaineEncodee = Encodage.CodageByte(chaineDebut);
+                    break;
+                case ChEncoding.Kanji:
+                    chaineEncodee = Encodage.CodageKanji(chaineDebut);
+                    break;
             }
-
-            return CaractereEncode;
+            return chaineEncodee;
         }
+
 
         /// <summary>
         /// Ajoute des octets de pad
@@ -201,7 +216,6 @@ namespace CodeQr_Generateur
 
             string result = "";
 
-            //Sachant que c'est la verison 1 avec un code d'erreur de Q
             int nbBitsRequis = nbTotalMotCode * 8;
 
             //Terminateur
@@ -222,12 +236,12 @@ namespace CodeQr_Generateur
                     ChaineDebut += '0';
                 }
             }
+            string DonneCodeMultiple = ChaineDebut;
 
             //Ajout d'octets de pad
             if (ChaineDebut.Length % 8 != 0)
             {
 
-                string DonneCodeMultiple = ChaineDebut;
                 int remainder = ChaineDebut.Length % 8;
 
                 if (remainder != 0)
@@ -235,28 +249,28 @@ namespace CodeQr_Generateur
                     DonneCodeMultiple += new string('0', 8 - remainder);
                 }
 
-                do
+
+            }
+            do
+            {
+
+                DonneCodeMultiple += "11101100";
+
+                if (DonneCodeMultiple.Length != nbBitsRequis)
                 {
-
-                    DonneCodeMultiple += "11101100";
-
-                    if (DonneCodeMultiple.Length != nbBitsRequis)
-                    {
-                        DonneCodeMultiple += "00010001";
-                    }
-
-
+                    DonneCodeMultiple += "00010001";
                 }
-                while (DonneCodeMultiple.Length != nbBitsRequis);
-
-                //Mettre des espaces après chaque 8bits
-                for (int i = 0; i < DonneCodeMultiple.Length; i += 8)
-                {
-
-                    result += DonneCodeMultiple.Substring(i, Math.Min(8, DonneCodeMultiple.Length - i)) + " ";
 
 
-                }
+            }
+            while (DonneCodeMultiple.Length != nbBitsRequis);
+
+            //Mettre des espaces après chaque 8bits
+            for (int i = 0; i < DonneCodeMultiple.Length; i += 8)
+            {
+
+                result += DonneCodeMultiple.Substring(i, Math.Min(8, DonneCodeMultiple.Length - i)) + " ";
+
 
             }
 

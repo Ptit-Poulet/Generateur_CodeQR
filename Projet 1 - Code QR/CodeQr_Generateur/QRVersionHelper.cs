@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 namespace CodeQr_Generateur
 {
 
-    internal struct QRVersionHelper
+    static internal class QRVersionHelper
     {
-        
-        public QRVersionHelper()
-        {
-
-        }
-
 
        static  Dictionary<ECLevel, Dictionary<ChEncoding, List<int>>> VersionByECAndCharType = new Dictionary<ECLevel, Dictionary<ChEncoding, List<int>>>()
         {
@@ -43,7 +37,7 @@ namespace CodeQr_Generateur
                 {ChEncoding.Kanji, new List<int>(40) { 7,12,20,28,37,45,53,66,80,93,109,125,149,159,180,198,224,243,272,297,314,348,376,407,440,462,496,534,559,604,634,684,719,756,790,832,876,923,972,1024} }
             } },
 
-          {ECLevel.Q, new Dictionary<ChEncoding, List<int>>()
+          {ECLevel.H, new Dictionary<ChEncoding, List<int>>()
             {
                 {ChEncoding.Num, new List<int>(40) { 17,34,58,82,106,139,154,202,235,288,331,374,427,468,530,602,674,746,813,919,969,1056,1108,1228,1286,1425,1501,1581,1677,1782,1897,2022,2157,2301,2361,2524,2625,2735,2927,3057} },
                 {ChEncoding.AlphaNum, new List<int>(40) { 10,20,35,50,64,84,93,122,143,174,200,227,259,283,321,365,408,452,493,557,587,640,672,744,779,864,910,958,1016,1080,1150,1226,1307,1394,1431,1530,1591,1658,1774,1852} },
