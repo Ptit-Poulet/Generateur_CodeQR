@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {}
+    "C:\\Users\\Utilisateur\\Downloads\\Projet 2\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {}
   },
   "projects": {
-    "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {
+    "C:\\Users\\Utilisateur\\Downloads\\Projet 2\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
+        "projectUniqueName": "C:\\Users\\Utilisateur\\Downloads\\Projet 2\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
         "projectName": "CodeQr_Generateur",
-        "projectPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
-        "packagesPath": "C:\\Users\\2230912\\.nuget\\packages\\",
-        "outputPath": "P:\\session 4\\Dev d'App\\Generateur_CodeQR\\Generateur_CodeQR\\Projet 1 - Code QR\\CodeQr_Generateur\\obj\\",
+        "projectPath": "C:\\Users\\Utilisateur\\Downloads\\Projet 2\\Projet 1 - Code QR\\CodeQr_Generateur\\CodeQr_Generateur.csproj",
+        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Utilisateur\\Downloads\\Projet 2\\Projet 1 - Code QR\\CodeQr_Generateur\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2230912\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

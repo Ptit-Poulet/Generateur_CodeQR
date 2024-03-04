@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CodeQr_Generateur": {
+      "commandName": "Project",
+      "commandLineArgs": "\"HELLO WORLD\" Q\r\n"
+    }
+  }
+}
