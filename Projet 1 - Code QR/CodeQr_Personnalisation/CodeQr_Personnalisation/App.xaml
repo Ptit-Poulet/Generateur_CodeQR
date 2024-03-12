@@ -1,0 +1,10 @@
+﻿<Application x:Class="CodeQr_Personnalisation.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CodeQr_Personnalisation"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             StartupUri="View/VueGeneration.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

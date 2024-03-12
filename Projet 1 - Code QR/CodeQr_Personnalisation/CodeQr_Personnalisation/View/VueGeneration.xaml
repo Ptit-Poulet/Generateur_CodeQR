@@ -1,0 +1,52 @@
+﻿<Window x:Class="CodeQr_Personnalisation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeQr_Personnalisation"
+        mc:Ignorable="d"
+        Title="Génération Code Qr" Height="450" Width="800">
+    <Grid Background="LightSlateGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--region renter les inputs-->
+        <Grid Grid.Column="0" Margin="15 10 0 10" Background="LightSteelBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Entrez le Text:"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
+            <TextBox Grid.Row="1"  Margin="15"
+                       GotFocus="TextBox_SelectionContenu"></TextBox>
+            
+
+            <Label Grid.Row="2" Content="Niveau de Correction d'Erreur"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
+            <ComboBox Grid.Row="3" Margin="15">
+
+            </ComboBox>
+
+            <Button Grid.Row=" 4" Margin="15" Content="Personnaliser Le Code Qr"  FontSize="20"
+                    Click="Click_PersonnaliserCodeQR"/>
+
+
+        </Grid>
+
+        <!--region generation code qr-->
+        <Grid Grid.Column="1" Margin="0 10 15 10" Background="LightSteelBlue">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" x:Name="img_CodeQr"></Image>
+            <Label Grid.Row="1" Content="Seulement un Aperçu, ne pas Scanner" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="LightGray"></Label>
+        </Grid>
+    </Grid>
+</Window>

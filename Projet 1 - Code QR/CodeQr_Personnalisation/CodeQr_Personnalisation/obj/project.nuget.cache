@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3KAeC3/Gma27iAeE/PZjE92XTQSRk6tpi21wA1Yo0LqaUCcZgyrzBdAiMydrR++MQYCkI/RwW8ifMbauJ4n5TQ==",
+  "success": true,
+  "projectFilePath": "P:\\session 4\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\2230912\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
+    "C:\\Users\\2230912\\.nuget\\packages\\extended.wpf.toolkit\\4.6.0\\extended.wpf.toolkit.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

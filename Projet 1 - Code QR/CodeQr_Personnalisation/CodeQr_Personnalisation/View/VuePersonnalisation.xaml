@@ -1,0 +1,118 @@
+﻿<Window x:Class="CodeQr_Personnalisation.View.PersonnalisationCodeQr"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:CodeQr_Personnalisation.View"
+        mc:Ignorable="d"
+        Title="Personnalisation Code Qr" Height="450" Width="800">
+    <Grid Background="LightSlateGray">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <!--region personnalisation modulet et logo-->
+        <Grid Grid.Row="0" Background="LightSteelBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Content="Modification des modules" FontSize="15"></Label>
+                <TextBox Grid.Row="1" Margin="5" 
+                         GotFocus="TextBox_SelectionContenu"></TextBox>
+                <Label Grid.Row="2" Content="Ajout d'un Logo" FontSize="15"></Label>
+                <TextBox Grid.Row="3" Margin="5"
+                         GotFocus="TextBox_SelectionContenu"></TextBox>
+
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Height="50" Width="100" FontSize="15" HorizontalAlignment="center" 
+                    Content="Rechercher..."/>
+                <Button Grid.Row="1" Height="50" Width="100" FontSize="15" HorizontalAlignment="center" 
+                    Content="Rechercher..."/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <GroupBox Header="Aperçu des Modules" HorizontalAlignment="center" >
+                    <Image></Image>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="3">
+                <GroupBox Header="Aperçu du Logo" HorizontalAlignment="center" >
+                    <Image></Image>
+
+                </GroupBox>
+
+            </Grid>
+        </Grid>
+        
+        <!--region couleur background et reference markers-->
+        <Grid Grid.Row="1" Background="LightSteelBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Grid.Column="0" Header="Personnalisation des couleurs" FontSize="15" Margin="30">
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0"  Content="Background" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+                        <Label Grid.Row="1"  Content="Marker de référence" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Width="75"></TextBlock>
+                        <TextBlock Grid.Row="1" Width="75"></TextBlock>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Header="Aperçu ( Pas le Code Qr Fonctionnel, ne pas Scanner)" FontSize="15" Margin="10">
+            </GroupBox>
+
+        </Grid>
+        
+        <!--region boutons-->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0.30*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Height="50" Width="150" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                    Content="Ok" Click="Click_Enregistrer"/>
+            
+            <Button Grid.Column="1" Height="50" Width="150" FontSize="20" HorizontalAlignment="Right" Margin="10"
+                    Content="Annuler"
+                    Click="Click_Annnuler"/>
+        </Grid>
+    </Grid>
+</Window>
