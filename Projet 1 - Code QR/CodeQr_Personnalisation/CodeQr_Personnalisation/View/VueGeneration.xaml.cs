@@ -76,10 +76,10 @@ namespace CodeQr_Personnalisation
         private void Click_AfficherImage(object sender, RoutedEventArgs e)
         {
             string path = Environment.CurrentDirectory + "\\QRGen\\CodeQr_Generateur.exe";
-            
 
-            string args = ChaineDebut.Text + " " + comboBox_EcLevel.SelectedItem;
 
+            string args = "\"" + ChaineDebut.Text + "\""+  " " + comboBox_EcLevel.SelectedItem.ToString();
+           
             //avant de lancer le processus, on vérifie si un ancien fichier existe déja et dans ce cas on le supprime d'abord:
             string pathImage = Environment.CurrentDirectory + "\\output.png";
             if (File.Exists(pathImage))
@@ -96,8 +96,11 @@ namespace CodeQr_Personnalisation
             //TxtResult.Text = proc.ExitCode.ToString();
 
             //charger l'image et l'afficher
-            var uriSouirce = new Uri(pathImage, UriKind.Absolute);
-               img_CodeQr.Source = new BitmapImage(uriSouirce);
+            var uriSource = new Uri(pathImage, UriKind.Absolute);
+            if(ChaineDebut.Text != "") //ECLevel défaut à Q
+            {
+               img_CodeQr.Source = new BitmapImage(uriSource);
+            }
 
              img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
         }

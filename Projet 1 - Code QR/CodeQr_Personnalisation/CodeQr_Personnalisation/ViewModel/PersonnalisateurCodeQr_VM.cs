@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Windows.Input;
 
 namespace CodeQr_Personnalisation.ViewModel
 {
-    internal class PersonnalisateurCodeQr_VM
+    internal class PersonnalisateurCodeQr_VM : ObservableObject
     {
         public bool EstAnnule { get; set; }
 
@@ -19,6 +20,35 @@ namespace CodeQr_Personnalisation.ViewModel
         {
             Enregistrer = new RelayCommand(Enregistrer_Execute);
             Annuler = new RelayCommand(Annuler_Execute);
+        }
+        public enum SKColor
+        {
+            red = 'r',
+            blue = 'b',
+            green = 'g',
+            orange = 'o'
+        }
+
+        private List<SKColor> _listeSKColor = new List<SKColor> { SKColor.red, SKColor.blue, SKColor.green, SKColor.orange };
+
+        public List<SKColor> ListeSKColor
+        {
+            get { return _listeSKColor; }
+            set
+            {
+                OnPropertyChanged(nameof(ListeSKColor));
+            }
+        }
+
+        private SKColor _SKColorSelectionne;
+        public SKColor SKColorSelectionne
+        {
+            get { return _SKColorSelectionne; }
+            set
+            {
+                _SKColorSelectionne = value;
+                OnPropertyChanged(nameof(SKColorSelectionne));
+            }
         }
         public ICommand Enregistrer { get; }
         /// <summary>

@@ -84,7 +84,9 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Width="75"></TextBlock>
-                        <ComboBox  x:Name="comboBox_MarkerReference"  Grid.Row="1" Width="100"></ComboBox>
+                        <ComboBox  x:Name="comboBox_MarkerReference"  Grid.Row="1" Width="100"
+                                   ItemsSource="{Binding ListeSKColor}"
+                                   SelectedItem="{Binding SKColorSelectionne, Mode=OneWayToSource}"></ComboBox>
                     </Grid>
                 </Grid>
             </GroupBox>

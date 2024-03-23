@@ -168,11 +168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilisateur\\Downloads\\Dev_dApp\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
+      "projectUniqueName": "C:\\Users\\Utilisateur\\Downloads\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
       "projectName": "CodeQr_Personnalisation",
-      "projectPath": "C:\\Users\\Utilisateur\\Downloads\\Dev_dApp\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
+      "projectPath": "C:\\Users\\Utilisateur\\Downloads\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
       "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilisateur\\Downloads\\Dev_dApp\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\obj\\",
+      "outputPath": "C:\\Users\\Utilisateur\\Downloads\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

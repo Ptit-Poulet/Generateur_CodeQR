@@ -24,12 +24,14 @@ namespace CodeQr_Personnalisation.View
     {
         public VueEnregistrement()
         {
-            InitializeComponent();
             DataContext = new Enregistrement_VM();
 
-            string pathImage = "C:\\Users\\2130331\\Downloads\\Projet 1 - Code QR 4\\Projet 1 - Code QR\\CodeQr_Generateur\\bin\\output.png";
-            var uriSouirce = new Uri(pathImage, UriKind.Absolute);
-            img_CodeQr.Source = new BitmapImage(uriSouirce);
+
+            //string pathImage = "C:\\Users\\2130331\\Downloads\\Projet 1 - Code QR 4\\Projet 1 - Code QR\\CodeQr_Generateur\\bin\\output.png";
+            string pathImage = Environment.CurrentDirectory + "\\output.png";
+
+            var uriSource = new Uri(pathImage, UriKind.Absolute);
+            img_CodeQr.Source = new BitmapImage(uriSource);
 
             img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
         }

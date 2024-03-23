@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LptxOdzIenvyMHPL+8UkmhUv1mCjRySrcDar1b2rxsZlPDER4nXoBHiIsoC1n7/jN+JkVWd0DzZOYdxuNr7QKA==",
+  "dgSpecHash": "079LxvSecSh9gFi1sdTDD7Fri9YKy/0tMjfQO8PNLgKrhK/VS7wxPTt1SAa+aLjDCWVl2ZKeSP490bMduMVnIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Utilisateur\\Downloads\\Dev_dApp\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
+  "projectFilePath": "C:\\Users\\Utilisateur\\Downloads\\Dev d'App\\Projet 1 - Code QR\\CodeQr_Personnalisation\\CodeQr_Personnalisation\\CodeQr_Personnalisation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Utilisateur\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\Utilisateur\\.nuget\\packages\\extended.wpf.toolkit\\4.6.0\\extended.wpf.toolkit.4.6.0.nupkg.sha512"
