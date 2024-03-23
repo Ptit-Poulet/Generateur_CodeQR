@@ -40,3 +40,221 @@ P:\session 4\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personn
 P:\session 4\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
 P:\session 4\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 P:\session 4\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.exe
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.deps.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.runtimeconfig.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfo.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CoreCompileInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CopyComplete
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\refint\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 6\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.exe
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.deps.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.runtimeconfig.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfo.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CoreCompileInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CopyComplete
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\refint\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR_exe\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.exe
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.deps.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.runtimeconfig.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfo.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CoreCompileInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CopyComplete
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\refint\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 4\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.exe
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.deps.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.runtimeconfig.json
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfo.cs
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CoreCompileInputs.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CopyComplete
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\refint\CodeQr_Personnalisation.dll
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
+C:\Users\2130331\Downloads\Projet 1 - Code QR 5\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.exe
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.deps.json
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.runtimeconfig.json
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.g.cs
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.baml
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfo.cs
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CoreCompileInputs.cache
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.CopyComplete
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\refint\CodeQr_Personnalisation.dll
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
+C:\Users\Utilisateur\Downloads\Dev_dApp\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll

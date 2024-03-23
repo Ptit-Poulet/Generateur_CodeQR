@@ -20,7 +20,6 @@
                 <ColumnDefinition Width="2.5*"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
@@ -30,36 +29,30 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content="Modification des modules" FontSize="15"></Label>
-                <TextBox Grid.Row="1" Margin="5" 
+                <Label Grid.Row="0" Grid.Column="0" Content="Modifier les modules" FontSize="15"></Label>
+                <Button x:Name="ButtonModule" Grid.Row="0" Grid.Column="1" Height="40" Width="100" FontSize="15"
+                        HorizontalAlignment="center" Content="Rechercher..." Margin="90,0,0,0"
+                        Click="ClickExplorateur_Module"/>
+                <TextBox x:Name="pathModule" Grid.Row="1" Margin="5" 
                          GotFocus="TextBox_SelectionContenu"></TextBox>
-                <Label Grid.Row="2" Content="Ajout d'un Logo" FontSize="15"></Label>
-                <TextBox Grid.Row="3" Margin="5"
+                <Label Grid.Row="2" Grid.Column="0" Content="Ajout d'un Logo" FontSize="15"></Label>
+                <Button  x:Name="ButtonLogo" Grid.Row="2" Grid.Column="1" Height="40" Width="100" FontSize="15"
+                    HorizontalAlignment="center" Margin="90,0,0,0"
+                    Content="Rechercher..." Click="ClickExplorateur_Logo"/>
+                <TextBox x:Name="pathLogo" Grid.Row="3" Margin="5"
                          GotFocus="TextBox_SelectionContenu"></TextBox>
 
             </Grid>
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Button Grid.Row="0" Height="50" Width="100" FontSize="15" HorizontalAlignment="center" 
-                    Content="Rechercher..."/>
-                <Button Grid.Row="1" Height="50" Width="100" FontSize="15" HorizontalAlignment="center" 
-                    Content="Rechercher..."/>
-            </Grid>
-            <Grid Grid.Column="2">
-                <GroupBox Header="Aperçu des Modules" HorizontalAlignment="center" >
-                    <Image></Image>
-                </GroupBox>
-            </Grid>
-            <Grid Grid.Column="3">
-                <GroupBox Header="Aperçu du Logo" HorizontalAlignment="center" >
-                    <Image></Image>
 
-                </GroupBox>
+            <GroupBox Grid.Column="1" Header="Aperçu des Modules" HorizontalAlignment="center" >
+                <Image Grid.Column="1" x:Name="img_Module" Margin="20"/>
+            </GroupBox>
+            
+            <GroupBox Grid.Column="2" Header="Aperçu du Logo" HorizontalAlignment="center" >
+                <Image Grid.Column="1" x:Name="img_Logo" Margin="20"/>
+            </GroupBox>
 
-            </Grid>
+
         </Grid>
         
         <!--region couleur background et reference markers-->
@@ -97,6 +90,11 @@
             </GroupBox>
 
             <GroupBox Grid.Column="1" Header="Aperçu ( Pas le Code Qr Fonctionnel, ne pas Scanner)" FontSize="15" Margin="10">
+                <Border Grid.Row="0" Background="Red">
+                    <Image  x:Name="img_CodeQr" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+                </Border>
+                
+                     
             </GroupBox>
 
         </Grid>
@@ -108,7 +106,7 @@
                 <ColumnDefinition Width="0.30*"/>
             </Grid.ColumnDefinitions>
             <Button Grid.Column="0" Height="50" Width="150" FontSize="20" HorizontalAlignment="Right" Margin="10"
-                    Content="Ok" Click="Click_Enregistrer"/>
+                    Content="Ok" Click="Click_Visualisation"/>
             
             <Button Grid.Column="1" Height="50" Width="150" FontSize="20" HorizontalAlignment="Right" Margin="10"
                     Content="Annuler"

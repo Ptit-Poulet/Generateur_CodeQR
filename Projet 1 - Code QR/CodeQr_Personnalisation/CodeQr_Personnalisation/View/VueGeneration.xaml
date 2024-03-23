@@ -19,34 +19,51 @@
                 <RowDefinition Height="1.5*"/>
                 <RowDefinition/>
                 <RowDefinition Height="1.5*"/>
-                <RowDefinition/>
             </Grid.RowDefinitions>
-
-            <Label Grid.Row="0" Content="Entrez le Text:"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
-            <TextBox Grid.Row="1"  Margin="15"
-                       GotFocus="TextBox_SelectionContenu"></TextBox>
             
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="2" Content="Niveau de Correction d'Erreur"  FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom"></Label>
-            <ComboBox Grid.Row="3" Margin="15">
+                <Label Grid.Column="0" Content="Entrez le Texte:"  FontSize="20"
+                       HorizontalAlignment="Center"  VerticalAlignment="Center"></Label>
+                <TextBox x:Name="ChaineDebut" Grid.Column="1"  Height="60" Margin="0,0,10,0"
+                       GotFocus="TextBox_SelectionContenu"></TextBox>
+            </Grid>
 
-            </ComboBox>
 
-            <Button Grid.Row=" 4" Margin="15" Content="Personnaliser Le Code Qr"  FontSize="20"
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Niveau de Correction d'Erreur:" 
+                   FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+                <ComboBox x:Name="comboBox_EcLevel" Grid.Column="1" Width="100" Height="50"
+                      HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Padding="10"
+                      ItemsSource="{Binding ListeEClevel}"
+                      SelectedItem="{Binding EcLevelSelectionne, Mode=OneWayToSource}">
+                </ComboBox>
+
+            </Grid>
+
+            <Button Grid.Row="2"  Content="Afficher l'image"  FontSize="20"
+                    Width="250"
+                    Click="Click_AfficherImage"/>
+
+            <Button Grid.Row="3" Margin="15" Content="Personnaliser Le Code Qr"  FontSize="20"
+                    Width="250"
                     Click="Click_PersonnaliserCodeQR"/>
 
 
         </Grid>
 
         <!--region generation code qr-->
-        <Grid Grid.Column="1" Margin="0 10 15 10" Background="LightSteelBlue">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="3*"/>
-                <RowDefinition />
-            </Grid.RowDefinitions>
-
-            <Image Grid.Row="0" x:Name="img_CodeQr"></Image>
-            <Label Grid.Row="1" Content="Seulement un Aperçu, ne pas Scanner" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="LightGray"></Label>
-        </Grid>
+        <Image Grid.Column="1" x:Name="img_CodeQr" Margin="20"
+               RenderOptions.BitmapScalingMode="NearestNeighbor"/>
     </Grid>
 </Window>

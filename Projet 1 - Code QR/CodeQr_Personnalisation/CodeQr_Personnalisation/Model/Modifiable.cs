@@ -8,5 +8,6 @@ namespace CodeQr_Personnalisation.Model
 {
     internal class Modifiable
     {
+
     }
 }
