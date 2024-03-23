@@ -84,7 +84,7 @@
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Width="75"></TextBlock>
-                        <TextBlock Grid.Row="1" Width="75"></TextBlock>
+                        <ComboBox  x:Name="comboBox_MarkerReference"  Grid.Row="1" Width="100"></ComboBox>
                     </Grid>
                 </Grid>
             </GroupBox>

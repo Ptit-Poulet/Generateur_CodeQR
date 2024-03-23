@@ -80,7 +80,7 @@ namespace CodeQr_Personnalisation
 
             string args = ChaineDebut.Text + " " + comboBox_EcLevel.SelectedItem;
 
-            //avant de lancer le processus, on vérifie si un ancien fichier existe déja et dans ce s on le supprime d'abord:
+            //avant de lancer le processus, on vérifie si un ancien fichier existe déja et dans ce cas on le supprime d'abord:
             string pathImage = Environment.CurrentDirectory + "\\output.png";
             if (File.Exists(pathImage))
             {
