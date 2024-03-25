@@ -16,6 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Reflection;
 using Microsoft.Win32;
+using System.Diagnostics;
 
 namespace CodeQr_Personnalisation.View
 {
@@ -40,13 +41,58 @@ namespace CodeQr_Personnalisation.View
         }
         private void Click_Visualisation(object sender, RoutedEventArgs e)
         {
-            Enregistrement_VM enregistrement_VM = new Enregistrement_VM();
-            VueEnregistrement vueEnregistrement = new VueEnregistrement();  
-            vueEnregistrement.Owner = this; 
-            vueEnregistrement.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            //Enregistrement_VM enregistrement_VM = new Enregistrement_VM();
+            //VueEnregistrement vueEnregistrement = new VueEnregistrement();  
+            //vueEnregistrement.Owner = this; 
+            //vueEnregistrement.WindowStartupLocation = WindowStartupLocation.CenterScreen;
 
-            vueEnregistrement.DataContext = enregistrement_VM;
-            vueEnregistrement.ShowDialog();
+            //vueEnregistrement.DataContext = enregistrement_VM;
+            //vueEnregistrement.ShowDialog();
+
+            PersonnalisateurCodeQr_VM personnalisateurCodeQr_VM = new PersonnalisateurCodeQr_VM();
+            GenerateurCodeQr_VM generateurCodeQr_VM = new GenerateurCodeQr_VM();
+            MainWindow vueGeneration = new MainWindow();
+
+
+            //à faire tout de suite:
+
+            //string paramColor = personnalisateurCodeQr_VM.ColorSelectionne;
+            string paramColor = (string)comboBox_MarkerReference.SelectedItem;
+
+
+            string path = Environment.CurrentDirectory + "\\QRGen\\CodeQr_Generateur.exe";
+
+
+            string a1 = vueGeneration.ChaineDebut.Text;
+            string a2 = vueGeneration.comboBox_EcLevel.SelectedItem.ToString();
+
+
+            //string args = "\"" + vueGeneration.ChaineDebut.Text + "\"" + " " + vueGeneration.comboBox_EcLevel.SelectedItem.ToString();
+            string args = vueGeneration.ChaineDebut.Text + vueGeneration.comboBox_EcLevel.SelectedItem.ToString() + paramColor;
+
+            //avant de lancer le processus, on vérifie si un ancien fichier existe déja et dans ce cas on le supprime d'abord:
+            string pathImage = Environment.CurrentDirectory + "\\output.png";
+            if (System.IO.File.Exists(pathImage))
+            {
+                System.IO.File.Delete(pathImage);
+            }
+
+            ProcessStartInfo startInfo = new ProcessStartInfo(path, args);
+            startInfo.UseShellExecute = false;
+            Process proc = System.Diagnostics.Process.Start(startInfo);
+            proc.WaitForExit();
+
+
+            //TxtResult.Text = proc.ExitCode.ToString();
+
+            //charger l'image et l'afficher
+            var uriSource = new Uri(pathImage, UriKind.Absolute);
+            if (vueGeneration.ChaineDebut.Text != "")
+            {
+                img_CodeQr.Source = new BitmapImage(uriSource);
+            }
+
+            img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
         }
 
         private void Click_PersonnaliserCodeQR(object sender, RoutedEventArgs e)

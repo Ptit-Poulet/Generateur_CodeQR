@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\App.xaml
-372678333
+3709142772
 
-12-658268700
+12-1894655177
 20025593044
-View\VueEnregistrement.xaml;View\VueGeneration.xaml;View\VuePersonnalisation.xaml;
+Model\View\VueEnregistrement.xaml;Model\View\VueGeneration.xaml;Model\View\VuePersonnalisation.xaml;
 
 False
 

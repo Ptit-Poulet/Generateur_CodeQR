@@ -282,15 +282,9 @@ C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisat
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.csproj.AssemblyReference.cache
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.g.cs
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.g.cs
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.g.cs
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.cache
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation_MarkupCompile.lref
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueEnregistrement.baml
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VueGeneration.baml
-C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\View\VuePersonnalisation.baml
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.g.resources
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.AssemblyInfoInputs.cache
@@ -302,3 +296,9 @@ C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisat
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.pdb
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\CodeQr_Personnalisation.genruntimeconfig.cache
 C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\ref\CodeQr_Personnalisation.dll
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VueEnregistrement.g.cs
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VueGeneration.g.cs
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VuePersonnalisation.g.cs
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VueEnregistrement.baml
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VueGeneration.baml
+C:\Users\Utilisateur\Downloads\Dev d'App\Projet 1 - Code QR\CodeQr_Personnalisation\CodeQr_Personnalisation\obj\Debug\net6.0-windows\Model\View\VuePersonnalisation.baml

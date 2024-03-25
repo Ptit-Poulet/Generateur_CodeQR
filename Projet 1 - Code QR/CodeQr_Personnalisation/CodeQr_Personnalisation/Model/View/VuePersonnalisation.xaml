@@ -85,14 +85,14 @@
                         </Grid.RowDefinitions>
                         <TextBlock Grid.Row="0" Width="75"></TextBlock>
                         <ComboBox  x:Name="comboBox_MarkerReference"  Grid.Row="1" Width="100"
-                                   ItemsSource="{Binding ListeSKColor}"
-                                   SelectedItem="{Binding SKColorSelectionne, Mode=OneWayToSource}"></ComboBox>
+                                   ItemsSource="{Binding ListeColor}"
+                                   SelectedItem="{Binding ColorSelectionne, Mode=OneWayToSource}"></ComboBox>
                     </Grid>
                 </Grid>
             </GroupBox>
 
             <GroupBox Grid.Column="1" Header="Aperçu ( Pas le Code Qr Fonctionnel, ne pas Scanner)" FontSize="15" Margin="10">
-                <Border Grid.Row="0" Background="Red">
+                <Border Grid.Row="0">
                     <Image  x:Name="img_CodeQr" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
                 </Border>
                 

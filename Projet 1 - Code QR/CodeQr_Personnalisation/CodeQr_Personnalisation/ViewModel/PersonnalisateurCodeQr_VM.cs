@@ -29,25 +29,26 @@ namespace CodeQr_Personnalisation.ViewModel
             orange = 'o'
         }
 
-        private List<SKColor> _listeSKColor = new List<SKColor> { SKColor.red, SKColor.blue, SKColor.green, SKColor.orange };
+        private List<string> _listeSKColor = new List<string> { "r", "b", "g", "o" };
 
-        public List<SKColor> ListeSKColor
+        public List<string> ListeColor
         {
             get { return _listeSKColor; }
             set
             {
-                OnPropertyChanged(nameof(ListeSKColor));
+                OnPropertyChanged(nameof(ListeColor));
             }
         }
 
-        private SKColor _SKColorSelectionne;
-        public SKColor SKColorSelectionne
+        private string _ColorSelectionne;
+        public string ColorSelectionne
         {
-            get { return _SKColorSelectionne; }
+            get { return _ColorSelectionne; }
             set
             {
-                _SKColorSelectionne = value;
-                OnPropertyChanged(nameof(SKColorSelectionne));
+
+                _ColorSelectionne = value;
+                OnPropertyChanged(nameof(ColorSelectionne));
             }
         }
         public ICommand Enregistrer { get; }

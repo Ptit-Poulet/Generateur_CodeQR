@@ -34,16 +34,24 @@ namespace CodeQr_Personnalisation
         }
         private void Click_PersonnaliserCodeQR(object sender, RoutedEventArgs e)
         {
-            PersonnalisateurCodeQr_VM vmPersonnalisation = new PersonnalisateurCodeQr_VM();
-            PersonnalisationCodeQr vuePersonnalisation = new PersonnalisationCodeQr();
-
-            vuePersonnalisation.Owner = this;
-            vuePersonnalisation.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-
-            vuePersonnalisation.DataContext = vmPersonnalisation;
-            vuePersonnalisation.ShowDialog();
-
+            
+            ModifierCode(((GenerateurCodeQr_VM)this.DataContext).CodeCreer);
         }
+        private void ModifierCode(string codeCreer)
+        {
+            if (codeCreer != null)
+            {
+                PersonnalisationCodeQr vuePersonnalisation = new PersonnalisationCodeQr();
+                vuePersonnalisation.Owner = this;
+                PersonnalisateurCodeQr_VM vmPersonnalisation = new PersonnalisateurCodeQr_VM();
+
+                vuePersonnalisation.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                vuePersonnalisation.ShowDialog();
+
+                vuePersonnalisation = null;
+            }
+        }
+       
         private void TextBox_SelectionContenu(object sender, RoutedEventArgs e)
         {
             Comportements.TextBox_SelectionContenu(sender, e);
@@ -100,5 +108,6 @@ namespace CodeQr_Personnalisation
             }
             return returnVal;
         }
+
     }
 }

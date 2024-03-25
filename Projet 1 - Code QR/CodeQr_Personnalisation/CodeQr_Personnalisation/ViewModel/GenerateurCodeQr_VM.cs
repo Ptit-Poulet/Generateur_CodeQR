@@ -19,7 +19,17 @@ namespace CodeQr_Personnalisation.ViewModel
         {
 
         }
-
+        private string _ChaineDebut;
+        public string ChaineDebut
+        {
+            get { return _ChaineDebut; }
+            set
+            {
+                _ChaineDebut = value;
+                OnPropertyChanged(nameof(ChaineDebut));
+                UpdateCodeCreer();
+            }
+        }
         public enum ECLevel
         {
             L,
@@ -35,6 +45,7 @@ namespace CodeQr_Personnalisation.ViewModel
             set
             {
                 OnPropertyChanged(nameof(ListeEClevel));
+
             }
         }
 
@@ -46,6 +57,21 @@ namespace CodeQr_Personnalisation.ViewModel
             {
                 _eCLevelSelectionne = value;
                 OnPropertyChanged(nameof(EcLevelSelectionne));
+                UpdateCodeCreer();
+            }
+        }
+        private void UpdateCodeCreer()
+        {
+            CodeCreer = $"{ChaineDebut} {EcLevelSelectionne}";
+        }
+        private string _CodeCreer;
+        public string CodeCreer
+        {
+            get { return _CodeCreer; }
+            set
+            {
+                _CodeCreer = value;
+                OnPropertyChanged(nameof(CodeCreer));
             }
         }
     }
