@@ -8,6 +8,9 @@ namespace CodeQr_Personnalisation.Model
 {
     internal class Modifiable
     {
+        public static string Chaine { get; set; }
+        public static string Eclevel { get; set; }
+        public static string Couleur { get; set; }
 
     }
 }

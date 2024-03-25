@@ -21,15 +21,8 @@ namespace CodeQr_Personnalisation.ViewModel
             Enregistrer = new RelayCommand(Enregistrer_Execute);
             Annuler = new RelayCommand(Annuler_Execute);
         }
-        public enum SKColor
-        {
-            red = 'r',
-            blue = 'b',
-            green = 'g',
-            orange = 'o'
-        }
-
-        private List<string> _listeSKColor = new List<string> { "r", "b", "g", "o" };
+ 
+        private List<string> _listeSKColor = new List<string> { "red", "blue", "green", "orange" };
 
         public List<string> ListeColor
         {
@@ -46,7 +39,6 @@ namespace CodeQr_Personnalisation.ViewModel
             get { return _ColorSelectionne; }
             set
             {
-
                 _ColorSelectionne = value;
                 OnPropertyChanged(nameof(ColorSelectionne));
             }

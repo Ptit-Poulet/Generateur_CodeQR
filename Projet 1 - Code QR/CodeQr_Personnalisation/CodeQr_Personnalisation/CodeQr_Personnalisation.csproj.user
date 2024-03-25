@@ -2,18 +2,18 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="Model\View\VueEnregistrement.xaml.cs">
+    <Compile Update="View\VueEnregistrement.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Model\View\VuePersonnalisation.xaml.cs">
+    <Compile Update="View\VuePersonnalisation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Model\View\VueEnregistrement.xaml">
+    <Page Update="View\VueEnregistrement.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Model\View\VuePersonnalisation.xaml">
+    <Page Update="View\VuePersonnalisation.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
