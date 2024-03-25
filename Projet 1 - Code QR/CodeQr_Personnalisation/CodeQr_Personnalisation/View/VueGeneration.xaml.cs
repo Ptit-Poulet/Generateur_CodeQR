@@ -62,6 +62,13 @@ namespace CodeQr_Personnalisation
           MessageBox.Show(message," ", MessageBoxButton.OK, MessageBoxImage.Warning);
            
         }
+        private void Confirmation()
+        {
+            string message = $"Veuillez remplir tous les champs.";
+
+            MessageBox.Show(message, " ", MessageBoxButton.OK, MessageBoxImage.Warning);
+
+        }
         /// <summary>
         /// Sélectionn tout le contenu d'un textboc
         /// </summary>
@@ -80,12 +87,15 @@ namespace CodeQr_Personnalisation
         {
             string path = Environment.CurrentDirectory + "\\QRGen\\CodeQr_Generateur.exe";
 
+            if(!string.IsNullOrEmpty(ChaineDebut.Text) && !string.IsNullOrEmpty(comboBox_EcLevel.SelectedItem?.ToString()) && !string.IsNullOrEmpty(comboBox_Couleur.SelectedItem?.ToString()))
+            {
             Modifiable.Chaine = ChaineDebut.Text;
             Modifiable.Eclevel = comboBox_EcLevel.SelectedItem?.ToString() ?? "Q";
-            Modifiable.Couleur = comboBox_Couleur.SelectedItem?.ToString() ?? "black";
-            string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} {Modifiable.Couleur}");
+            Modifiable.Couleur = comboBox_Couleur.SelectedItem.ToString();
+            //string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} {Modifiable.Couleur}");
+            string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} \"orange\"");
 
-            
+
             string pathImage = Environment.CurrentDirectory + "\\output.png";
             if (File.Exists(pathImage))
             {
@@ -100,6 +110,12 @@ namespace CodeQr_Personnalisation
             }
 
             img_CodeQr.Stretch = Stretch.Uniform;
+
+            }
+            else
+            {
+                Confirmation();
+            }
         }
         /// <summary>
         /// Utilise le fichier.exe
@@ -110,8 +126,8 @@ namespace CodeQr_Personnalisation
         private void GenerateQRCode(string filename, string args, string outputPath)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(filename, args);
-            startInfo.UseShellExecute = false;
             Process proc = System.Diagnostics.Process.Start(startInfo);
+            startInfo.UseShellExecute = false;
             proc.WaitForExit();
         }
         /// <summary>
