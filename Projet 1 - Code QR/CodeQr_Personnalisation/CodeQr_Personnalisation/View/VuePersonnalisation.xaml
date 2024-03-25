@@ -107,6 +107,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition Width="0.30*"/>
             </Grid.ColumnDefinitions>
+            
             <Button Grid.Column="0" Height="50" Width="150" FontSize="20" HorizontalAlignment="Right" Margin="10"
                     Content="Ok" Click="Click_Visualisation"/>
             

@@ -18,6 +18,7 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Reflection;
 using System.IO;
+using System.Threading;
 
 namespace CodeQr_Personnalisation
 {
@@ -34,7 +35,7 @@ namespace CodeQr_Personnalisation
         private void Click_PersonnaliserCodeQR(object sender, RoutedEventArgs e)
         {
             PersonnalisateurCodeQr_VM vmPersonnalisation = new PersonnalisateurCodeQr_VM();
-            PersonnalisationCodeQr vuePersonnalisation  = new PersonnalisationCodeQr();
+            PersonnalisationCodeQr vuePersonnalisation = new PersonnalisationCodeQr();
 
             vuePersonnalisation.Owner = this;
             vuePersonnalisation.WindowStartupLocation = WindowStartupLocation.CenterOwner;
@@ -48,61 +49,56 @@ namespace CodeQr_Personnalisation
             Comportements.TextBox_SelectionContenu(sender, e);
         }
 
-
-        //private void Click_AfficherImage(object sender, RoutedEventArgs e)
-        //{
-        //    GenerateurCodeQr_VM generateurCodeQr_VM = new GenerateurCodeQr_VM();
-
-        //    //string filename = @"";
-
-        //    //ProcessStartInfo startInfo = new ProcessStartInfo(filename);
-        //    //startInfo.UseShellExecute = false;
-        //    //Process proc = System.Diagnostics.Process.Start(startInfo);
-        //    //proc.WaitForExit();
-        //    ////TxtResult.Text = proc.ExitCode.ToString();
-
-
-        //    //charger l'image et l'afficher
-        //    string assemblyPath = Assembly.GetExecutingAssembly().Location;
-        //    //charger l'image et l'afficher
-        //    string pathImage = "C:\\Users\\2130331\\Downloads\\Projet 1 - Code QR 4\\Projet 1 - Code QR\\CodeQr_Generateur\\bin\\output.png";
-        //    var uriSouirce = new Uri(pathImage, UriKind.Absolute);
-        //    img_CodeQr.Source = new BitmapImage(uriSouirce);
-
-        //    img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
-
-        //}
-
         private void Click_AfficherImage(object sender, RoutedEventArgs e)
         {
             string path = Environment.CurrentDirectory + "\\QRGen\\CodeQr_Generateur.exe";
 
+            string message = ChaineDebut.Text;
+            string ecl = comboBox_EcLevel.SelectedItem?.ToString() ?? "Q";
 
-            string args = "\"" + ChaineDebut.Text + "\""+  " " + comboBox_EcLevel.SelectedItem.ToString();
-           
-            //avant de lancer le processus, on vérifie si un ancien fichier existe déja et dans ce cas on le supprime d'abord:
+            string args = $"\"{message}\" {ecl}";
+
+            // Check if the old image file exists and delete it
             string pathImage = Environment.CurrentDirectory + "\\output.png";
             if (File.Exists(pathImage))
             {
                 File.Delete(pathImage);
             }
 
-            ProcessStartInfo startInfo = new ProcessStartInfo(path, args);
+            GenerateQRCode(path, args, pathImage);
+
+            if (!string.IsNullOrEmpty(ChaineDebut.Text))
+            {
+                img_CodeQr.Source = LoadImage(pathImage);
+            }
+
+            img_CodeQr.Stretch = Stretch.Uniform;
+        }
+
+        private void GenerateQRCode(string filename, string args, string outputPath)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo(filename, args);
             startInfo.UseShellExecute = false;
             Process proc = System.Diagnostics.Process.Start(startInfo);
             proc.WaitForExit();
+        }
 
-
-            //TxtResult.Text = proc.ExitCode.ToString();
-
-            //charger l'image et l'afficher
-            var uriSource = new Uri(pathImage, UriKind.Absolute);
-            if(ChaineDebut.Text != "") //ECLevel défaut à Q
+        private BitmapImage LoadImage(string url)
+        {
+            BitmapImage returnVal = null;
+            if (url != null)
             {
-               img_CodeQr.Source = new BitmapImage(uriSource);
+                BitmapImage image = new BitmapImage();
+                using (FileStream stream = File.OpenRead(url))
+                {
+                    image.BeginInit();
+                    image.CacheOption = BitmapCacheOption.OnLoad;
+                    image.StreamSource = stream;
+                    image.EndInit();
+                }
+                returnVal = image;
             }
-
-             img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
+            return returnVal;
         }
     }
 }
