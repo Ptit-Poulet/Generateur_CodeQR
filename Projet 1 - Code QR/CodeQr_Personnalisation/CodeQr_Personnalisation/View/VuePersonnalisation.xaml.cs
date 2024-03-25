@@ -26,6 +26,7 @@ namespace CodeQr_Personnalisation.View
     /// </summary>
     public partial class PersonnalisationCodeQr : Window
     {
+            //TODO les modifications sont tous à implémenter
         public PersonnalisationCodeQr()
         {
             InitializeComponent();
@@ -40,9 +41,13 @@ namespace CodeQr_Personnalisation.View
             img_CodeQr.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
 
         }
+        /// <summary>
+        /// Affiche le code QR avec les modifications
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Click_Visualisation(object sender, RoutedEventArgs e)
         {
-         
             PersonnalisateurCodeQr_VM personnalisateurCodeQr_VM = new PersonnalisateurCodeQr_VM();
             GenerateurCodeQr_VM generateurCodeQr_VM = new GenerateurCodeQr_VM();
             MainWindow vueGeneration = new MainWindow();
@@ -77,6 +82,12 @@ namespace CodeQr_Personnalisation.View
 
             img_CodeQr.Stretch = Stretch.Uniform;
         }
+        /// <summary>
+        /// Utiliser le fichier.exe
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="args"></param>
+        /// <param name="outputPath"></param>
         private void GenerateQRCode(string filename, string args, string outputPath)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(filename, args);
@@ -84,7 +95,11 @@ namespace CodeQr_Personnalisation.View
             Process proc = System.Diagnostics.Process.Start(startInfo);
             proc.WaitForExit();
         }
-
+        /// <summary>
+        /// Load le png
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         private BitmapImage LoadImage(string url)
         {
             BitmapImage returnVal = null;
@@ -102,20 +117,11 @@ namespace CodeQr_Personnalisation.View
             }
             return returnVal;
         }
-
-        private void Click_PersonnaliserCodeQR(object sender, RoutedEventArgs e)
-        {
-            PersonnalisateurCodeQr_VM vmPersonnalisation = new PersonnalisateurCodeQr_VM();
-            PersonnalisationCodeQr vuePersonnalisation = new PersonnalisationCodeQr();
-
-            vuePersonnalisation.Owner = this;
-            vuePersonnalisation.WindowStartupLocation = WindowStartupLocation.CenterOwner;
-
-            vuePersonnalisation.DataContext = vmPersonnalisation;
-            vuePersonnalisation.ShowDialog();
-
-        }
-
+        /// <summary>
+        /// Annule toute modification
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Click_Annnuler(object sender, RoutedEventArgs e)
         {
             if (this.DataContext is PersonnalisateurCodeQr_VM)
@@ -124,17 +130,26 @@ namespace CodeQr_Personnalisation.View
                 this.Close();
             }
         }
+        /// <summary>
+        /// Seelctionne tous le contenu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBox_SelectionContenu(object sender, RoutedEventArgs e)
         {
             Comportements.TextBox_SelectionContenu(sender, e);
         }
-
+        /// <summary>
+        /// Recherche l'image de remplacement des modules
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         //ClickExplorateur_Fichier
         private void ClickExplorateur_Module(object sender, RoutedEventArgs e)
         {
             PersonnalisateurCodeQr_VM personnalisateurCodeQr_VM = new PersonnalisateurCodeQr_VM();
 
-           OpenFileDialog openFileDialog = new OpenFileDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
             string pathImage = "";
 
             if (openFileDialog.ShowDialog() == true)
@@ -151,8 +166,11 @@ namespace CodeQr_Personnalisation.View
                 img_Module.Stretch = Stretch.Uniform;   //Pour l'étendre sur tout son contenant
             }
         }
-
-
+        /// <summary>
+        /// Recherche l'image pour mettre un logo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClickExplorateur_Logo(object sender, RoutedEventArgs e)
         {
             PersonnalisateurCodeQr_VM personnalisateurCodeQr_VM = new PersonnalisateurCodeQr_VM();

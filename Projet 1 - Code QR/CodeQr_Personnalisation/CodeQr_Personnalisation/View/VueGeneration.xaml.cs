@@ -32,6 +32,11 @@ namespace CodeQr_Personnalisation
             InitializeComponent();
             DataContext = new GenerateurCodeQr_VM();
         }
+        /// <summary>
+        /// Ouvre la fenetre de personnalisation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Click_PersonnaliserCodeQR(object sender, RoutedEventArgs e)
         {
             PersonnalisateurCodeQr_VM vmPersonnalisation = new PersonnalisateurCodeQr_VM();
@@ -44,6 +49,11 @@ namespace CodeQr_Personnalisation
             vuePersonnalisation.ShowDialog();
 
         }
+        /// <summary>
+        /// Avertis que ce n'est pas dispo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Click_PasImplémenté(object sender, RoutedEventArgs e)
         {
            
@@ -52,11 +62,20 @@ namespace CodeQr_Personnalisation
           MessageBox.Show(message," ", MessageBoxButton.OK, MessageBoxImage.Warning);
            
         }
+        /// <summary>
+        /// Sélectionn tout le contenu d'un textboc
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TextBox_SelectionContenu(object sender, RoutedEventArgs e)
         {
             Comportements.TextBox_SelectionContenu(sender, e);
         }
-
+        /// <summary>
+        /// Fonctions pour afficher le Code Qr
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Click_AfficherImage(object sender, RoutedEventArgs e)
         {
             string path = Environment.CurrentDirectory + "\\QRGen\\CodeQr_Generateur.exe";
@@ -82,7 +101,12 @@ namespace CodeQr_Personnalisation
 
             img_CodeQr.Stretch = Stretch.Uniform;
         }
-
+        /// <summary>
+        /// Utilise le fichier.exe
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="args"></param>
+        /// <param name="outputPath"></param>
         private void GenerateQRCode(string filename, string args, string outputPath)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo(filename, args);
@@ -90,7 +114,11 @@ namespace CodeQr_Personnalisation
             Process proc = System.Diagnostics.Process.Start(startInfo);
             proc.WaitForExit();
         }
-
+        /// <summary>
+        /// Lis l'image et l'affiche
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
         private BitmapImage LoadImage(string url)
         {
             BitmapImage returnVal = null;
