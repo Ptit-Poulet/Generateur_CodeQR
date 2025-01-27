@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CodeQr_Generateur": {
+      "commandName": "Project",
+      "commandLineArgs": "\"CEGEP DE CHICOUTIMI\"\r\nQ\r\ngreen"
+    }
+  }
+}
