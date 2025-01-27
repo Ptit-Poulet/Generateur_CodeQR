@@ -92,8 +92,8 @@ namespace CodeQr_Personnalisation
             Modifiable.Chaine = ChaineDebut.Text;
             Modifiable.Eclevel = comboBox_EcLevel.SelectedItem?.ToString() ?? "Q";
             Modifiable.Couleur = comboBox_Couleur.SelectedItem.ToString();
-            //string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} {Modifiable.Couleur}");
-            string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} \"orange\"");
+            string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} {Modifiable.Couleur}");
+            //string args = ($"\"{Modifiable.Chaine}\" {Modifiable.Eclevel} \"orange\"");
 
 
             string pathImage = Environment.CurrentDirectory + "\\output.png";
